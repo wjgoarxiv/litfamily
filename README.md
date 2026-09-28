@@ -45,7 +45,7 @@ Choose **one** product. Follow its README for supported Node.js and host version
 
 
 > [!NOTE]
-> **Released on npm.** Each product is published under the `@litfamily` npm scope. The versions and release commits are listed in [release status](docs/release-status.md). The GitHub repositories, including this hub, are private for now, so the product links below require access.
+> **Released on npm.** Each product is published under the `@litfamily` npm scope. The versions and release commits are listed in [release status](docs/release-status.md). The product repositories and this hub are public on GitHub.
 
 ### Product READMEs
 

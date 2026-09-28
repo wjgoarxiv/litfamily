@@ -45,7 +45,7 @@
 
 
 > [!NOTE]
-> **npm에 출시했습니다.** 각 제품은 npm `@litfamily` 스코프로 배포되어 있습니다. 버전과 출시 커밋은 [출시 상태](docs/release-status.md)에 있습니다. 이 허브를 포함한 GitHub 저장소는 아직 비공개라서, 아래 제품 링크는 접근 권한이 있어야 열립니다.
+> **npm에 출시했습니다.** 각 제품은 npm `@litfamily` 스코프로 배포되어 있습니다. 버전과 출시 커밋은 [출시 상태](docs/release-status.md)에 있습니다. 제품 저장소와 이 허브는 GitHub에 공개되어 있습니다.
 
 ### 제품 README
 
