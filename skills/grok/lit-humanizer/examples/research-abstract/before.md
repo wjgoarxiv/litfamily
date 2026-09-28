@@ -1,0 +1,5 @@
+Let's dive in. This study investigates the relationship between four weekly reading sessions and recall among first-year biology students. The study represents an important contribution to the ongoing conversation about learning, highlighting the transformative potential of consistent practice.
+
+We assigned 84 students to one of two groups. The practice group completed four 20-minute reading sessions each week for six weeks. The comparison group followed its usual study schedule. On a 30-question quiz in week seven, the practice group averaged 21.4 correct answers and the comparison group averaged 18.7. The groups began with similar scores on a 10-question baseline quiz.
+
+These results suggest that regular reading may improve recall. While further research is needed and the sample is limited, the findings point toward a promising new direction. The findings are not just about the reading sessions, but about the value of a structured approach to learning. Future studies should explore this area in greater depth.

@@ -1,0 +1,20 @@
+{
+  "name": "litfamily",
+  "owner": {
+    "name": "wjgoarxiv"
+  },
+  "plugins": [
+    {
+      "name": "litclaude",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/wjgoarxiv/litclaude.git",
+        "path": "plugins/litclaude",
+        "sha": "d3febe77d5961dbcbd06bf230e8b3522e1a361c3"
+      },
+      "description": "Claude Code-native planning, implementation, research and review workflows.",
+      "strict": true
+    }
+  ],
+  "description": "Independent Claude Code plugin distribution within the LitFamily workflow family."
+}

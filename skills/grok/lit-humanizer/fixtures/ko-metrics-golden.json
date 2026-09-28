@@ -1,0 +1,49 @@
+{
+  "description": "Adapted Korean diagnostic cases. Every signal is advisory and genre dependent.",
+  "cases": [
+    {
+      "id": "conclusion-cluster-positive",
+      "text": "결론적으로 자료를 공개한다. 따라서 다음 회의에서 검토한다. 이를 통해 누락을 찾는다. 그러므로 일정은 하루 늦춘다.",
+      "warning": "ko-conclusion-pivot-cluster",
+      "minimum": { "conclusionPivotCount": 4 }
+    },
+    {
+      "id": "conclusion-cluster-negative",
+      "text": "회의는 6월 12일 열렸다. 참석자는 표의 수치를 확인했다. 담당자는 결과를 게시했다.",
+      "absent": "ko-conclusion-pivot-cluster"
+    },
+    {
+      "id": "cleft-cluster-positive",
+      "text": "필요한 것은 날짜를 먼저 확정하는 일이다. 이번 주에는 참석자에게 가능한 시간을 묻고, 답이 오면 같은 표에 반영한다. 중요한 것은 빈칸을 남겨 두지 않는 것이다. 담당자는 확정된 시간을 회의실 예약에 그대로 옮긴다. 참석이 어려운 사람에게는 회의록을 보내고, 다음 회의에서 보충 의견을 받는다. 일정 변경은 표의 마지막 열에 기록한다.",
+      "warning": "ko-cleft-cluster",
+      "minimum": { "cleftCount": 2, "eojeol": 40 }
+    },
+    {
+      "id": "cleft-single-negative",
+      "text": "이번 회의에서 중요한 것은 참석자 전원이 결정 내용을 확인하는 일이다. 담당자는 다음 날 회의록을 공유한다.",
+      "absent": "ko-cleft-cluster"
+    },
+    {
+      "id": "connective-openers-positive",
+      "text": "또한, 접수 창구는 오전 9시에 문을 연다. 따라서, 번호표는 입구에서 받는다. 아울러, 담당자가 순서대로 안내한다.\n\n접수는 오후 5시에 끝난다.",
+      "warning": "ko-paragraph-initial-connective-cluster",
+      "minimum": { "paragraphInitialConnectiveCounts": [3, 0] }
+    },
+    {
+      "id": "connective-openers-negative",
+      "text": "창구는 오전 9시에 문을 연다. 번호표는 입구에서 받는다. 담당자가 순서대로 안내한다.",
+      "absent": "ko-paragraph-initial-connective-cluster"
+    },
+    {
+      "id": "connective-comma-positive",
+      "text": "담당자가 자료를 읽고, 회의록에 질문을 적었다. 팀은 결과를 확인하며, 다음 일정을 정했다. 일정이 늦어졌지만, 접수는 계속됐다.",
+      "warning": "ko-connective-ending-comma-cluster",
+      "minimum": { "connectiveEndingCommaCount": 3 }
+    },
+    {
+      "id": "connective-comma-negative",
+      "text": "담당자가 자료를 읽고 회의록에 질문을 적었다. 팀은 결과를 확인하며 다음 일정을 정했다. 일정이 늦어졌지만 접수는 계속됐다.",
+      "absent": "ko-connective-ending-comma-cluster"
+    }
+  ]
+}
