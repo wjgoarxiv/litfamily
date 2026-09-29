@@ -18,8 +18,8 @@ test('the standalone Grok export pins the LitGrok humanizer release commit', asy
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   const entry = inventory.exports.find((item) => item.id === 'lit-humanizer');
   assert.equal(entry.product, 'grok');
-  assert.equal(entry.sourceVersion, '1.0.9');
-  assert.equal(entry.sourceCommit, 'b1641f34c5f417eca8983174275f08ac116ca8cb');
+  assert.equal(entry.sourceVersion, '1.0.11');
+  assert.equal(entry.sourceCommit, 'a0e9fe37b65071390cbbe98ff682444083eac29f');
   assert.equal(entry.sourcePath, '.grok/skills/lit-humanizer');
   assert.equal(entry.destinationPath, 'skills/grok/lit-humanizer');
   assert.equal(entry.files.length, 72);
@@ -27,11 +27,11 @@ test('the standalone Grok export pins the LitGrok humanizer release commit', asy
 
 test('the hub binds the release commits', async () => {
   const release = {
-    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.13', sourceCommit: 'da312b46ea3353e546e47a4ad0fbbc0ba199b934' },
-    hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.10', sourceCommit: 'e67beb5eaf148166c758d20d5705b73e587a7b59' },
-    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.8', sourceCommit: 'ae3ea1c8c237b771dd843e9b02eb45d9dfbd58d0' },
-    opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.10', sourceCommit: '1af1a4e6a52b3605d4625aaf4b6b5db1ca1d08f8' },
-    grok: { name: 'LitGrok', repository: 'https://github.com/wjgoarxiv/litgrok', version: '1.0.9', sourceCommit: 'b1641f34c5f417eca8983174275f08ac116ca8cb' },
+    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.15', sourceCommit: '5677192970b09c1e7a4fca3655300eeed6fed66c' },
+    hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.12', sourceCommit: '86eb26043ad7c5e4c092d110b299fe180fd0fb1b' },
+    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.10', sourceCommit: '2cd6117217cd27058541c721ddf6ddff86d7e6e4' },
+    opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.12', sourceCommit: 'db5c23e40b866d64259be78b418bf37fefc89748' },
+    grok: { name: 'LitGrok', repository: 'https://github.com/wjgoarxiv/litgrok', version: '1.0.11', sourceCommit: 'a0e9fe37b65071390cbbe98ff682444083eac29f' },
   };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   for (const [id, expected] of Object.entries(release)) {
