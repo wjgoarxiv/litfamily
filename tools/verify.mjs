@@ -8,8 +8,8 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const litGrokHumanizer = {
   product: 'grok',
   id: 'lit-humanizer',
-  sourceVersion: '1.0.12',
-  sourceCommit: '17bf5e362b3ae2a265bb14b167e80af2a9812ada',
+  sourceVersion: '1.0.13',
+  sourceCommit: '3bedbce8a2e64d9d5238c45cda4041dfce954127',
   sourcePath: '.grok/skills/lit-humanizer',
   destinationPath: 'skills/grok/lit-humanizer',
 };
