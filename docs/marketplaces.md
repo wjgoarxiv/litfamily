@@ -17,7 +17,7 @@ The hub lives at `wjgoarxiv/litfamily`. To add it as a Claude Code marketplace a
 
 The plugin ID stays `litclaude`; the marketplace ID is `litfamily`; neither is the npm package name. The product-owned marketplace retains `litclaude-ai` with source `./plugins/litclaude`; this hub uses the separate `litfamily` registration. Choose one activation route and avoid enabling the same plugin through both registrations. Follow the product migration guide before replacing one registration with another. A marketplace install supplies the plugin; it does not imply that the npm installer's optional HUD, status-line or host configuration setup ran.
 
-For local schema checking, run `claude plugin validate .` from the hub root. Installing from this manifest fetches the GitHub source and is a separate operation; validation is not installation. The `git-subdir` source uses the full `sha` of the LitClaude 1.0.18 release commit recorded in the [source catalog](skills.md#assessed-source-identities-and-licenses). Hub verification requires those pins to match. The private development history is not included in that source.
+For local schema checking, run `claude plugin validate .` from the hub root. Installing from this manifest fetches the GitHub source and is a separate operation; validation is not installation. The `git-subdir` source uses the full `sha` of the LitClaude 1.0.19 release commit recorded in the [source catalog](skills.md#assessed-source-identities-and-licenses). Hub verification requires those pins to match. The private development history is not included in that source.
 
 Public release acceptance still requires a real fetch, isolated install, activation checks and removal from the pinned remote source after the necessary remote actions are authorized. An isolated local-transport check, if recorded, proves only the local lifecycle and cannot satisfy public availability.
 
@@ -27,7 +27,7 @@ Schema authority: [Claude Code marketplace documentation](https://code.claude.co
 
 The native marketplace remains in the independent LitCodex repository at `.agents/plugins/marketplace.json`. Its marketplace name is `litcodex`; its plugin name is `litcodex`; its source is `./plugins/litcodex`. The current native policy uses installation `AVAILABLE` and authentication `ON_INSTALL`.
 
-Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/8c47ab044f3e50ba8875111a12f8b30bdfe487f8) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
+Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/90122dd78954874e46876fa345578d28c93ed2f9) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
 
 ## Other harnesses
 
