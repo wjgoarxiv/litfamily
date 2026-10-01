@@ -1,12 +1,12 @@
 # Release status
 
-The five products are released. On 2026-10-01, each version below was the npm `latest` of its `@litfamily` package, and each release commit was the product repository's GitHub `main`. The product repositories and this hub are public on GitHub.
+The five products are released. On 2026-10-02, each version below was the npm `latest` of its `@litfamily` package, and each release commit was the product repository's GitHub `main`. The product repositories and this hub are public on GitHub.
 
 | Product | Released version | Legacy unscoped package | npm package | CLI name retained |
 |---|---|---|---|---|
 | LitClaude | 1.0.19 | `litclaude-ai` | `@litfamily/litclaude` | `litclaude-ai`, `litclaude` |
 | LitHermes | 1.0.16 | `lithermes-ai` | `@litfamily/lithermes` | `lithermes`, `lithermes-ai` |
-| LitCodex | 1.0.14 | `litcodex-ai` | `@litfamily/litcodex` | `litcodex` |
+| LitCodex | 1.0.15 | `litcodex-ai` | `@litfamily/litcodex` | `litcodex` |
 | LitOpenCode | 1.0.16 | `litopencode` | `@litfamily/litopencode` | `litopencode` |
 | LitGrok | 1.0.14 | `litgrok-ai` | `@litfamily/litgrok` | `litgrok-ai`, `litgrok` |
 
@@ -18,7 +18,7 @@ Each commit below is the product's GitHub `main` for that release and the source
 |---|---|---|---|
 | LitClaude | 1.0.19 | `release/1.0.19` | `c587d25aaa8134c1ba7f41b05c27b8bd2fa832d1` |
 | LitHermes | 1.0.16 | `release/1.0.16` | `ce68f4ba7feaf4d894434e114cd90e7e538f182c` |
-| LitCodex | 1.0.14 | `release/1.0.14` | `90122dd78954874e46876fa345578d28c93ed2f9` |
+| LitCodex | 1.0.15 | `release/1.0.15` | `226e47c74080db2d4b27457b8535219d2fdf42a1` |
 | LitOpenCode | 1.0.16 | `release/1.0.16` | `4e5893602e43c983db0f522c2944f5ad677bd8ae` |
 | LitGrok | 1.0.14 | `release/1.0.14` | `eb36ffc95780803d5c8fc8b4be785558f4374498` |
 
