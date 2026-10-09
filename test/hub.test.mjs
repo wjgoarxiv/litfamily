@@ -29,7 +29,7 @@ test('the hub binds the release commits', async () => {
   const release = {
     claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.20', sourceCommit: '09466c0aca33ea1bb5e09b0d6f772190b36238b2' },
     hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.17', sourceCommit: '81231474c7e5797ca209a63a952793d2de9a9ef1' },
-    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.16', sourceCommit: 'dc975bb44182509de677069a003154d02457cfaa' },
+    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.17', sourceCommit: 'a7dca52df1f4fb99da86ebdb6ad28dbe0bb87ede' },
     opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.17', sourceCommit: '299aba0ab4d0ef8f9cd6a07241124e26cc92aa2e' },
     grok: { name: 'LitGrok', repository: 'https://github.com/wjgoarxiv/litgrok', version: '1.0.15', sourceCommit: '68702f3e3d430ee853aad993f7b58e3d42fbf101' },
   };

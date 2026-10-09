@@ -27,7 +27,7 @@ Schema authority: [Claude Code marketplace documentation](https://code.claude.co
 
 The native marketplace remains in the independent LitCodex repository at `.agents/plugins/marketplace.json`. Its marketplace name is `litcodex`; its plugin name is `litcodex`; its source is `./plugins/litcodex`. The current native policy uses installation `AVAILABLE` and authentication `ON_INSTALL`.
 
-Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/dc975bb44182509de677069a003154d02457cfaa) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
+Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/a7dca52df1f4fb99da86ebdb6ad28dbe0bb87ede) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
 
 ## Other harnesses
 
