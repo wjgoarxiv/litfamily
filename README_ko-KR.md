@@ -5,29 +5,7 @@
 
 **Keep the work lit.**
 
-목표와 계획, 확인한 결과, 다음에 할 일을 프로젝트에 남깁니다.
-
-**[설치](#설치) · [빠른 시작](#빠른-시작) · [주요 기능](#주요-기능) · [명령과 훅](#명령과-훅) · [링크](#링크) · [English](README.md)**
-
-<p align="center"><img src="assets/brand/readme/ascii-readme.svg" width="300" alt="LIT ASCII B mark" /></p>
-
-<details>
-<summary>Copy ASCII logo</summary>
-
-```text
-          ▄▖  ▄█▄
-▗▄▄▖    ▄██▌  ▜█▛
-▐██▌  ▄████████████▜▛
-▐██▌ ▐█▀▀▀▀▀▀▀▀▀▀▀▀▘
-▐██▌   ▄█▌█████████▌
-▐██▌ ▄██▛▘  ▗▄▄  ▗
-▐██▌▐█▛▘    ▐██  ▝▀
-▐██▌▝       ▐██
-▐██████▘    ▐██
-▝▀▀▀▀▀      ▝▀▀
-```
-
-</details>
+LitFamily는 AI 코딩 에이전트 다섯 종류에 하나씩 맞춰 만든 오픈소스 확장입니다. 에이전트가 작업을 계획하고, 결과를 스스로 확인하고, 다음 세션이 이어받을 수 있도록 프로젝트에 기록을 남기게 도와줍니다.
 
 <p align="center">
 <img src="assets/brand/readme/badge-version.svg" alt="출시: npm" />
@@ -35,27 +13,52 @@
 <img src="assets/brand/readme/badge-family.svg" alt="Five independent ports" />
 </p>
 
-<p align="center">
-<a href="docs/skills.md"><img src="assets/brand/readme/lucide-book-open.svg" width="16" alt="" /> Docs</a> &nbsp; <a href="assets/brand/exports/ignition-film.mp4"><img src="assets/brand/readme/lucide-play.svg" width="16" alt="" /> Ignition</a> &nbsp; <a href="LICENSE"><img src="assets/brand/readme/lucide-shield-check.svg" width="16" alt="" /> MIT</a>
-</p>
+**[설치](#설치) · [실제 화면](#실제-화면) · [빠른 시작](#빠른-시작) · [주요 기능](#주요-기능) · [명령과 훅](#명령과-훅) · [링크](#링크) · [English](README.md)**
 
 ## 설치
 
-지금 쓰는 도구에 맞는 제품 **하나**를 고르세요. 지원하는 Node.js와 호스트 버전, 설치 방법과 활성화 확인 절차는 해당 README에서 확인하세요. 다른 LitFamily 제품은 필요하지 않습니다.
+제품마다 npm 패키지가 따로 있고, 각각 에이전트 하나를 위해 만들어졌습니다. 지금 쓰는 에이전트를 찾아 그 줄의 명령을 터미널에 붙여 넣으면 됩니다. 하나만 설치하면 되고, 다른 제품이 함께 필요하지는 않습니다.
 
+### 에이전트 고르기
+
+| 쓰는 에이전트 | 제품 | 설치 명령 |
+|---|---|---|
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@latest -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@latest -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.19 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@latest -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@latest -- litgrok install` |
+
+npm이 함께 설치된 Node.js와 해당 에이전트가 있어야 합니다. LitCodex는 Node.js 22 이상, LitHermes는 18 이상이 필요합니다. 설치 프로그램이 무엇을 바꾸는지, 설치 중에 무엇을 묻는지, 바뀔 내용을 미리 보는 방법과 제거하는 방법은 각 제품 README에 정리되어 있습니다.
+
+Claude Code를 쓴다면 Claude Code 안에서 이 허브의 플러그인 마켓플레이스로 LitClaude를 설치할 수도 있습니다.
+
+```text
+/plugin marketplace add wjgoarxiv/litfamily
+/plugin install litclaude@litfamily
+```
+
+LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플러그인이 두 번 켜지는 일을 막을 수 있습니다. 마켓플레이스로는 플러그인 자체만 설치되고, 선택 사항인 상태 표시줄과 호스트 설정은 npm 설치 프로그램이 맡습니다. 자세한 내용은 [마켓플레이스 안내](docs/marketplaces.md)에 있습니다.
+
+### 설치한 다음에는
+
+- **Claude Code** — [LitClaude](https://github.com/wjgoarxiv/litclaude): 프로젝트 대화에서 `lit`으로 요청.
+- **Hermes Agent** — [LitHermes](https://github.com/wjgoarxiv/lithermes): Hermes CLI나 게이트웨이를 다시 시작하고, 플러그인과 스킬이 불러와졌는지 확인한 뒤 `lit`으로 요청.
+- **Codex CLI** — [LitCodex](https://github.com/wjgoarxiv/litcodex): 프로젝트 대화에서 `lit`으로 요청.
+- **OpenCode** — [LitOpenCode](https://github.com/wjgoarxiv/litopencode): OpenCode를 다시 시작하고 **Tab**을 눌러 `lit-loop` 에이전트를 고른 뒤 작업 요청.
+- **Grok Build** — [LitGrok](https://github.com/wjgoarxiv/litgrok): 써볼 프로젝트 안에서 설치 명령을 실행하고(파일은 그 프로젝트의 `.grok/` 폴더에 들어갑니다), 훅 신뢰 설정을 확인한 뒤 `/litwork`로 요청.
 
 > [!NOTE]
 > **npm에 출시했습니다.** 각 제품은 npm `@litfamily` 스코프로 배포되어 있습니다. 버전과 출시 커밋은 [출시 상태](docs/release-status.md)에 있습니다. 제품 저장소와 이 허브는 GitHub에 공개되어 있습니다.
 
-### 제품 README
+같은 명령은 각 npm 페이지에서도 볼 수 있습니다: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok). 허브에는 공통 설치기가 없습니다. 호스트 설정, 로그인, 설치 중 선택 항목과 제거 방법은 제품마다 다릅니다.
 
-- [LitClaude](https://github.com/wjgoarxiv/litclaude) — Claude Code.
-- [LitHermes](https://github.com/wjgoarxiv/lithermes) — Hermes Agent.
-- [LitCodex](https://github.com/wjgoarxiv/litcodex) — Codex CLI.
-- [LitOpenCode](https://github.com/wjgoarxiv/litopencode) — OpenCode.
-- [LitGrok](https://github.com/wjgoarxiv/litgrok) — Grok Build.
+## 실제 화면
 
-설치할 때는 제품 README에 있는 npm 명령을 사용하세요. 같은 명령은 각 npm 페이지에서도 볼 수 있습니다: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok). 허브에는 공통 설치기가 없습니다. 호스트 설정, 로그인, 설치 중 선택 항목과 제거 방법은 제품마다 다릅니다.
+<!-- demo-gif -->
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="세 가지 요청이 보이는 Codex 터미널 창. &quot;lit add input validation to the signup form&quot; 다음에 &quot;Hook ·&quot;, 다섯 줄짜리 LIT 마크와 &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;가 나옵니다. &quot;handoff&quot; 다음에는 같은 마크와 &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;가, &quot;lit recap&quot; 다음에는 마크와 &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;가 나옵니다." /></picture></p>
+
+Codex CLI 세션에서 LitCodex가 동작하는 모습입니다. `lit`, `handoff`, `lit recap`으로 시작한 요청마다 LIT 마크와 그 요청을 맡은 작업 흐름의 이름이 함께 나오기 때문에, 지금 어떤 모드가 돌고 있는지 한눈에 알 수 있습니다. 다른 제품은 각 호스트에 맞는 방식으로 시작을 알리며, 제품별 화면은 각 README에서 볼 수 있습니다.
 
 ## 빠른 시작
 
@@ -84,14 +87,6 @@ lit 외부 의존성 없이 HTML 파일 하나로 할 일 목록을 만들어줘
 시작은 짧은 한 줄이면 됩니다. 어려운 건 그다음입니다. 대화가 길어지고 세션이 바뀌면, 어디까지 했는지부터 다시 짚어야 합니다. 어떤 결정을 내렸는지, 무엇을 확인했는지, 다음에는 무엇을 해야 하는지.
 
 **LIT은 그 불씨를 남깁니다.** 목표와 계획, 확인한 결과, 다음에 할 일을 프로젝트에 기록합니다. 다음 세션에서 그 기록을 읽고 작업을 이어갈 수 있도록. 쓰던 도구에 맞는 LIT 하나면 됩니다.
-
-### 제품별 시작 경로
-
-- **Claude Code** — [LitClaude](https://github.com/wjgoarxiv/litclaude): 프로젝트 대화에서 `lit`으로 요청.
-- **Hermes Agent** — [LitHermes](https://github.com/wjgoarxiv/lithermes): 플러그인 로드와 스킬을 확인한 뒤 `lit`으로 요청.
-- **Codex CLI** — [LitCodex](https://github.com/wjgoarxiv/litcodex): 프로젝트 대화에서 `lit`으로 요청.
-- **OpenCode** — [LitOpenCode](https://github.com/wjgoarxiv/litopencode): `lit-loop` 에이전트를 선택하고 작업 요청.
-- **Grok Build** — [LitGrok](https://github.com/wjgoarxiv/litgrok): 훅 신뢰 설정을 확인하고 `/litwork`로 요청.
 
 ### 공통 작업 흐름
 
@@ -208,6 +203,30 @@ Claude, Hermes, Codex, OpenCode, Grok을 다섯 아머드 머신으로 그린 �
 [10초 영상 재생](assets/brand/exports/ignition-film.mp4) · [움직이는 GIF](assets/brand/exports/ignition-demo.gif) · [정지 포스터](assets/brand/exports/ignition-poster.png) · [브랜드 갤러리](assets/brand/gallery.html)
 
 LitFamily의 작업 흐름을 표현한 모션 그래픽입니다. 설치나 실제 호스트 실행을 녹화한 영상은 아닙니다. 움직이는 GIF와 10초 영상은 위 링크에서 볼 수 있습니다.
+
+<p align="center"><img src="assets/brand/readme/ascii-readme.svg" width="300" alt="LIT ASCII B mark" /></p>
+
+<details>
+<summary>Copy ASCII logo</summary>
+
+```text
+          ▄▖  ▄█▄
+▗▄▄▖    ▄██▌  ▜█▛
+▐██▌  ▄████████████▜▛
+▐██▌ ▐█▀▀▀▀▀▀▀▀▀▀▀▀▘
+▐██▌   ▄█▌█████████▌
+▐██▌ ▄██▛▘  ▗▄▄  ▗
+▐██▌▐█▛▘    ▐██  ▝▀
+▐██▌▝       ▐██
+▐██████▘    ▐██
+▝▀▀▀▀▀      ▝▀▀
+```
+
+</details>
+
+<p align="center">
+<a href="docs/skills.md"><img src="assets/brand/readme/lucide-book-open.svg" width="16" alt="" /> Docs</a> &nbsp; <a href="assets/brand/exports/ignition-film.mp4"><img src="assets/brand/readme/lucide-play.svg" width="16" alt="" /> Ignition</a> &nbsp; <a href="LICENSE"><img src="assets/brand/readme/lucide-shield-check.svg" width="16" alt="" /> MIT</a>
+</p>
 
 <details>
 <summary>Ignition 커버</summary>

@@ -5,29 +5,7 @@
 
 **Keep the work lit.**
 
-Plan the work, make something, check it, and leave the next step with your project.
-
-**[Install](#install) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**
-
-<p align="center"><img src="assets/brand/readme/ascii-readme.svg" width="300" alt="LIT ASCII B mark" /></p>
-
-<details>
-<summary>Copy ASCII logo</summary>
-
-```text
-          ▄▖  ▄█▄
-▗▄▄▖    ▄██▌  ▜█▛
-▐██▌  ▄████████████▜▛
-▐██▌ ▐█▀▀▀▀▀▀▀▀▀▀▀▀▘
-▐██▌   ▄█▌█████████▌
-▐██▌ ▄██▛▘  ▗▄▄  ▗
-▐██▌▐█▛▘    ▐██  ▝▀
-▐██▌▝       ▐██
-▐██████▘    ▐██
-▝▀▀▀▀▀      ▝▀▀
-```
-
-</details>
+LitFamily is five open-source add-ons, one for each of five AI coding agents, that help the agent plan a task, check its own work, and leave a note in your project so the next session can carry on.
 
 <p align="center">
 <img src="assets/brand/readme/badge-version.svg" alt="Release: npm" />
@@ -35,27 +13,52 @@ Plan the work, make something, check it, and leave the next step with your proje
 <img src="assets/brand/readme/badge-family.svg" alt="Five independent ports" />
 </p>
 
-<p align="center">
-<a href="docs/skills.md"><img src="assets/brand/readme/lucide-book-open.svg" width="16" alt="" /> Docs</a> &nbsp; <a href="assets/brand/exports/ignition-film.mp4"><img src="assets/brand/readme/lucide-play.svg" width="16" alt="" /> Ignition</a> &nbsp; <a href="LICENSE"><img src="assets/brand/readme/lucide-shield-check.svg" width="16" alt="" /> MIT</a>
-</p>
+**[Install](#install) · [See it work](#see-it-work) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**
 
 ## Install
 
-Choose **one** product. Follow its README for supported Node.js and host versions, installation, and activation checks. No other LitFamily product is required.
+Each product is its own npm package, written for one agent. Find the agent you already use, then run its line in a terminal. One product is all you need; none of them depends on another.
 
+### Pick your agent
+
+| Your agent | Product | Install command |
+|---|---|---|
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@latest -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@latest -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.19 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@latest -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@latest -- litgrok install` |
+
+You need Node.js with npm and the agent itself. LitCodex asks for Node.js 22 or later and LitHermes for 18 or later. Each product's README explains what its installer changes, the questions it may ask, how to preview the changes first, and how to remove it again.
+
+If you use Claude Code, you can also install LitClaude from this hub's plugin marketplace, right inside Claude Code:
+
+```text
+/plugin marketplace add wjgoarxiv/litfamily
+/plugin install litclaude@litfamily
+```
+
+Choose one of the two routes for LitClaude and stay with it, so the same plugin is never switched on twice. The marketplace gives you the plugin itself; the optional status line and host settings come from the npm installer. [More about the marketplace](docs/marketplaces.md).
+
+### After you install
+
+- **Claude Code** — [LitClaude](https://github.com/wjgoarxiv/litclaude): Start a project conversation with `lit`.
+- **Hermes Agent** — [LitHermes](https://github.com/wjgoarxiv/lithermes): Restart the Hermes CLI or gateway, check that the plugin and its skills loaded, then start with `lit`.
+- **Codex CLI** — [LitCodex](https://github.com/wjgoarxiv/litcodex): Start a project conversation with `lit`.
+- **OpenCode** — [LitOpenCode](https://github.com/wjgoarxiv/litopencode): Restart OpenCode, press **Tab**, pick the `lit-loop` agent, and describe the task.
+- **Grok Build** — [LitGrok](https://github.com/wjgoarxiv/litgrok): Run the installer inside the project you want to try (the files land in its `.grok/` folder), review hook trust, then invoke `/litwork`.
 
 > [!NOTE]
 > **Released on npm.** Each product is published under the `@litfamily` npm scope. The versions and release commits are listed in [release status](docs/release-status.md). The product repositories and this hub are public on GitHub.
 
-### Product READMEs
+The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
 
-- [LitClaude](https://github.com/wjgoarxiv/litclaude) — Claude Code.
-- [LitHermes](https://github.com/wjgoarxiv/lithermes) — Hermes Agent.
-- [LitCodex](https://github.com/wjgoarxiv/litcodex) — Codex CLI.
-- [LitOpenCode](https://github.com/wjgoarxiv/litopencode) — OpenCode.
-- [LitGrok](https://github.com/wjgoarxiv/litgrok) — Grok Build.
+## See it work
 
-Install with the npm command in that product's README. Each npm page shows the same command: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
+<!-- demo-gif -->
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="A Codex terminal window with three prompts. &quot;lit add input validation to the signup form&quot; is followed by &quot;Hook ·&quot;, a five-row LIT mark and &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;. &quot;handoff&quot; is followed by the same mark and &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;. &quot;lit recap&quot; is followed by the mark and &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;." /></picture></p>
+
+This is LitCodex in a Codex CLI session. Each request that begins with `lit`, `handoff` or `lit recap` is answered with the LIT mark and the name of the workflow that took it, so you can tell at a glance which mode is running. The other products greet you in their own host's way, and each product README shows its own screens.
 
 ## Quick start
 
@@ -73,7 +76,7 @@ In **Grok Build**, use its explicit skill route instead:
 Implement add, complete, and delete. Check the behavior and leave the next step.
 ```
 
-Open the result yourself and try adding, completing, and deleting an item. Ask the agent what it actually checked and what remains unchecked. If a browser is unavailable, a generated file alone does not prove that the interface works. A logo or activation message shows entry into the workflow, not completion of the task.
+Open the result yourself and try adding, completing, and deleting an item. Ask the agent what it actually checked and what remains unchecked. If a browser is unavailable, a generated file alone does not prove that the interface works. A logo or activation message tells you the workflow has started; whether the task is finished is something you still check.
 
 ## Key features
 
@@ -84,14 +87,6 @@ A bug you want fixed. A screen you want built. A project you want to finish.
 Starting takes a line. After a long conversation or a session change, carrying on takes more: finding what you decided, what you checked, and what is still left to do.
 
 **LIT gives that work a place to stay.** Goals, plans, checked results, and next steps remain with the project so the next session has something to pick up. Choose the product for the harness you already use; the five products are independent.
-
-### Product entry points
-
-- **Claude Code** — [LitClaude](https://github.com/wjgoarxiv/litclaude): A project conversation beginning with `lit`.
-- **Hermes Agent** — [LitHermes](https://github.com/wjgoarxiv/lithermes): Load the plugin and check its skills before using `lit`.
-- **Codex CLI** — [LitCodex](https://github.com/wjgoarxiv/litcodex): A project conversation beginning with `lit`.
-- **OpenCode** — [LitOpenCode](https://github.com/wjgoarxiv/litopencode): Select the `lit-loop` agent and describe the task.
-- **Grok Build** — [LitGrok](https://github.com/wjgoarxiv/litgrok): Review hook trust, then invoke `/litwork`.
 
 ### A shared workflow
 
@@ -208,6 +203,30 @@ Claude, Hermes, Codex, OpenCode, and Grok, pictured as five armored machines. Ch
 [Play the 10-second film](assets/brand/exports/ignition-film.mp4) · [Animated GIF](assets/brand/exports/ignition-demo.gif) · [Static poster](assets/brand/exports/ignition-poster.png) · [Brand gallery](assets/brand/gallery.html)
 
 An authored motion graphic illustrates the LitFamily workflow. It is a brand demonstration, not a recording of installation or host execution. The animated GIF and the 10-second film are linked above.
+
+<p align="center"><img src="assets/brand/readme/ascii-readme.svg" width="300" alt="LIT ASCII B mark" /></p>
+
+<details>
+<summary>Copy ASCII logo</summary>
+
+```text
+          ▄▖  ▄█▄
+▗▄▄▖    ▄██▌  ▜█▛
+▐██▌  ▄████████████▜▛
+▐██▌ ▐█▀▀▀▀▀▀▀▀▀▀▀▀▘
+▐██▌   ▄█▌█████████▌
+▐██▌ ▄██▛▘  ▗▄▄  ▗
+▐██▌▐█▛▘    ▐██  ▝▀
+▐██▌▝       ▐██
+▐██████▘    ▐██
+▝▀▀▀▀▀      ▝▀▀
+```
+
+</details>
+
+<p align="center">
+<a href="docs/skills.md"><img src="assets/brand/readme/lucide-book-open.svg" width="16" alt="" /> Docs</a> &nbsp; <a href="assets/brand/exports/ignition-film.mp4"><img src="assets/brand/readme/lucide-play.svg" width="16" alt="" /> Ignition</a> &nbsp; <a href="LICENSE"><img src="assets/brand/readme/lucide-shield-check.svg" width="16" alt="" /> MIT</a>
+</p>
 
 <details>
 <summary>Ignition cover</summary>
