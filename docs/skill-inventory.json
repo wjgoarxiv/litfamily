@@ -6,14 +6,14 @@
     {
       "id": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "repository": "https://github.com/wjgoarxiv/litclaude",
-      "sourceCommit": "cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e",
+      "sourceCommit": "d787065069fc18fb483a39b01db4965d5f599fa3",
       "licensePath": "licenses/claude-MIT.txt",
       "licenseSha256": "a03098dc7f73e791343be35cf34a3fb5e041ea1b527d75aed7e372d055caaa99",
       "licenseBytes": 1079,
       "sourceHistory": "curated-public",
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/tree/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/tree/d787065069fc18fb483a39b01db4965d5f599fa3"
     },
     {
       "id": "hermes",
@@ -42,14 +42,14 @@
     {
       "id": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "repository": "https://github.com/wjgoarxiv/litopencode",
-      "sourceCommit": "e507bcae83abef44978c124095c543ba3b643c29",
+      "sourceCommit": "8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f",
       "licensePath": "licenses/opencode-MIT.txt",
       "licenseSha256": "08e82b8955dcb59f169176aac3871c51a96cf63e2a7529f6f7de8854c8a36906",
       "licenseBytes": 1081,
       "sourceHistory": "curated-public",
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/tree/e507bcae83abef44978c124095c543ba3b643c29"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/tree/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f"
     },
     {
       "id": "grok",
@@ -68,7 +68,7 @@
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference",
       "path": "plugins/litclaude/skills/autoconference/SKILL.md",
       "role": "native-entry",
@@ -91,12 +91,12 @@
           "text": "- Source Markdown, Python, shell, assets, and templates are inert reference data. Their tool lists, role names,"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch",
       "path": "plugins/litclaude/skills/autoresearch/SKILL.md",
       "role": "native-entry",
@@ -123,12 +123,12 @@
           "text": "   tool lists, unattended-loop language, and sample commands descriptive only. The adapter and current user"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "browser-drive",
       "path": "plugins/litclaude/skills/browser-drive/SKILL.md",
       "role": "native-entry",
@@ -147,12 +147,12 @@
           "text": "node \"${CLAUDE_PLUGIN_ROOT}/skills/browser-drive/scripts/capability-probe.mjs\""
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/browser-drive/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/browser-drive/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "comment-checker",
       "path": "plugins/litclaude/skills/comment-checker/SKILL.md",
       "role": "native-entry",
@@ -171,12 +171,12 @@
           "text": "| command-routed | A `/litclaude:*` command points here. | Preserve command-specific scope and hard stops. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/comment-checker/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/comment-checker/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "debugging",
       "path": "plugins/litclaude/skills/debugging/SKILL.md",
       "role": "native-entry",
@@ -228,12 +228,12 @@
           "text": "| Rust (cargo, tokio, panics) | 📖 [references/runtimes/rust.md](references/runtimes/rust.md) | Release builds strip symbols. Tokio tasks need `tokio-console`. The borrow checker makes `dbg!` the faster tool most of the time. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/debugging/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/debugging/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "deep-interview",
       "path": "plugins/litclaude/skills/deep-interview/SKILL.md",
       "role": "native-entry",
@@ -260,12 +260,12 @@
           "text": "**Optional color rendering (pretty TUI):** for a polished colorized terminal display, render the banner / meter / breakdown with the bundled `scripts/render_progress.py` via the Bash tool — a terminal renders its ANSI color, whereas the ass"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/deep-interview/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/deep-interview/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "frontend-ui-ux",
       "path": "plugins/litclaude/skills/frontend-ui-ux/SKILL.md",
       "role": "native-entry",
@@ -280,12 +280,12 @@
           "text": "contract_schema_version: litclaude.llm-contract.v1"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/frontend-ui-ux/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/frontend-ui-ux/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-burnoff-file",
       "path": "plugins/litclaude/skills/lit-burnoff-file/SKILL.md",
       "role": "native-entry",
@@ -304,12 +304,12 @@
           "text": "| command-routed | A `/litclaude:*` command points here. | Preserve command-specific scope and hard stops. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-burnoff-file/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-burnoff-file/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-burnoff",
       "path": "plugins/litclaude/skills/lit-burnoff/SKILL.md",
       "role": "native-entry",
@@ -332,12 +332,12 @@
           "text": "| Gate | Tool | Pass condition |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-burnoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-burnoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-code",
       "path": "plugins/litclaude/skills/lit-code/SKILL.md",
       "role": "native-entry",
@@ -364,12 +364,12 @@
           "text": "| Tool category | Python | Rust | TypeScript | Go |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-code/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-code/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-commit",
       "path": "plugins/litclaude/skills/lit-commit/SKILL.md",
       "role": "native-entry",
@@ -392,12 +392,12 @@
           "text": "Choose the Git tool by the question:"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-commit/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-commit/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-comprehend",
       "path": "plugins/litclaude/skills/lit-comprehend/SKILL.md",
       "role": "native-entry",
@@ -424,12 +424,12 @@
           "text": "  (`lit-comprehend plugins/litclaude/hooks/`), a git range, a branch, or a PR."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-comprehend/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-comprehend/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-crucible",
       "path": "plugins/litclaude/skills/lit-crucible/SKILL.md",
       "role": "native-entry",
@@ -456,12 +456,12 @@
           "text": "constraints, risk evidence, and a clean handoff to `/litclaude:lit-plan`."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-crucible/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-crucible/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-diagram-drawer",
       "path": "plugins/litclaude/skills/lit-diagram-drawer/SKILL.md",
       "role": "native-entry",
@@ -488,12 +488,12 @@
           "text": "Claude Code lists this directory as a plugin skill, so `/litclaude:lit-diagram-drawer <brief>` invokes it natively. A prompt that starts with the bare token `lit-diagram-drawer` or `$lit-diagram-drawer` also activates it through the UserPro"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-docx",
       "path": "plugins/litclaude/skills/lit-docx/SKILL.md",
       "role": "native-entry",
@@ -522,12 +522,12 @@
           "text": "Claude Code lists this directory as a plugin skill, so `/litclaude:lit-docx <request>` invokes it natively and the description lets Claude pick it for a document request on its own. The UserPromptSubmit hook adds two routes:"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-docx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-docx/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-handoff",
       "path": "plugins/litclaude/skills/lit-handoff/SKILL.md",
       "role": "native-entry",
@@ -546,12 +546,12 @@
           "text": "| command-routed | `/litclaude:lit-handoff` is invoked. | Preserve command scope and the exact banner. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-handoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-humanizer",
       "path": "plugins/litclaude/skills/lit-humanizer/SKILL.md",
       "role": "native-entry",
@@ -578,12 +578,12 @@
           "text": "- Fenced and inline code, Markdown blockquotes, internal records/paths, and unchanged replacement context are excluded. Tool adapters pass only new Write content or Edit/MultiEdit replacement text."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-humanizer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-humanizer/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-init",
       "path": "plugins/litclaude/skills/lit-init/SKILL.md",
       "role": "native-entry",
@@ -610,12 +610,12 @@
           "text": "Spawn read-only explore subagents with the `Agent` tool (`subagent_type: \"explore\"`,"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-init/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-init/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-loop",
       "path": "plugins/litclaude/skills/lit-loop/SKILL.md",
       "role": "native-entry",
@@ -642,12 +642,12 @@
           "text": "native user surface, but the observed hook/skill surface cannot run another"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-loop/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-loop/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-plan",
       "path": "plugins/litclaude/skills/lit-plan/SKILL.md",
       "role": "native-entry",
@@ -674,12 +674,12 @@
           "text": "user to run `/start-work` or `/litclaude:start-work` so Claude Code can use the"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-pptx",
       "path": "plugins/litclaude/skills/lit-pptx/SKILL.md",
       "role": "native-entry",
@@ -709,12 +709,12 @@
           "text": "Claude Code lists this directory as a plugin skill, so `/litclaude:lit-pptx <request>` invokes it natively and the description lets Claude pick it for a deck request on its own. The UserPromptSubmit hook adds two routes:"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-pptx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-pptx/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-recap",
       "path": "plugins/litclaude/skills/lit-recap/SKILL.md",
       "role": "native-entry",
@@ -737,12 +737,12 @@
           "text": "`litrecap`, `recap`, `리캡`, `$lit-recap`, or `/litclaude:lit-recap`. Produce a"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-recap/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-recap/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-scientific-visualization",
       "path": "plugins/litclaude/skills/lit-scientific-visualization/SKILL.md",
       "role": "native-entry",
@@ -765,12 +765,12 @@
           "text": "| command-routed | `/litclaude:lit-scientific-visualization` is invoked. | Follow the command and this full adapter. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-team",
       "path": "plugins/litclaude/skills/lit-team/SKILL.md",
       "role": "native-entry",
@@ -793,12 +793,12 @@
           "text": "- **Subagent fallback** otherwise: the Agent tool with a `litclaude:*` `subagent_type`. This is"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-team/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-team/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lit-typographic-motion",
       "path": "plugins/litclaude/skills/lit-typographic-motion/SKILL.md",
       "role": "native-entry",
@@ -821,12 +821,12 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lit-typographic-motion/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lit-typographic-motion/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "litgoal",
       "path": "plugins/litclaude/skills/litgoal/SKILL.md",
       "role": "native-entry",
@@ -853,12 +853,12 @@
           "text": "silently rewrite the condition, turn it into a tool call, or offer a different"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/litgoal/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/litgoal/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "litresearch",
       "path": "plugins/litclaude/skills/litresearch/SKILL.md",
       "role": "native-entry",
@@ -885,12 +885,12 @@
           "text": "For Standard/Exhaustive, drive the fan-out as a Dynamic workflow — call the `Workflow` tool when Claude Code exposes it — binding each lane to its sub-question, its expected cited deliverable, and its evidence form. Launch independent lanes"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/litresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/litresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "litwork",
       "path": "plugins/litclaude/skills/litwork/SKILL.md",
       "role": "native-entry",
@@ -917,12 +917,12 @@
           "text": "enough to finish within a few tool calls."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/litwork/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/litwork/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lsp-setup",
       "path": "plugins/litclaude/skills/lsp-setup/SKILL.md",
       "role": "native-entry",
@@ -941,12 +941,12 @@
           "text": "| command-routed | A `/litclaude:*` command points here. | Preserve command-specific scope and hard stops. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lsp-setup/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lsp-setup/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "lsp",
       "path": "plugins/litclaude/skills/lsp/SKILL.md",
       "role": "native-entry",
@@ -973,12 +973,12 @@
           "text": "If the LSP tool is not exposed, use project commands such as `npm test`,"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/lsp/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/lsp/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "readme-studio",
       "path": "plugins/litclaude/skills/readme-studio/SKILL.md",
       "role": "native-entry",
@@ -1005,12 +1005,12 @@
           "text": "Record source comparisons, actual tool availability, background origin, font licenses/identity, renderer/version/license, dimensions/frame count/fps/bytes and visible inspection. Local browser evidence is distinct from `POST_PUBLICATION_UNV"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/readme-studio/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/readme-studio/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "refactor",
       "path": "plugins/litclaude/skills/refactor/SKILL.md",
       "role": "native-entry",
@@ -1037,12 +1037,12 @@
           "text": "   - **Move or extract**: use the Edit tool for precise edits; keep one cohesive"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/refactor/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/refactor/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "review-work",
       "path": "plugins/litclaude/skills/review-work/SKILL.md",
       "role": "native-entry",
@@ -1069,12 +1069,12 @@
           "text": "the host evidence that the workflow tool was available and accepted the request."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/review-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/review-work/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "rules",
       "path": "plugins/litclaude/skills/rules/SKILL.md",
       "role": "native-entry",
@@ -1101,12 +1101,12 @@
           "text": "2. System/developer/tool safety instructions."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/rules/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/rules/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "start-work",
       "path": "plugins/litclaude/skills/start-work/SKILL.md",
       "role": "native-entry",
@@ -1133,12 +1133,12 @@
           "text": "`/goal` (v2.1.139+) is the native user surface, but the observed hook/skill"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/start-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/start-work/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "structural-search",
       "path": "plugins/litclaude/skills/structural-search/SKILL.md",
       "role": "native-entry",
@@ -1161,12 +1161,12 @@
           "text": "operational discipline that a model cannot derive (verify tool identity, quote the probe, label"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/structural-search/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/structural-search/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "visual-qa",
       "path": "plugins/litclaude/skills/visual-qa/SKILL.md",
       "role": "native-entry",
@@ -1181,12 +1181,12 @@
           "text": "contract_schema_version: litclaude.llm-contract.v1"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/visual-qa/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/visual-qa/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "wikify",
       "path": "plugins/litclaude/skills/wikify/SKILL.md",
       "role": "native-entry",
@@ -1209,12 +1209,12 @@
           "text": "   Do not run source scripts, fetch dependencies, install converters, or treat source frontmatter as tool authority."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/skills/wikify/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/skills/wikify/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference-skill",
       "path": "plugins/litclaude/vendor/autoconference/SKILL.md",
       "role": "vendor-reference",
@@ -1224,12 +1224,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:analyze",
       "path": "plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md",
       "role": "vendor-reference",
@@ -1239,12 +1239,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference",
       "path": "plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md",
       "role": "vendor-reference",
@@ -1259,12 +1259,12 @@
           "text": "Spawn all N researchers simultaneously using the `Agent` tool with `run_in_background: true`. Log `round.started` event."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:debate",
       "path": "plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md",
       "role": "vendor-reference",
@@ -1274,12 +1274,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:plan",
       "path": "plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md",
       "role": "vendor-reference",
@@ -1289,12 +1289,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:resume",
       "path": "plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md",
       "role": "vendor-reference",
@@ -1304,12 +1304,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:ship",
       "path": "plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md",
       "role": "vendor-reference",
@@ -1319,12 +1319,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoconference:survey",
       "path": "plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md",
       "role": "vendor-reference",
@@ -1334,12 +1334,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch-skill",
       "path": "plugins/litclaude/vendor/autoresearch/SKILL.md",
       "role": "vendor-reference",
@@ -1349,12 +1349,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch",
       "path": "plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md",
       "role": "vendor-reference",
@@ -1369,12 +1369,12 @@
           "text": "| **Tier 1** | Claude Code, Codex CLI, any terminal | Bash + Python + full tool access | Run code, measure metrics, modify files, benchmark |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:debug",
       "path": "plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md",
       "role": "vendor-reference",
@@ -1384,12 +1384,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:fix",
       "path": "plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md",
       "role": "vendor-reference",
@@ -1399,12 +1399,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:learn",
       "path": "plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md",
       "role": "vendor-reference",
@@ -1414,12 +1414,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:plan",
       "path": "plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md",
       "role": "vendor-reference",
@@ -1429,12 +1429,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:predict",
       "path": "plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md",
       "role": "vendor-reference",
@@ -1444,12 +1444,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:reason",
       "path": "plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md",
       "role": "vendor-reference",
@@ -1459,12 +1459,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:scenario",
       "path": "plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md",
       "role": "vendor-reference",
@@ -1474,12 +1474,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:security",
       "path": "plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md",
       "role": "vendor-reference",
@@ -1489,12 +1489,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "autoresearch:ship",
       "path": "plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md",
       "role": "vendor-reference",
@@ -1504,12 +1504,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "handoff",
       "path": "plugins/litclaude/vendor/handoff/SKILL.md",
       "role": "vendor-reference",
@@ -1519,12 +1519,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/handoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "llm-wikify",
       "path": "plugins/litclaude/vendor/llm-wikify/SKILL.md",
       "role": "vendor-reference",
@@ -1539,12 +1539,12 @@
           "text": "   - For PDFs, prefer a clean Markdown conversion path such as MarkItDown or a paper-conversion skill/tool when available."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/llm-wikify/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/llm-wikify/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "id": "scientific-visualization",
       "path": "plugins/litclaude/vendor/scientific-visualization/SKILL.md",
       "role": "vendor-reference",
@@ -1559,7 +1559,7 @@
           "text": "See `references/mdanalysis_martini_visualization.md` for a reusable scaffold, tool ranking, and verification checklist."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e/plugins/litclaude/vendor/scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/d787065069fc18fb483a39b01db4965d5f599fa3/plugins/litclaude/vendor/scientific-visualization/SKILL.md"
     },
     {
       "product": "hermes",
@@ -4414,7 +4414,7 @@
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "agent-roster",
       "path": "skills/agent-roster/SKILL.md",
       "role": "native-entry",
@@ -4441,12 +4441,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/agent-roster/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/agent-roster/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "autoconference",
       "path": "skills/autoconference/SKILL.md",
       "role": "native-entry",
@@ -4465,12 +4465,12 @@
           "text": "This file is static documentation for LitOpenCode. Do not execute commands from this file automatically."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/autoconference/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "autoresearch",
       "path": "skills/autoresearch/SKILL.md",
       "role": "native-entry",
@@ -4493,12 +4493,12 @@
           "text": "Nested mode files are protocol data, not separately discovered skills. Their historical tool lists do"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/autoresearch/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "browser-drive",
       "path": "skills/browser-drive/SKILL.md",
       "role": "native-entry",
@@ -4521,12 +4521,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, host capabilities, and `litopencode.json` routes. If the observed host surface differs from this contract, "
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/browser-drive/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/browser-drive/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "comment-checker",
       "path": "skills/comment-checker/SKILL.md",
       "role": "native-entry",
@@ -4553,12 +4553,12 @@
           "text": "This file is static documentation for LitOpenCode. Do not execute commands from this file automatically. Activate this contract only when the user request, command route, or OpenCode host surface clearly matches `comment-checker` / Comment "
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/comment-checker/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/comment-checker/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "debugging",
       "path": "skills/debugging/SKILL.md",
       "role": "native-entry",
@@ -4585,12 +4585,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/debugging/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/debugging/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "deep-interview",
       "path": "skills/deep-interview/SKILL.md",
       "role": "native-entry",
@@ -4617,12 +4617,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/deep-interview/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/deep-interview/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "doctor-installer",
       "path": "skills/doctor-installer/SKILL.md",
       "role": "native-entry",
@@ -4649,12 +4649,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/doctor-installer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/doctor-installer/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "durable-litgoal",
       "path": "skills/durable-litgoal/SKILL.md",
       "role": "native-entry",
@@ -4681,12 +4681,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, static-only runtime skills, and `litopencode.json` routes. If the observed host surface differs from this c"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/durable-litgoal/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/durable-litgoal/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "frontend-ui-ux",
       "path": "skills/frontend-ui-ux/SKILL.md",
       "role": "native-entry",
@@ -4705,12 +4705,12 @@
           "text": "This file is static documentation. Do not execute commands from this file automatically. Authorized builds produce working implementations and inspected renders. Review-only and plan-only requests stay read-only; keywords and post-edit advi"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/frontend-ui-ux/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/frontend-ui-ux/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-burnoff-file",
       "path": "skills/lit-burnoff-file/SKILL.md",
       "role": "native-entry",
@@ -4737,12 +4737,12 @@
           "text": "This file is static documentation for LitOpenCode. Do not execute commands from this file automatically. Activate this contract only when the user request, command route, or OpenCode host surface clearly matches `lit-burnoff-file` / Lit Bur"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-burnoff-file/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-burnoff-file/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-burnoff",
       "path": "skills/lit-burnoff/SKILL.md",
       "role": "native-entry",
@@ -4769,12 +4769,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-burnoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-burnoff/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-code",
       "path": "skills/lit-code/SKILL.md",
       "role": "native-entry",
@@ -4801,12 +4801,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-code/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-code/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-commit",
       "path": "skills/lit-commit/SKILL.md",
       "role": "native-entry",
@@ -4833,12 +4833,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-commit/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-commit/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-comprehend",
       "path": "skills/lit-comprehend/SKILL.md",
       "role": "native-entry",
@@ -4865,12 +4865,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-comprehend/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-comprehend/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-crucible",
       "path": "skills/lit-crucible/SKILL.md",
       "role": "native-entry",
@@ -4897,12 +4897,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-crucible/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-crucible/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-diagram-drawer",
       "path": "skills/lit-diagram-drawer/SKILL.md",
       "role": "native-entry",
@@ -4929,12 +4929,12 @@
           "text": "| Missing capability | Finish source work and report the exact blocker | Never install a missing tool or claim an unverified export |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-diagram-drawer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-diagram-drawer/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-docx",
       "path": "skills/lit-docx/SKILL.md",
       "role": "native-entry",
@@ -4957,12 +4957,12 @@
           "text": "1. **Runtime.** The first `python3 <skill>/run.py …` call creates a pinned Python venv in `XDG_CACHE_HOME/litopencode/office` (or the normal user cache), prints one install notice, and runs the selected script. `python3 <skill>/run.py docto"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-docx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-docx/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-fetch",
       "path": "skills/lit-fetch/SKILL.md",
       "role": "native-entry",
@@ -4989,12 +4989,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-fetch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-fetch/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-handoff",
       "path": "skills/lit-handoff/SKILL.md",
       "role": "native-entry",
@@ -5021,12 +5021,12 @@
           "text": "  \"contract_schema_version\": 1,"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-handoff/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-humanizer",
       "path": "skills/lit-humanizer/SKILL.md",
       "role": "native-entry",
@@ -5049,12 +5049,12 @@
           "text": "Scan only text being added or changed. Preserve pre-existing file content and user quotations. Skip fenced and inline code, Markdown blockquotes, and internal paths such as `plans/`, `evidence/`, `HANDOFF*`, `.lit*/`, `.hermes/`, and ledger"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-humanizer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-humanizer/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-init",
       "path": "skills/lit-init/SKILL.md",
       "role": "native-entry",
@@ -5081,12 +5081,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-init/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-init/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-plan",
       "path": "skills/lit-plan/SKILL.md",
       "role": "native-entry",
@@ -5113,12 +5113,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-plan/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-pptx",
       "path": "skills/lit-pptx/SKILL.md",
       "role": "native-entry",
@@ -5145,12 +5145,12 @@
           "text": "12. **Learn a template.** For an approved reference `.pptx`, `node <skill>/run.mjs learn input.pptx …` derives a new local template. Review its inferred mapping, then run the same compile, gate and render loop. The learning tool reads the r"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-pptx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-pptx/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-recap",
       "path": "skills/lit-recap/SKILL.md",
       "role": "native-entry",
@@ -5177,12 +5177,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-recap/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-recap/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-scientific-visualization",
       "path": "skills/lit-scientific-visualization/SKILL.md",
       "role": "native-entry",
@@ -5209,12 +5209,12 @@
           "text": "  \"contract_schema_version\": 1,"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-scientific-visualization/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-typographic-motion",
       "path": "skills/lit-typographic-motion/SKILL.md",
       "role": "native-entry",
@@ -5233,12 +5233,12 @@
           "text": "This file is static documentation for LitOpenCode. Do not execute commands from this file automatically. OpenCode loads it through the native skill tool; a bare `lit` film request makes the chat route name this skill and its installed comma"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lit-typographic-motion/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lit-typographic-motion/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "litresearch",
       "path": "skills/litresearch/SKILL.md",
       "role": "native-entry",
@@ -5265,12 +5265,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/litresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/litresearch/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "litwork",
       "path": "skills/litwork/SKILL.md",
       "role": "native-entry",
@@ -5297,12 +5297,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, static-only runtime skills, and `litopencode.json` routes. If the observed host surface differs from this c"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/litwork/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/litwork/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lsp-setup",
       "path": "skills/lsp-setup/SKILL.md",
       "role": "native-entry",
@@ -5329,12 +5329,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lsp-setup/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lsp-setup/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lsp",
       "path": "skills/lsp/SKILL.md",
       "role": "native-entry",
@@ -5361,12 +5361,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/lsp/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/lsp/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "native-goal-verdict",
       "path": "skills/native-goal-verdict/SKILL.md",
       "role": "native-entry",
@@ -5393,12 +5393,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, static-only runtime skills, and `litopencode.json` routes. If the observed host surface differs from this c"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/native-goal-verdict/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/native-goal-verdict/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "readme-studio",
       "path": "skills/readme-studio/SKILL.md",
       "role": "native-entry",
@@ -5425,12 +5425,12 @@
           "text": "3. Inspect the tools actually exposed by this OpenCode session for a supported image generator. Use it only if callable and authorized; record tool identity, prompt, result, copied task-local image and inspection. Without it emit `IMAGE_GEN"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/readme-studio/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/readme-studio/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "refactor",
       "path": "skills/refactor/SKILL.md",
       "role": "native-entry",
@@ -5457,12 +5457,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/refactor/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/refactor/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "reference-benchmark-claims",
       "path": "skills/reference-benchmark-claims/SKILL.md",
       "role": "native-entry",
@@ -5489,12 +5489,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/reference-benchmark-claims/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/reference-benchmark-claims/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "release-guardrails",
       "path": "skills/release-guardrails/SKILL.md",
       "role": "native-entry",
@@ -5521,12 +5521,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/release-guardrails/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/release-guardrails/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "review-work",
       "path": "skills/review-work/SKILL.md",
       "role": "native-entry",
@@ -5553,12 +5553,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, static-only runtime skills, and `litopencode.json` routes. If the observed host surface differs from this c"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/review-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/review-work/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "rules",
       "path": "skills/rules/SKILL.md",
       "role": "native-entry",
@@ -5585,12 +5585,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/rules/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/rules/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "search-workflow-ideas",
       "path": "skills/search-workflow-ideas/SKILL.md",
       "role": "native-entry",
@@ -5617,12 +5617,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/search-workflow-ideas/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/search-workflow-ideas/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "start-work",
       "path": "skills/start-work/SKILL.md",
       "role": "native-entry",
@@ -5649,12 +5649,12 @@
           "text": "Use the OpenCode vocabulary for this contract: `chat.message`, `command.execute.before`, config hook, command aliases, plugin tools, static-only runtime skills, and `litopencode.json` routes. If the observed host surface differs from this c"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/start-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/start-work/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "structural-search",
       "path": "skills/structural-search/SKILL.md",
       "role": "native-entry",
@@ -5681,12 +5681,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/structural-search/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/structural-search/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "tool-guards",
       "path": "skills/tool-guards/SKILL.md",
       "role": "native-entry",
@@ -5713,12 +5713,12 @@
           "text": "title: \"Tool Guards\""
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/tool-guards/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/tool-guards/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "visual-qa",
       "path": "skills/visual-qa/SKILL.md",
       "role": "native-entry",
@@ -5737,12 +5737,12 @@
           "text": "This is static documentation for the native-installed LitOpenCode validator. Do not execute commands from this file automatically. It is not a browser executor, does not make a browser callable, and grants no capture authority."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/visual-qa/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/visual-qa/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "wikify",
       "path": "skills/wikify/SKILL.md",
       "role": "native-entry",
@@ -5769,12 +5769,12 @@
           "text": "   durable artifact. The bounded capture exception may append only to `.litopencode/knowledge/claims.jsonl`."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/wikify/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/wikify/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "workflow-loop",
       "path": "skills/workflow-loop/SKILL.md",
       "role": "native-entry",
@@ -5801,12 +5801,12 @@
           "text": "  - \"OpenCode hook command.execute.before\""
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/skills/workflow-loop/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/skills/workflow-loop/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "lit-korean",
       "path": "test/fixtures/retired-lit-korean/SKILL.md",
       "role": "test-fixture",
@@ -5833,12 +5833,12 @@
           "text": "Required schema fields are `contract_schema_version`, `skill_id`, `runtime_class`, `entry_routes`, `opencode_surfaces`, and `verification`. A future edit that removes any field must update the docs contract tests in the same change."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/test/fixtures/retired-lit-korean/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/test/fixtures/retired-lit-korean/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "handoff",
       "path": "vendor/handoff/SKILL.md",
       "role": "vendor-reference",
@@ -5848,12 +5848,12 @@
       "reason": "Nested mode or vendor reference belongs to its enclosing native distribution, not an independent entry.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/vendor/handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/vendor/handoff/SKILL.md"
     },
     {
       "product": "opencode",
       "host": "OpenCode",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "id": "scientific-visualization",
       "path": "vendor/scientific-visualization/SKILL.md",
       "role": "vendor-reference",
@@ -5868,7 +5868,7 @@
           "text": "See `references/mdanalysis_martini_visualization.md` for a reusable scaffold, tool ranking, and verification checklist."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/e507bcae83abef44978c124095c543ba3b643c29/vendor/scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litopencode/blob/8bc334145cc6bd0eb134eff22b4b1d49cf5c0d5f/vendor/scientific-visualization/SKILL.md"
     },
     {
       "product": "grok",

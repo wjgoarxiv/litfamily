@@ -10,7 +10,7 @@
         "source": "git-subdir",
         "url": "https://github.com/wjgoarxiv/litclaude.git",
         "path": "plugins/litclaude",
-        "sha": "cff3cbf946b39e06ad1ffc6ba579d15be31dfd9e"
+        "sha": "d787065069fc18fb483a39b01db4965d5f599fa3"
       },
       "description": "Claude Code-native planning, implementation, research and review workflows.",
       "strict": true
