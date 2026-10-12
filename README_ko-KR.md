@@ -25,11 +25,23 @@ LitFamily는 AI 코딩 에이전트 다섯 종류에 하나씩 맞춰 만든 오
 |---|---|---|
 | Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@latest -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@latest -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.19 -- litcodex install` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.20 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@latest -- litopencode install` |
 | Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@latest -- litgrok install` |
 
 npm이 함께 설치된 Node.js와 해당 에이전트가 있어야 합니다. LitCodex는 Node.js 22 이상, LitHermes는 18 이상이 필요합니다. 설치 프로그램이 무엇을 바꾸는지, 설치 중에 무엇을 묻는지, 바뀔 내용을 미리 보는 방법과 제거하는 방법은 각 제품 README에 정리되어 있습니다.
+
+### 코딩 에이전트에게 설치 맡기기
+
+쓰고 있는 코딩 에이전트에게 설치를 맡기고 싶다면 아래 프롬프트를 붙여 넣으세요. 에이전트가 맞는 LitFamily 제품을 고른 뒤, 그 제품 README에 에이전트용으로 적힌 설치 순서를 그대로 따릅니다.
+
+```text
+내가 쓰는 코딩 에이전트에 맞는 LitFamily 제품을 설치해 줘.
+1. 어떤 에이전트용인지 모르겠으면 먼저 물어봐. Claude Code, Codex CLI, OpenCode, Hermes Agent, Grok Build 중 하나야. 각각 맞는 제품은 LitClaude, LitCodex, LitOpenCode, LitHermes, LitGrok이야.
+2. 그 제품의 GitHub README(github.com/wjgoarxiv/<소문자 제품 이름>)를 열고, 코딩 에이전트용 설치 프롬프트를 따라 해. 공식 npm 패키지 @litfamily/<소문자 제품 이름>만 써.
+3. 무엇이든 바꾸기 전에 계획을 먼저 보여 주고 내가 좋다고 할 때까지 기다려.
+4. 설치가 끝나면 그 제품의 점검 명령(doctor 또는 status)을 돌리고, 무엇을 어디에 썼는지와 에이전트를 어떻게 다시 시작해야 불러오는지 알려 줘.
+```
 
 Claude Code를 쓴다면 Claude Code 안에서 이 허브의 플러그인 마켓플레이스로 LitClaude를 설치할 수도 있습니다.
 
@@ -56,7 +68,7 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 ## 실제 화면
 
 <!-- demo-gif -->
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="세 가지 요청이 보이는 Codex 터미널 창. &quot;lit add input validation to the signup form&quot; 다음에 &quot;Hook ·&quot;, 다섯 줄짜리 LIT 마크와 &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;가 나옵니다. &quot;handoff&quot; 다음에는 같은 마크와 &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;가, &quot;lit recap&quot; 다음에는 마크와 &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;가 나옵니다." /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/79e58ba1a993efb406f996ad9d6c2d1a2ce9a789/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/79e58ba1a993efb406f996ad9d6c2d1a2ce9a789/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="세 가지 요청이 보이는 Codex 터미널 창. &quot;lit add input validation to the signup form&quot; 다음에 &quot;Hook ·&quot;, 다섯 줄짜리 LIT 마크와 &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;가 나옵니다. &quot;handoff&quot; 다음에는 같은 마크와 &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;가, &quot;lit recap&quot; 다음에는 마크와 &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;가 나옵니다." /></picture></p>
 
 Codex CLI 세션에서 LitCodex가 동작하는 모습입니다. `lit`, `handoff`, `lit recap`으로 시작한 요청마다 LIT 마크와 그 요청을 맡은 작업 흐름의 이름이 함께 나오기 때문에, 지금 어떤 모드가 돌고 있는지 한눈에 알 수 있습니다. 다른 제품은 각 호스트에 맞는 방식으로 시작을 알리며, 제품별 화면은 각 README에서 볼 수 있습니다.
 

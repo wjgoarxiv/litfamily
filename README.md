@@ -25,11 +25,23 @@ Each product is its own npm package, written for one agent. Find the agent you a
 |---|---|---|
 | Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@latest -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@latest -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.19 -- litcodex install` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.20 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@latest -- litopencode install` |
 | Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@latest -- litgrok install` |
 
 You need Node.js with npm and the agent itself. LitCodex asks for Node.js 22 or later and LitHermes for 18 or later. Each product's README explains what its installer changes, the questions it may ask, how to preview the changes first, and how to remove it again.
+
+### Let a coding agent install it
+
+If you would rather hand the install to the coding agent you already use, paste this prompt into it. The agent works out which LitFamily product fits, then follows that product's own install steps, which are written for agents too.
+
+```text
+Install the LitFamily product that matches the coding agent I use.
+1. Ask me which agent I want it for if you can't tell: Claude Code, Codex CLI, OpenCode, Hermes Agent or Grok Build. The matching products are LitClaude, LitCodex, LitOpenCode, LitHermes and LitGrok.
+2. Open that product's README on GitHub (github.com/wjgoarxiv/<product name in lower case>) and follow the install prompt it gives for coding agents. Use only the official npm package @litfamily/<product name in lower case>.
+3. Before you change anything, show me your plan and wait for my yes.
+4. When it is installed, run the product's own check (doctor or status), tell me what was written and where, and tell me how to restart my agent so it loads.
+```
 
 If you use Claude Code, you can also install LitClaude from this hub's plugin marketplace, right inside Claude Code:
 
@@ -56,7 +68,7 @@ The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.
 ## See it work
 
 <!-- demo-gif -->
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/317f28404c087553ba2229d094be681e2975e1b3/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="A Codex terminal window with three prompts. &quot;lit add input validation to the signup form&quot; is followed by &quot;Hook ·&quot;, a five-row LIT mark and &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;. &quot;handoff&quot; is followed by the same mark and &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;. &quot;lit recap&quot; is followed by the mark and &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;." /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/79e58ba1a993efb406f996ad9d6c2d1a2ce9a789/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/79e58ba1a993efb406f996ad9d6c2d1a2ce9a789/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="A Codex terminal window with three prompts. &quot;lit add input validation to the signup form&quot; is followed by &quot;Hook ·&quot;, a five-row LIT mark and &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;. &quot;handoff&quot; is followed by the same mark and &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;. &quot;lit recap&quot; is followed by the mark and &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;." /></picture></p>
 
 This is LitCodex in a Codex CLI session. Each request that begins with `lit`, `handoff` or `lit recap` is answered with the LIT mark and the name of the workflow that took it, so you can tell at a glance which mode is running. The other products greet you in their own host's way, and each product README shows its own screens.
 
