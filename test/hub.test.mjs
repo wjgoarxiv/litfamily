@@ -27,7 +27,7 @@ test('the standalone Grok export pins the LitGrok humanizer release commit', asy
 
 test('the hub binds the release commits', async () => {
   const release = {
-    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.24', sourceCommit: '87384561a1cf8e271f249b97ca2e16f0a5db0781' },
+    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.25', sourceCommit: '64c6da700cc4973a7d5314dbcb779d71093555ca' },
     hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.20', sourceCommit: '0de8f07e2bd14d0e3b7898e35e388f107142e2d3' },
     codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.20', sourceCommit: '79e58ba1a993efb406f996ad9d6c2d1a2ce9a789' },
     opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.21', sourceCommit: '9cacbb7f44b74ae257c8a8f4b86d06bcd9abeaa8' },
