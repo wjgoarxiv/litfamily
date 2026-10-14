@@ -27,10 +27,10 @@ test('the standalone Grok export pins the LitGrok humanizer release commit', asy
 
 test('the hub binds the release commits', async () => {
   const release = {
-    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.26', sourceCommit: '2c1554bc6caef5b0fc0c8f17136b66a81333c4bb' },
-    hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.21', sourceCommit: '2ffa492a0797f2a39b58159723721c66f266dc50' },
-    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.21', sourceCommit: 'b91bb2b8c3df5c0737bdde649bd0f281b27dae63' },
-    opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.22', sourceCommit: '026e9fefe88b6690819b18f699466f81982a3aa7' },
+    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.27', sourceCommit: '650abafb2a82d0d51695bbd529f6b4917fe6166c' },
+    hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.22', sourceCommit: '9bcf8d38c8ce171f31ae53f51816a606c41a3492' },
+    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.22', sourceCommit: '7d4b6d122fb862e858f3f5c9f258a3d15fc1701c' },
+    opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.23', sourceCommit: 'bd11af4ebdfc1361ccb29e0004a24ab811784a0a' },
     grok: { name: 'LitGrok', repository: 'https://github.com/wjgoarxiv/litgrok', version: '1.0.19', sourceCommit: '271e99b792cba20175ddf425d207f3251ced1fe1' },
   };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
