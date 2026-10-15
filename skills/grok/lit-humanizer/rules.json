@@ -185,7 +185,7 @@
       "id": "ko-status-negation",
       "lang": "ko",
       "severity": "warn",
-      "pattern": "(?:검증|실측|측정|실행|실시|시작|확인|보장|평가|판단|조언|의미|증명|재현|사용|제공|적용|쓰)(?:[된한]\\s*(?:적이|값이)?|하지(?:\\s*않(?:음|는다|았다))?|되지\\s*않(?:음|는다|았다)|이|은|는)?\\s*(?:아님|않음|않는다|않았다|없음)|보류",
+      "pattern": "(?:검증|실측|측정|실행|실시|시작|확인|보장|평가|판단|조언|의미|증명|재현|사용|제공|적용|쓰)(?:[된한](?:\\s*(?:적이|값이))?|하지(?:\\s*않(?:음|는다|았다))?|되지\\s*않(?:음|는다|았다)|(?<=쓰)지|이|은|는)?\\s*(?:(?:\\*\\*|__)\\s*)?(?:아님|않음|않는다|않았다|않습니다|않았습니다|없음)|보류",
       "flags": "im",
       "scope": "line",
       "context": [
@@ -878,6 +878,57 @@
       "fixture_ids": [
         "en-chatbot-closer:positive",
         "en-chatbot-closer:negative"
+      ]
+    },
+    {
+      "id": "ko-negative-pledge",
+      "lang": "ko",
+      "severity": "block",
+      "pattern": "(?<![가-힣])(?:이|본|해당|위|아래)\\s+(?:자료|문서|보고서|슬라이드|덱|표|그림|그래프|차트|수치|결과|비교|분석|내용|예시)(?:은|는)\\s[^.!?\\n]{0,40}?(?:(?:해석하|의미하|주장하|대표하)(?:지\\s*(?:[*_]{1,2}\\s*)?(?:않(?:음|는다|습니다)|말\\s*것|마세요|마십시오)|(?:으)?면\\s*(?:[*_]{1,2}\\s*)?안\\s*(?:됨|된다|됩니다))|(?:(?:비교|결론|벤치마크|순위|대표값|일반화)(?:이|가)|목적이|위한\\s*것이)\\s*(?:[*_]{1,2}\\s*)?(?:아님|아니다|아닙니다)(?![가-힣]))|(?:비교|결론|벤치마크|순위|대표값|일반화)(?:으로|로)\\s*(?:[*_]{1,2}\\s*)?(?:쓰|사용하|해석하|읽|간주하|인용하)(?:지\\s*(?:[*_]{1,2}\\s*)?(?:않(?:음|는다|습니다)|말\\s*것|마세요|마십시오)|(?:으)?면\\s*(?:[*_]{1,2}\\s*)?안\\s*(?:됨|된다|됩니다))|(?:공개|배포|대외|외부|홍보|발표|보고|비교|인용|공식)용\\s*(?:자료|문서|수치|표|그래프)(?:이|가)\\s*(?:[*_]{1,2}\\s*)?(?:아님|아니다|아닙니다)(?![가-힣])",
+      "flags": "m",
+      "scope": "line",
+      "context": [
+        "fenced_code",
+        "quoted_user_text"
+      ],
+      "rationale": "A sentence that tells the reader what the document, table or number is not for belongs in the reply or becomes a data fact. Three shapes: a self-reference topic (이/본/해당/위/아래 + document noun + 은/는) with a negated claim verb or a claim noun + 아님 within one bullet; a comparison or ranking noun + (으)로 + a negated use verb; a purpose-용 data noun (공개용 수치) + 아님. Use verbs after a self-reference, 근거/평가/증거/추천, and legal or financial notices (대체하, 보장하, 권유) stay outside the pattern because operating rules, method lines and standard notices use them.",
+      "fixture_ids": [
+        "ko-negative-pledge:positive",
+        "ko-negative-pledge:negative"
+      ]
+    },
+    {
+      "id": "ko-negative-pledge-repeat",
+      "lang": "ko",
+      "severity": "block",
+      "pattern": "(?:(?:해석하|주장하|대표하)지\\s*(?:[*_]{1,2}\\s*)?않(?:음|습니다)|(?:비교|결론|벤치마크|순위|대표값|일반화)(?:이|가)\\s*(?:[*_]{1,2}\\s*)?(?:아님|아닙니다)(?![가-힣]))(?:[*_]{1,2})?(?=\\s*(?:[.!?。]|$))[\\s\\S]*?(?:(?:해석하|주장하|대표하)지\\s*(?:[*_]{1,2}\\s*)?않(?:음|습니다)|(?:비교|결론|벤치마크|순위|대표값|일반화)(?:이|가)\\s*(?:[*_]{1,2}\\s*)?(?:아님|아닙니다)(?![가-힣]))(?:[*_]{1,2})?(?=\\s*(?:[.!?。]|$))",
+      "flags": "m",
+      "scope": "document",
+      "context": [
+        "fenced_code",
+        "quoted_user_text"
+      ],
+      "rationale": "Two or more sentences that end in 해석하지/주장하지/대표하지 않음 or a claim noun + 이/가 + 아님 turn a document into a list of disclaimers. 의미하, 간주하, 인용하 and the use verbs are left out because repeated definitions, data-processing rules, method lines and operating rules end that way; a single such sentence stays with the warn-only ko-status-negation.",
+      "fixture_ids": [
+        "ko-negative-pledge-repeat:positive",
+        "ko-negative-pledge-repeat:negative"
+      ]
+    },
+    {
+      "id": "en-negative-pledge",
+      "lang": "en",
+      "severity": "block",
+      "pattern": "\\b(?:this|these)\\s+(?:deck|report|document|analysis|table|chart|figure|figures|numbers|results|slide|comparison)\\s+(?:(?:is|are)\\s+not\\s+(?:intended|meant|to\\s+be\\s+(?:read|used|taken|interpreted))(?:\\s+to\\s+be\\s+(?:read|used|taken|interpreted))?\\s+as\\b(?!\\s*(?:a\\s+substitute|a\\s+replacement|(?:legal|investment|medical|professional)\\s+advice))\\s+(?:an?\\s+|the\\s+)?(?:[A-Za-z0-9-]+\\s+){0,4}?(?:comparison|benchmark|ranking)s?\\b(?!-)(?!\\s+(?:arm|arms|group|groups|standard|standards|class|baseline)\\b)|(?:should|must)\\s+not\\s+be\\s+(?:read|used|taken|interpreted)\\s+as\\s+(?:an?\\s+|the\\s+)?(?:[A-Za-z0-9-]+\\s+){0,4}?(?:comparison|benchmark|ranking)s?\\b(?!-)(?!\\s+(?:arm|arms|group|groups|standard|standards|class|baseline)\\b)|makes?\\s+no\\s+claims?\\s+(?:about|that|regarding|as\\s+to)\\b)|\\b(?:this|these)\\s+(?:is|are)\\s+not\\s+(?:intended|meant)\\s+as\\b(?!\\s*(?:a\\s+substitute|a\\s+replacement|(?:legal|investment|medical|professional)\\s+advice))\\s+(?:an?\\s+|the\\s+)?(?:[A-Za-z0-9-]+\\s+){0,4}?(?:comparison|benchmark|ranking)s?\\b(?!-)(?!\\s+(?:arm|arms|group|groups|standard|standards|class|baseline)\\b)|\\bthe\\s+(?:deck|report|document|analysis)\\s+makes?\\s+no\\s+claims?\\s+(?:about|that|regarding|as\\s+to)\\b|(?:^|\\s[-*]\\s)\\s*(?:[-*]\\s+|\\d+\\.\\s+)?(?:[*_]{1,2})?not\\s+(?:intended|meant|to\\s+be\\s+read|to\\s+be\\s+used)\\s+as\\b(?!\\s*(?:a\\s+substitute|a\\s+replacement|(?:legal|investment|medical|professional)\\s+advice))\\s+(?:an?\\s+|the\\s+)?(?:[A-Za-z0-9-]+\\s+){0,4}?(?:comparison|benchmark|ranking)s?\\b(?!-)(?!\\s+(?:arm|arms|group|groups|standard|standards|class|baseline)\\b)|\\b(?:this|these)\\s+(?:table|chart|figure|figures|numbers|results|comparison|analysis)\\s+(?:does|do)\\s+not\\s+constitute\\s+(?:an?\\s+)?[^.!?]{0,60}?\\b(?:comparison|benchmark|ranking)s?\\b(?!-)(?!\\s+(?:arm|arms|group|groups|standard|standards|class|baseline)\\b)",
+      "flags": "i",
+      "scope": "sentence",
+      "context": [
+        "fenced_code",
+        "quoted_user_text"
+      ],
+      "rationale": "A sentence that says the deck, report or numbers are not intended, meant or to be read as a comparison, benchmark or ranking, or make no claim about something belongs in the reply, and so does a table, chart or set of numbers that does not constitute one. Requiring one of those nouns keeps safety labels and advice, offer or diagnosis notices clean; \"does not constitute\" for a report or document stays a notice form, and \"the\" is not a subject except with \"makes no claim\".",
+      "fixture_ids": [
+        "en-negative-pledge:positive",
+        "en-negative-pledge:negative"
       ]
     }
   ]

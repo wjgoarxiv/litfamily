@@ -50,7 +50,10 @@
     "en-chatbot-opener": "Certainly! Here is the overview.",
     "en-testament": "The project stands as a testament to careful planning.",
     "en-left-in-narration": "I've updated the file and saved it.",
-    "en-chatbot-closer": "Let me know if you would like another version."
+    "en-chatbot-closer": "Let me know if you would like another version.",
+    "ko-negative-pledge": "동일 조건의 독립 성능 비교로 쓰지 않음.",
+    "ko-negative-pledge-repeat": "측정값은 인과관계를 주장하지 않음.\n두 공정의 차이는 최종 결론이 아님.",
+    "en-negative-pledge": "This is not intended as a head-to-head benchmark."
   },
   "negative": {
     "ko-bold-deliverable-label": "표 7의 출처는 각주 2에 적었다.",
@@ -103,7 +106,10 @@
     "en-chatbot-opener": "The overview starts with the sample period.",
     "en-testament": "The project used two review rounds.",
     "en-left-in-narration": "The file contains the updated overview.",
-    "en-chatbot-closer": "The requested revision is attached."
+    "en-chatbot-closer": "The requested revision is attached.",
+    "ko-negative-pledge": "이 장비는 방폭 구역에서 사용하지 않습니다. 냉각수로 쓰지 않음.",
+    "ko-negative-pledge-repeat": "첨가제 B는 수율을 개선하지 않았다. 이 결과는 우연이 아니다.",
+    "en-negative-pledge": "This is not intended as a substitute for professional advice."
   },
   "contextCases": {
     "plainSourceAttached": [
