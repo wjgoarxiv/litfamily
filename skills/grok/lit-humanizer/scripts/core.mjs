@@ -82,7 +82,12 @@ function sourceRows(text) {
     if (/^\s{0,3}>\s?/.test(line)) {
       captionPending = 0;
       figureActive = false;
-      return { line, number: index + 1, candidate: '', skipped: true, caption: false, captionAttribution: false };
+      // A quote that opens with a bold label (> **주의:** ...) is the author's own callout rather than
+      // quoted user text. Only rules whose context names blockquote_callout read it, marker blanked.
+      const callout = /^\s{0,3}>\s?(?:\*\*|__)[^*_\n]{1,24}(?:\*\*|__)/.test(line)
+        ? inlineCodeAsSpaces(line.replace(/^\s{0,3}>\s?/, (prefix) => ' '.repeat(prefix.length)))
+        : '';
+      return { line, number: index + 1, candidate: '', callout, skipped: true, caption: false, captionAttribution: false };
     }
     const candidate = inlineCodeAsSpaces(line);
     const caption = isCaption(line);
@@ -149,7 +154,8 @@ function splitSentences(span) {
 }
 
 function ruleSegments(rows, rule, cache) {
-  const cacheKey = `${rule.scope}/${rule.context.includes('table_figure_caption')}`;
+  const readCallouts = rule.context.includes('blockquote_callout');
+  const cacheKey = `${rule.scope}/${rule.context.includes('table_figure_caption')}/${readCallouts}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey);
   const skipCaptions = rule.context.includes('table_figure_caption');
   const segments = [];
@@ -163,6 +169,11 @@ function ruleSegments(rows, rule, cache) {
 
   for (const row of rows) {
     const captionExempt = skipCaptions && (row.caption || row.captionAttribution);
+    if (readCallouts && row.callout) {
+      flush();
+      segments.push({ text: row.callout, line: row.number });
+      continue;
+    }
     if (row.skipped || captionExempt || (rule.scope === 'sentence' && !row.candidate.trim())) {
       flush();
       continue;
