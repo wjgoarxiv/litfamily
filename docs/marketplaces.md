@@ -1,6 +1,6 @@
 # Native marketplaces
 
-This page records the pinned marketplace sources. The pinned commits are the released GitHub `main` commits of the public repositories. Local manifest validation does not prove that another user can download a plugin.
+This page records the pinned marketplace sources. The pins identify final round-26 commits on the public product repositories. npm publication is tracked separately in the [release status](release-status.md). Local manifest validation does not prove that another user can download a plugin.
 
 ## Claude Code
 
@@ -17,7 +17,7 @@ The hub lives at `wjgoarxiv/litfamily`. To add it as a Claude Code marketplace a
 
 The plugin ID stays `litclaude`; the marketplace ID is `litfamily`; neither is the npm package name. The product-owned marketplace retains `litclaude-ai` with source `./plugins/litclaude`; this hub uses the separate `litfamily` registration. Choose one activation route and avoid enabling the same plugin through both registrations. Follow the product migration guide before replacing one registration with another. A marketplace install supplies the plugin; it does not imply that the npm installer's optional HUD, status-line or host configuration setup ran.
 
-For local schema checking, run `claude plugin validate .` from the hub root. Installing from this manifest fetches the GitHub source and is a separate operation; validation is not installation. The `git-subdir` source uses the full `sha` of the LitClaude 1.0.32 release commit recorded in the [source catalog](skills.md#assessed-source-identities-and-licenses). Hub verification requires those pins to match. The private development history is not included in that source.
+For local schema checking, run `claude plugin validate .` from the hub root. Installing from this manifest fetches the GitHub source and is a separate operation; validation is not installation. The `git-subdir` source uses the full `sha` of the LitClaude 1.0.36 public release commit recorded in the [source catalog](skills.md#assessed-source-identities-and-licenses). Hub verification requires those pins to match. Public fetch and install checks remain separate acceptance steps.
 
 Public release acceptance still requires a real fetch, isolated install, activation checks and removal from the pinned remote source after the necessary remote actions are authorized. An isolated local-transport check, if recorded, proves only the local lifecycle and cannot satisfy public availability.
 
@@ -27,7 +27,7 @@ Schema authority: [Claude Code marketplace documentation](https://code.claude.co
 
 The native marketplace remains in the independent LitCodex repository at `.agents/plugins/marketplace.json`. Its marketplace name is `litcodex`; its plugin name is `litcodex`; its source is `./plugins/litcodex`. The current native policy uses installation `AVAILABLE` and authentication `ON_INSTALL`.
 
-Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/004895a0683721739173660e6acfa26a7e70f589) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
+Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/6171a250e22e98eca3e65d368d6be79d5297094f) and its own installer and `/plugins` guidance. This hub does not duplicate that manifest with a relative path pointing outside itself, declare a Claude-compatible Codex plugin, or claim official directory acceptance. The plugin icon and brand color remain product-owned.
 
 ## Other harnesses
 

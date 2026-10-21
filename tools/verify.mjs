@@ -8,8 +8,8 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const litGrokHumanizer = {
   product: 'grok',
   id: 'lit-humanizer',
-  sourceVersion: '1.0.21',
-  sourceCommit: '3b873996d8e17e0eee43b108d267f5caca2d378d',
+  sourceVersion: '1.0.25',
+  sourceCommit: '9c749c4ca446055471d534bdef9da120bee0ef59',
   sourcePath: '.grok/skills/lit-humanizer',
   destinationPath: 'skills/grok/lit-humanizer',
 };
@@ -61,6 +61,14 @@ export async function validateSkillExports(base, exports) {
   assert.equal(entry.classification, 'host-scoped-self-contained');
   assert(entry.reason);
   assert.equal(entry.sourceUrl, `https://github.com/wjgoarxiv/litgrok/tree/${entry.sourceCommit}/${entry.sourcePath}`);
+
+  assert.deepEqual(entry.adaptations, ['scripts/extract.mjs', 'scripts/test-fixtures.mjs'].map(path => ({ path, from: '../../lit-pptx/scripts/proc.cjs', to: './proc.cjs' })));
+  assert.equal(entry.closureDependencies[0].sourcePath, '.grok/skills/lit-pptx/scripts/proc.cjs');
+  assert.equal(entry.closureDependencies[0].sourceSha256, '6d418562de41a3db013751905001ff7007449417bfdd99e856483725766f9f0e');
+  const helper = entry.files.find(file => file.path === 'scripts/proc.cjs');
+  assert.equal(helper?.sha256, entry.closureDependencies[0].sourceSha256);
+
+  assert.equal(entry.fixtureAdaptations[0].to, 'flags={"i":re.I,"m":re.M,"s":re.S,"u":re.U}');
 
   const exportRoot = path.resolve(base, entry.destinationPath);
   assert(exportRoot.startsWith(base + path.sep), 'Export destination must stay inside the hub');

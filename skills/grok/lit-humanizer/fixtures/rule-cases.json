@@ -53,7 +53,8 @@
     "en-chatbot-closer": "Let me know if you would like another version.",
     "ko-negative-pledge": "동일 조건의 독립 성능 비교로 쓰지 않음.",
     "ko-negative-pledge-repeat": "측정값은 인과관계를 주장하지 않음.\n두 공정의 차이는 최종 결론이 아님.",
-    "en-negative-pledge": "This is not intended as a head-to-head benchmark."
+    "en-negative-pledge": "This is not intended as a head-to-head benchmark.",
+    "negation-cluster": "방문 횟수임. 같은 사람의 재방문이 섞여 있어 이용자 수로 읽을 수 없음. 고유 방문자 수도 아님."
   },
   "negative": {
     "ko-bold-deliverable-label": "표 7의 출처는 각주 2에 적었다.",
@@ -109,7 +110,8 @@
     "en-chatbot-closer": "The requested revision is attached.",
     "ko-negative-pledge": "이 장비는 방폭 구역에서 사용하지 않습니다. 냉각수로 쓰지 않음.",
     "ko-negative-pledge-repeat": "첨가제 B는 수율을 개선하지 않았다. 이 결과는 우연이 아니다.",
-    "en-negative-pledge": "This is not intended as a substitute for professional advice."
+    "en-negative-pledge": "This is not intended as a substitute for professional advice.",
+    "negation-cluster": "18,420회는 같은 사람의 반복 방문을 포함한 방문 횟수 합계입니다. 고유 방문자 수는 자료에 없습니다."
   },
   "contextCases": {
     "plainSourceAttached": [

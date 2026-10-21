@@ -16,7 +16,7 @@ These are local assets. Publication and authenticated host acceptance are separa
 
 ## v7 armory README covers
 
-The v7 lossless WebP exports in `exports/` are one emphasis cover for each product and `litfamily-armory.webp`, the hub's former top cover, which stays in `exports/` but is no longer shown in the hub READMEs. The hub READMEs show the seven emphasis covers; their top image is now the motion cover below. They are 1536×1024 compatibility exports from the accepted v7 master; the exact SHA-256 values are recorded in `artifact-manifest.json`. The seven-product emphasis covers and hub armory come from the approved v7 master. Large production PNG masters stay outside this distribution. These files do not prove GitHub or npm availability.
+The v7 WebP exports in `exports/` are one emphasis cover for each product and `litfamily-armory.webp`, the hub's former top cover, which stays in `exports/` but is no longer shown in the hub READMEs. The hub READMEs show the seven emphasis covers; their top image is now the motion cover below. They are 1536×1024 compatibility exports from the accepted v7 master; the exact SHA-256 values are recorded in `artifact-manifest.json`. The seven-product emphasis covers and hub armory come from the approved v7 master. Large production PNG masters stay outside this distribution. These files do not prove GitHub or npm availability.
 
 ## Motion README cover
 

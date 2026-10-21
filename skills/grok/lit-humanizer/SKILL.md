@@ -27,6 +27,10 @@ Use the always-on rule for ordinary turns. Load this full skill for a long deliv
 4. **Re-check.** Run `scripts/detect.mjs` on the newly written text. Fix every block hit. Review warnings against context and keep a warning when it is accurate, useful, and natural. Re-run until block hits are zero and the remaining warnings are deliberate.
 5. **Deliver.** Return the requested artifact without an audit preamble or process labels. In the chat reply, summarize the change only if useful and state any material risk once, plainly.
 
+## Positive-first wording
+
+Lead with what a number or thing is, then add a needed caveat once. `18,420회는 주민 수가 아님. 고유 방문자 수도 아님.` leaves the reader to guess what the figure counts; `18,420회는 같은 사람의 반복 방문을 포함한 방문 횟수 합계입니다` says it, and the caveat is no longer needed. The detector's `negation-cluster` rule counts definitional negations in each paragraph, list block or table column: the plain forms (`아닙니다`, `아님`, `아니라`, `is not`, `rather than` and the like) and the reworded ones that say the same thing (`~로 읽을 수 없음`, `~로 보지 않음`, `~을 뜻하지 않음`, `~와는 다름`, `~로 읽으면 안 됨`, `should not be read as`, `does not mean`). Two Korean matches, or three in any language, block the write, and the refusal carries the rewrite advice; exactly two with at most one Korean match draw a warning. Trading `아님` for `~로 읽을 수 없음` leaves the count unchanged. The count skips code, quotes and table cells of 12 characters or fewer, and one honest limitation line such as `고유 이용자 지표는 자료에 없습니다` stays clean. Put any bad example you write in inline code or a blockquote.
+
 ## Modes
 
 - **Fast:** For short replies and small edits. Read once, revise clear residue, preserve the original voice, then check the changed text.

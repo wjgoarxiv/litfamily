@@ -934,6 +934,30 @@
         "en-negative-pledge:positive",
         "en-negative-pledge:negative"
       ]
+    },
+    {
+      "id": "negation-cluster",
+      "lang": "any",
+      "severity": "block",
+      "pattern": "아닙니다|아님|아니다|아니며|아니라|아닌|(?:로|으로) (?:읽을|볼|해석할|간주할) 수 없|(?:로|으로) 보지 않|(?:을|를) (?:뜻하지|의미하지|나타내지|가리키지) 않|(?:와|과)는 다(?:릅니다|르다|름|르며|르고|르므로)|(?:로|으로) (?:읽으면|보면|해석하면) 안 |(?<![\\p{L}\\p{N}_])(?:is not|are not|isn't|aren't|not a|rather than)(?![\\p{L}\\p{N}_])|(?<![\\p{L}\\p{N}_])(?:should not|cannot|can't|must not) be (?:read|taken|interpreted|treated) as(?![\\p{L}\\p{N}_])|(?<![\\p{L}\\p{N}_])(?:does|do) not (?:mean|represent|indicate)(?![\\p{L}\\p{N}_])",
+      "ko_pattern": "아닙니다|아님|아니다|아니며|아니라|아닌|(?:로|으로) (?:읽을|볼|해석할|간주할) 수 없|(?:로|으로) 보지 않|(?:을|를) (?:뜻하지|의미하지|나타내지|가리키지) 않|(?:와|과)는 다(?:릅니다|르다|름|르며|르고|르므로)|(?:로|으로) (?:읽으면|보면|해석하면) 안 ",
+      "flags": "iu",
+      "scope": "document",
+      "threshold": {
+        "block_ko": 2,
+        "block_total": 3,
+        "warn_total": 2
+      },
+      "context": [
+        "fenced_code",
+        "quoted_user_text"
+      ],
+      "message": "Several negations sit in one place. Say what the thing is first, then add the caveat once. Example: write \"18,420 visits in total, including repeat visits\" instead of \"18,420 is not the number of residents\". (한곳에 부정문이 여럿 있습니다. 무엇인지 먼저 말하고, 단서는 한 번만 붙이세요. 예: \"18,420회는 주민 수가 아님\" 대신 \"18,420회는 같은 사람의 반복 방문을 포함한 방문 횟수 합계입니다\".)",
+      "rationale": "Counts definitional negations, plain and reworded (~로 읽을 수 없음, ~로 보지 않음, ~와는 다름, ~로 읽으면 안 됨, does not mean), in each paragraph, list block or Markdown table column. Two Korean matches (ko_pattern) or three in any language block the write; exactly two that are not both Korean only warn. Table cells of 12 characters or fewer, such as a 해당 아님 status, are left out. One plain caveat after a positive statement stays clean.",
+      "fixture_ids": [
+        "negation-cluster:positive",
+        "negation-cluster:negative"
+      ]
     }
   ]
 }

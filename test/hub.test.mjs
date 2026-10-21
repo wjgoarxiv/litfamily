@@ -8,10 +8,10 @@ import { documentReferences, localTarget, validateMarketplace, validateHashes, v
 
 test('the distributed hub closes links, source identity and asset hashes', async () => {
   const result = await verify();
-  assert.equal(result.inventory, 330);
-  assert.equal(result.nativeEntries, 278);
+  assert.equal(result.inventory, 335);
+  assert.equal(result.nativeEntries, 283);
   assert.equal(result.exports, 1);
-  assert.equal(result.exportFiles, 72);
+  assert.equal(result.exportFiles, 74);
 });
 
 test('the catalog attributes all seven products to their own hosts', async () => {
@@ -19,30 +19,68 @@ test('the catalog attributes all seven products to their own hosts', async () =>
   assert.deepEqual(inventory.products.map(product => product.id).sort(), ['claude', 'codex', 'gravity', 'grok', 'hermes', 'muse', 'opencode']);
 });
 
-test('the standalone Grok export pins the LitGrok humanizer release commit', async () => {
+test('the standalone Grok export pins the LitGrok humanizer final public release commit', async () => {
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   const entry = inventory.exports.find((item) => item.id === 'lit-humanizer');
   assert.equal(entry.product, 'grok');
-  assert.equal(entry.sourceVersion, '1.0.21');
-  assert.equal(entry.sourceCommit, '3b873996d8e17e0eee43b108d267f5caca2d378d');
+  assert.equal(entry.sourceVersion, '1.0.25');
+  assert.equal(entry.sourceCommit, '9c749c4ca446055471d534bdef9da120bee0ef59');
   assert.equal(entry.sourcePath, '.grok/skills/lit-humanizer');
   assert.equal(entry.destinationPath, 'skills/grok/lit-humanizer');
-  assert.equal(entry.files.length, 72);
+  assert.equal(entry.files.length, 74);
 });
 
-test('the hub binds the release commits', async () => {
+test('the hub binds the round-26 final public release commits', async () => {
   const release = {
-    claude: { name: 'LitClaude', repository: 'https://github.com/wjgoarxiv/litclaude', version: '1.0.32', sourceCommit: '61b1c5237ad1406c979c9bfc6751bc5b0852deea' },
-    hermes: { name: 'LitHermes', repository: 'https://github.com/wjgoarxiv/lithermes', version: '1.0.24', sourceCommit: 'd2f2d533902c44ead2b62f162d3dcc366c977fde' },
-    codex: { name: 'LitCodex', repository: 'https://github.com/wjgoarxiv/litcodex', version: '1.0.25', sourceCommit: '004895a0683721739173660e6acfa26a7e70f589' },
-    opencode: { name: 'LitOpenCode', repository: 'https://github.com/wjgoarxiv/litopencode', version: '1.0.26', sourceCommit: '9f54ca949944a570a9d36ae44f22c1241ac99217' },
-    grok: { name: 'LitGrok', repository: 'https://github.com/wjgoarxiv/litgrok', version: '1.0.21', sourceCommit: '3b873996d8e17e0eee43b108d267f5caca2d378d' },
-  };
+  "claude": {
+    "version": "1.0.36",
+    "sourceCommit": "43c0e5d13d134ff699590eb46c78b4fda3640bfa",
+    "repository": "https://github.com/wjgoarxiv/litclaude",
+    "name": "LitClaude"
+  },
+  "hermes": {
+    "version": "1.0.28",
+    "sourceCommit": "7baecfc738e2a12b4f93d16d81305051236c2deb",
+    "repository": "https://github.com/wjgoarxiv/lithermes",
+    "name": "LitHermes"
+  },
+  "codex": {
+    "version": "1.0.29",
+    "sourceCommit": "6171a250e22e98eca3e65d368d6be79d5297094f",
+    "repository": "https://github.com/wjgoarxiv/litcodex",
+    "name": "LitCodex"
+  },
+  "opencode": {
+    "version": "1.0.30",
+    "sourceCommit": "fb534620d791949641c7df40883b0687d7b039fe",
+    "repository": "https://github.com/wjgoarxiv/litopencode",
+    "name": "LitOpenCode"
+  },
+  "grok": {
+    "version": "1.0.25",
+    "sourceCommit": "9c749c4ca446055471d534bdef9da120bee0ef59",
+    "repository": "https://github.com/wjgoarxiv/litgrok",
+    "name": "LitGrok"
+  },
+  "muse": {
+    "version": "0.1.0",
+    "sourceCommit": "6c8f41a4551cb2f6d53a8ead473c6cebae07d930",
+    "repository": "https://github.com/wjgoarxiv/litmuse",
+    "name": "LitMuse"
+  },
+  "gravity": {
+    "version": "0.1.0",
+    "sourceCommit": "de4d9946ad9481307cbcc52be9dfb128a56b59b5",
+    "repository": "https://github.com/wjgoarxiv/litgravity",
+    "name": "LitGravity"
+  }
+};
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   for (const [id, expected] of Object.entries(release)) {
     const product = inventory.products.find((entry) => entry.id === id);
     assert.equal(product.version, expected.version);
     assert.equal(product.sourceCommit, expected.sourceCommit);
+    assert.equal(product.sourceHistory, 'curated-public');
     assert.equal(product.sourceUrl, `${expected.repository}/tree/${expected.sourceCommit}`);
     assert.ok(inventory.entries.filter((entry) => entry.product === id).every((entry) => entry.version === expected.version), `${id} entry versions`);
   }
@@ -50,7 +88,7 @@ test('the hub binds the release commits', async () => {
   assert.equal(marketplace.plugins[0].source.sha, release.claude.sourceCommit);
   const status = await readFile(new URL('../docs/release-status.md', import.meta.url), 'utf8');
   for (const expected of Object.values(release)) {
-    const row = status.split('\n').find((line) => line.startsWith(`| ${expected.name} | ${expected.version} | \`release/${expected.version}\` |`));
+    const row = status.split('\n').find((line) => line.startsWith(`| ${expected.name} | ${expected.version} | pending publication |`));
     assert(row && row.includes(expected.sourceCommit), `Missing release row for ${expected.name}`);
   }
 });
@@ -174,5 +212,21 @@ test('new member installation and native registration remain host-specific', asy
   const gallery = await readFile(new URL('../assets/brand/gallery.html', import.meta.url), 'utf8');
   for (const id of ['muse', 'gravity']) {
     for (const suffix of ['-cover.svg', '-cover.webp', '-icon.svg', '-social.png']) assert(gallery.includes(id + suffix));
+  }
+});
+
+test('all install routes pin the pending round-26 targets', async () => {
+  const expected = { claude: '1.0.36', hermes: '1.0.28', codex: '1.0.29', opencode: '1.0.30', grok: '1.0.25', muse: '0.1.0', gravity: '0.1.0' };
+  const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
+  assert.equal(inventory.state, 'pending-release');
+  for (const product of inventory.products) {
+    assert.equal(product.version, expected[product.id]);
+    assert.equal(product.sourceHistory, 'curated-public');
+    assert.equal(product.releaseStatus, 'pending');
+  }
+  for (const name of ['README.md', 'README_ko-KR.md', 'assets/brand/gallery.html']) {
+    const text = await readFile(new URL('../' + name, import.meta.url), 'utf8');
+    for (const [id, version] of Object.entries(expected)) assert(text.includes('@litfamily/lit' + id + '@' + version), name + ': ' + id);
+    assert(!text.includes('@latest'));
   }
 });

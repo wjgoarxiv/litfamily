@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import proc from './proc.cjs';
 import { fileURLToPath } from 'node:url';
 import { exitCode, parseRules, scanText } from './core.mjs';
 import { extractTextForFile } from './extract.mjs';
@@ -34,8 +35,24 @@ for (const rule of rules) {
   negativeCounts.set(rule.id, 1);
 }
 
-const pyCheck = spawnSync('python3', ['-c', 'import json,re,sys; rules=json.load(sys.stdin); flags={"i":re.I,"m":re.M,"s":re.S}; [re.compile(r["pattern"], sum((flags[f] for f in r["flags"]), 0)) for r in rules]'], {
-  input: JSON.stringify(rules.map(({ id, pattern, flags }) => ({ id, pattern, flags }))), encoding: 'utf8',
+// Expand JavaScript Unicode categories to explicit ranges for Python's stdlib regex compiler.
+const pythonCategories = {};
+for (const category of ['L', 'N']) {
+  const matcher = new RegExp('\\p{' + category + '}', 'u');
+  const escape = value => value <= 0xffff ? '\\u' + value.toString(16).padStart(4, '0') : '\\U' + value.toString(16).padStart(8, '0');
+  const ranges = [];
+  let start = null;
+  for (let value = 0; value <= 0x110000; value++) {
+    const matches = value < 0x110000 && matcher.test(String.fromCodePoint(value));
+    if (matches && start === null) start = value;
+    if (!matches && start !== null) { ranges.push(escape(start) + (value - 1 === start ? '' : '-' + escape(value - 1))); start = null; }
+  }
+  pythonCategories[category] = ranges.join('');
+}
+
+const python = proc.findPython();
+const pyCheck = spawnSync(python.command, [...python.args, '-c', 'import json,re,sys; rules=json.load(sys.stdin); flags={"i":re.I,"m":re.M,"s":re.S,"u":re.U}; [re.compile(r["pattern"], sum((flags[f] for f in r["flags"]), 0)) for r in rules]'], {
+  input: JSON.stringify(rules.map(({ id, pattern, flags }) => ({ id, pattern: pattern.replace(/\\p\{([LN])\}/gu, (_, category) => pythonCategories[category]), flags }))), encoding: 'utf8',
 });
 assert.equal(pyCheck.status, 0, `Python re compilation failed: ${pyCheck.stderr}`);
 
