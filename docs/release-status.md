@@ -1,6 +1,6 @@
 # Release status
 
-The five products are released. On 2026-10-16, each version below was the npm `latest` of its `@litfamily` package, and each release commit was the product repository's GitHub `main`. The product repositories and this hub are public on GitHub.
+The established products retain the released snapshots below. LitMuse and LitGravity are preparing their first 0.1.0 releases; their package and repository links name the planned public destinations. On 2026-10-16, each version below was the npm `latest` of its `@litfamily` package, and each release commit was the product repository's GitHub `main`. The product repositories and this hub are public on GitHub.
 
 | Product | Released version | Legacy unscoped package | npm package | CLI name retained |
 |---|---|---|---|---|
@@ -10,9 +10,12 @@ The five products are released. On 2026-10-16, each version below was the npm `l
 | LitOpenCode | 1.0.26 | `litopencode` | `@litfamily/litopencode` | `litopencode` |
 | LitGrok | 1.0.21 | `litgrok-ai` | `@litfamily/litgrok` | `litgrok-ai`, `litgrok` |
 
+| LitMuse | 0.1.0 (pending) | — | `@litfamily/litmuse` | `litmuse` |
+| LitGravity | 0.1.0 (pending) | `antigravity-swarm` | `@litfamily/litgravity` | `litgravity` |
+
 ## Release commits
 
-Each commit below is the product's GitHub `main` for that release and the source of its npm package. The release branch column names the maintainer's local branch that produced the commit; GitHub carries only `main`, and the commits are not tagged. The hub catalog, the Grok skill export and the Claude marketplace pin it.
+The established product commits below are released sources. The two new product commits are local first-release candidates; their public availability has not been established. The release branch column names the maintainer's local branch that produced the commit; GitHub carries only `main`, and the commits are not tagged. The hub catalog, the Grok skill export and the Claude marketplace pin it.
 
 | Product | Version | Release branch | Source commit |
 |---|---|---|---|
@@ -21,6 +24,9 @@ Each commit below is the product's GitHub `main` for that release and the source
 | LitCodex | 1.0.25 | `release/1.0.25` | `004895a0683721739173660e6acfa26a7e70f589` |
 | LitOpenCode | 1.0.26 | `release/1.0.26` | `9f54ca949944a570a9d36ae44f22c1241ac99217` |
 | LitGrok | 1.0.21 | `release/1.0.21` | `3b873996d8e17e0eee43b108d267f5caca2d378d` |
+
+| LitMuse | 0.1.0 | pending first release | `8398e34611d1933e02bfc50c6d68e794bf1505d5` |
+| LitGravity | 0.1.0 | pending first release | `4779666e421f65b7639df38b508dcb715a9e17b2` |
 
 The Grok package still lacks authenticated user-session event proof. Slice22's isolated Git-root discovery established hook discovery only; it did not establish a logged-in host event.
 

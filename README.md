@@ -1,16 +1,16 @@
-<p align="center"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand/exports/litfamily-cover-motion-still.webp" /><img src="assets/brand/exports/litfamily-cover-motion.webp" width="100%" alt="LitFamily motion cover: five armored robots power on and wake one by one, then LITFAMILY and KEEP THE WORK LIT. light up." /></picture></p>
+<p align="center"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand/exports/litfamily-cover-motion-still.webp" /><img src="assets/brand/exports/litfamily-cover-motion.webp" width="100%" alt="LitFamily motion cover: seven armored robots power on and wake one by one, then LITFAMILY and KEEP THE WORK LIT. light up." /></picture></p>
 <p align="center"><a href="assets/brand/exports/litfamily-cover-motion-still.webp">View the still frame</a> · <a href="assets/brand/exports/litfamily-cover-film.mp4">Watch the 11-second film with sound</a></p>
 
 # LitFamily
 
 **Keep the work lit.**
 
-LitFamily is five open-source add-ons, one for each of five AI coding agents, that help the agent plan a task, check its own work, and leave a note in your project so the next session can carry on.
+LitFamily is seven open-source add-ons, one for each of seven AI coding agents, that help the agent plan a task, check its own work, and leave a note in your project so the next session can carry on.
 
 <p align="center">
 <img src="assets/brand/readme/badge-version.svg" alt="Release: npm" />
 <img src="assets/brand/readme/badge-license.svg" alt="MIT license" />
-<img src="assets/brand/readme/badge-family.svg" alt="Five independent ports" />
+<img src="assets/brand/readme/badge-family.svg" alt="Seven independent ports" />
 </p>
 
 **[Install](#install) · [See it work](#see-it-work) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**
@@ -28,8 +28,12 @@ Each product is its own npm package, written for one agent. Find the agent you a
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.25 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@latest -- litopencode install` |
 | Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@latest -- litgrok install` |
+| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.0 install` |
+| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.0 install` |
 
 You need Node.js with npm and the agent itself. LitCodex asks for Node.js 22 or later and LitHermes for 18 or later. Each product's README explains what its installer changes, the questions it may ask, how to preview the changes first, and how to remove it again.
+
+LitMuse and LitGravity require Node.js 20 or later. LitMuse is an independent community project, not affiliated with Meta.
 
 ### Let a coding agent install it
 
@@ -37,7 +41,7 @@ If you would rather hand the install to the coding agent you already use, paste 
 
 ```text
 Install the LitFamily product that matches the coding agent I use.
-1. Ask me which agent I want it for if you can't tell: Claude Code, Codex CLI, OpenCode, Hermes Agent or Grok Build. The matching products are LitClaude, LitCodex, LitOpenCode, LitHermes and LitGrok.
+1. Ask me which agent I want it for if you can't tell: Claude Code, Codex CLI, OpenCode, Hermes Agent, Grok Build, Muse Code or Antigravity CLI (agy). The matching products are LitClaude, LitCodex, LitOpenCode, LitHermes, LitGrok, LitMuse and LitGravity.
 2. Open that product's README on GitHub (github.com/wjgoarxiv/<product name in lower case>) and follow the install prompt it gives for coding agents. Use only the official npm package @litfamily/<product name in lower case>.
 3. Before you change anything, show me your plan and wait for my yes.
 4. When it is installed, run the product's own check (doctor or status), tell me what was written and where, and tell me how to restart my agent so it loads.
@@ -59,11 +63,13 @@ Choose one of the two routes for LitClaude and stay with it, so the same plugin 
 - **Codex CLI** — [LitCodex](https://github.com/wjgoarxiv/litcodex): Start a project conversation with `lit`.
 - **OpenCode** — [LitOpenCode](https://github.com/wjgoarxiv/litopencode): Restart OpenCode, press **Tab**, pick the `lit-loop` agent, and describe the task.
 - **Grok Build** — [LitGrok](https://github.com/wjgoarxiv/litgrok): Run the installer inside the project you want to try (the files land in its `.grok/` folder), review hook trust, then invoke `/litwork`.
+- **Muse Code** — [LitMuse](https://github.com/wjgoarxiv/litmuse): Approve its hooks and agents, run its `doctor`, then start a Muse project conversation with `lit`.
+- **Antigravity CLI (`agy`)** — [LitGravity](https://github.com/wjgoarxiv/litgravity): Run its `doctor`, then start with `lit` in your project. Execute an approved plan with `lit start plans/<slug>.md`.
 
 > [!NOTE]
-> **Released on npm.** Each product is published under the `@litfamily` npm scope. The versions and release commits are listed in [release status](docs/release-status.md). The product repositories and this hub are public on GitHub.
+> **Release preparation.** [Release status](docs/release-status.md) distinguishes existing releases from the pending LitMuse and LitGravity 0.1.0 first releases. Install lines for pending versions become usable after npm publication.
 
-The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
+The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok) · [`@litfamily/litmuse`](https://www.npmjs.com/package/@litfamily/litmuse) · [`@litfamily/litgravity`](https://www.npmjs.com/package/@litfamily/litgravity). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
 
 ## See it work
 
@@ -98,7 +104,7 @@ A bug you want fixed. A screen you want built. A project you want to finish.
 
 Starting takes a line. After a long conversation or a session change, carrying on takes more: finding what you decided, what you checked, and what is still left to do.
 
-**LIT gives that work a place to stay.** Goals, plans, checked results, and next steps remain with the project so the next session has something to pick up. Choose the product for the harness you already use; the five products are independent.
+**LIT gives that work a place to stay.** Goals, plans, checked results, and next steps remain with the project so the next session has something to pick up. Choose the product for the harness you already use; the seven products are independent.
 
 ### A shared workflow
 
@@ -128,6 +134,8 @@ Choose the one product that matches your host. Append `lit` to a prompt where th
 | Plan, execute, review | `lit-plan` → `/start-work` → `/review-work` |
 | Source-backed research | `litresearch` where the selected product ships it |
 
+For Antigravity CLI, execute an approved plan with `lit start plans/<slug>.md`.
+
 ## Troubleshooting
 
 Keep your existing configuration and read the selected product's migration guide before replacing an installation. If an ownership check refuses a destination, retain the error and existing files; do not delete state to force a retry.
@@ -142,7 +150,7 @@ For a problem, follow [Support](SUPPORT.md): include the product and host versio
 
 Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. A matching skill name does not make it portable between hosts.
 
-The five product READMEs above explain the actual installation paths, entry points, permissions, optional tools, and limitations. This hub helps you find them; it does not add a shared runtime.
+The seven product READMEs above explain the actual installation paths, entry points, permissions, optional tools, and limitations. This hub helps you find them; it does not add a shared runtime.
 
 ### Skills and native marketplaces
 
@@ -167,24 +175,30 @@ flowchart TB
     User --> X["Codex CLI + LitCodex"]
     User --> O["OpenCode + LitOpenCode"]
     User --> G["Grok Build + LitGrok"]
+    User --> M["Muse Code + LitMuse"]
+    User --> A["Antigravity CLI (agy) + LitGravity"]
     C --> CP["Its project: plan, work, checks, handoff"]
     H --> HP["Its project: plan, work, checks, handoff"]
     X --> XP["Its project: plan, work, checks, handoff"]
     O --> OP["Its project: plan, work, checks, handoff"]
     G --> GP["Its project: plan, work, checks, handoff"]
+    M --> MP["Its project: plan, work, checks, handoff"]
+    A --> AP["Its project: plan, work, checks, handoff"]
 ```
 
-These are five alternatives, not five stages to install. Products do not share a runtime or depend on one another. The diagram summarizes the workflow; commands, permissions, and record formats remain specific to each host.
+These are seven independent alternatives to install. Products do not share a runtime or depend on one another. The diagram summarizes the workflow; commands, permissions, and record formats remain specific to each host.
 
 ### Product editorial cues
 
-<table><tr>
-<td><a href="https://github.com/wjgoarxiv/litclaude"><img src="assets/brand/exports/litclaude-emphasis.webp" width="180" alt="LitClaude emphasis cover" /></a><br /><strong>LitClaude</strong><br />on npm</td>
-<td><a href="https://github.com/wjgoarxiv/lithermes"><img src="assets/brand/exports/lithermes-emphasis.webp" width="180" alt="LitHermes emphasis cover" /></a><br /><strong>LitHermes</strong><br />on npm</td>
-<td><a href="https://github.com/wjgoarxiv/litcodex"><img src="assets/brand/exports/litcodex-emphasis.webp" width="180" alt="LitCodex emphasis cover" /></a><br /><strong>LitCodex</strong><br />on npm</td>
-<td><a href="https://github.com/wjgoarxiv/litopencode"><img src="assets/brand/exports/litopencode-emphasis.webp" width="180" alt="LitOpenCode emphasis cover" /></a><br /><strong>LitOpenCode</strong><br />on npm</td>
-<td><a href="https://github.com/wjgoarxiv/litgrok"><img src="assets/brand/exports/litgrok-emphasis.webp" width="180" alt="LitGrok emphasis cover" /></a><br /><strong>LitGrok</strong><br />on npm</td>
-</tr></table>
+<table>
+<tr><td><a href="https://github.com/wjgoarxiv/litclaude"><img src="assets/brand/exports/litclaude-emphasis.webp" width="180" alt="LitClaude emphasis cover" /></a><br /><strong>LitClaude</strong><br />on npm</td>
+<td><a href="https://github.com/wjgoarxiv/lithermes"><img src="assets/brand/exports/lithermes-emphasis.webp" width="180" alt="LitHermes emphasis cover" /></a><br /><strong>LitHermes</strong><br />on npm</td></tr>
+<tr><td><a href="https://github.com/wjgoarxiv/litcodex"><img src="assets/brand/exports/litcodex-emphasis.webp" width="180" alt="LitCodex emphasis cover" /></a><br /><strong>LitCodex</strong><br />on npm</td>
+<td><a href="https://github.com/wjgoarxiv/litopencode"><img src="assets/brand/exports/litopencode-emphasis.webp" width="180" alt="LitOpenCode emphasis cover" /></a><br /><strong>LitOpenCode</strong><br />on npm</td></tr>
+<tr><td><a href="https://github.com/wjgoarxiv/litgrok"><img src="assets/brand/exports/litgrok-emphasis.webp" width="180" alt="LitGrok emphasis cover" /></a><br /><strong>LitGrok</strong><br />on npm</td>
+<td><a href="https://github.com/wjgoarxiv/litmuse"><img src="assets/brand/exports/litmuse-emphasis.webp" width="180" alt="LitMuse emphasis cover" /></a><br /><strong>LitMuse</strong><br />release pending</td></tr>
+<tr><td><a href="https://github.com/wjgoarxiv/litgravity"><img src="assets/brand/exports/litgravity-emphasis.webp" width="180" alt="LitGravity emphasis cover" /></a><br /><strong>LitGravity</strong><br />release pending</td></tr>
+</table>
 
 [![Ignition motion poster](assets/brand/exports/ignition-poster.png)](assets/brand/exports/ignition-film.mp4)
 
@@ -193,20 +207,20 @@ These are five alternatives, not five stages to install. Products do not share a
 Use these routes only through the product and host you selected. `lit` starts the work loop where the host supports the bare route; `handoff` records the checked result and next step; `lit-plan` lays out an approved path; `/start-work` executes that approved plan; `/review-work` inspects the result; and `litresearch` is available only when the selected product documents it. Grok Build documents `/litwork` as its explicit entry. Each route has a product-specific host limit: this hub only explains the choices and does not execute them, install a runtime, or make unsupported routes available.
 
 <table>
-<tr>
-<td><strong>LitClaude</strong><br /><img src="assets/brand/exports/litclaude-ignition-1600.webp" width="100%" alt="LitClaude ignition apparatus" /><img src="assets/brand/exports/litclaude-continuity-1600.webp" width="100%" alt="LitClaude continuity apparatus" /></td>
-<td><strong>LitHermes</strong><br /><img src="assets/brand/exports/lithermes-ignition-1600.webp" width="100%" alt="LitHermes ignition apparatus" /><img src="assets/brand/exports/lithermes-continuity-1600.webp" width="100%" alt="LitHermes continuity apparatus" /></td>
-<td><strong>LitCodex</strong><br /><img src="assets/brand/exports/litcodex-ignition-1600.webp" width="100%" alt="LitCodex ignition apparatus" /><img src="assets/brand/exports/litcodex-continuity-1600.webp" width="100%" alt="LitCodex continuity apparatus" /></td>
-<td><strong>LitOpenCode</strong><br /><img src="assets/brand/exports/litopencode-ignition-1600.webp" width="100%" alt="LitOpenCode ignition apparatus" /><img src="assets/brand/exports/litopencode-continuity-1600.webp" width="100%" alt="LitOpenCode continuity apparatus" /></td>
-<td><strong>LitGrok</strong><br /><img src="assets/brand/exports/litgrok-ignition-1600.webp" width="100%" alt="LitGrok ignition apparatus" /><img src="assets/brand/exports/litgrok-continuity-1600.webp" width="100%" alt="LitGrok continuity apparatus" /></td>
-</tr>
+<tr><td><strong>LitClaude</strong><br /><img src="assets/brand/exports/litclaude-ignition-1600.webp" width="100%" alt="LitClaude ignition apparatus" /><img src="assets/brand/exports/litclaude-continuity-1600.webp" width="100%" alt="LitClaude continuity apparatus" /></td>
+<td><strong>LitHermes</strong><br /><img src="assets/brand/exports/lithermes-ignition-1600.webp" width="100%" alt="LitHermes ignition apparatus" /><img src="assets/brand/exports/lithermes-continuity-1600.webp" width="100%" alt="LitHermes continuity apparatus" /></td></tr>
+<tr><td><strong>LitCodex</strong><br /><img src="assets/brand/exports/litcodex-ignition-1600.webp" width="100%" alt="LitCodex ignition apparatus" /><img src="assets/brand/exports/litcodex-continuity-1600.webp" width="100%" alt="LitCodex continuity apparatus" /></td>
+<td><strong>LitOpenCode</strong><br /><img src="assets/brand/exports/litopencode-ignition-1600.webp" width="100%" alt="LitOpenCode ignition apparatus" /><img src="assets/brand/exports/litopencode-continuity-1600.webp" width="100%" alt="LitOpenCode continuity apparatus" /></td></tr>
+<tr><td><strong>LitGrok</strong><br /><img src="assets/brand/exports/litgrok-ignition-1600.webp" width="100%" alt="LitGrok ignition apparatus" /><img src="assets/brand/exports/litgrok-continuity-1600.webp" width="100%" alt="LitGrok continuity apparatus" /></td>
+<td><strong>LitMuse</strong><br /><img src="assets/brand/exports/litmuse-ignition-1600.webp" width="100%" alt="LitMuse ignition apparatus" /><img src="assets/brand/exports/litmuse-continuity-1600.webp" width="100%" alt="LitMuse continuity apparatus" /></td></tr>
+<tr><td><strong>LitGravity</strong><br /><img src="assets/brand/exports/litgravity-ignition-1600.webp" width="100%" alt="LitGravity ignition apparatus" /><img src="assets/brand/exports/litgravity-continuity-1600.webp" width="100%" alt="LitGravity continuity apparatus" /></td></tr>
 </table>
 
 ## LITFAMILY
 
-![Five armored machines representing Claude, Hermes, Codex, OpenCode, and Grok](docs/assets/litfamily-machines.png)
+![Seven armored machines representing Claude, Hermes, Codex, OpenCode, Grok, Muse, and Gravity](docs/assets/litfamily-machines.png)
 
-Claude, Hermes, Codex, OpenCode, and Grok, pictured as five armored machines. Choose the product for the tool you use. This is an editorial illustration of the family, not a screenshot of the software.
+Claude, Hermes, Codex, OpenCode, Grok, Muse, and Gravity, pictured as seven armored machines. Choose the product for the tool you use. This is an editorial illustration of the family, not a screenshot of the software.
 
 ## See the mark
 

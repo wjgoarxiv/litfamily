@@ -4,7 +4,7 @@ This page records the pinned marketplace sources. The pinned commits are the rel
 
 ## Claude Code
 
-The hub's [marketplace manifest](../.claude-plugin/marketplace.json) contains one plugin: `litclaude`. Only LitClaude targets Claude Code. The other four products are not entries in this marketplace.
+The hub's [marketplace manifest](../.claude-plugin/marketplace.json) contains one plugin: `litclaude`. Only LitClaude targets Claude Code. The other six products are not entries in this marketplace.
 
 The source is the `plugins/litclaude` subdirectory of `https://github.com/wjgoarxiv/litclaude.git`. Claude's documented source type for a repository subdirectory is `git-subdir`, with `url` and `path`. A `github` source points at a repository root and has no documented `path` field. This distinction matters because LitClaude's real plugin manifest is `plugins/litclaude/.claude-plugin/plugin.json`.
 
@@ -31,4 +31,4 @@ Use the [LitCodex repository](https://github.com/wjgoarxiv/litcodex/tree/004895a
 
 ## Other harnesses
 
-LitHermes uses its Hermes installer and Python plugin registration. LitOpenCode uses its OpenCode plugin and config path. LitGrok uses documented Grok Build skills/rules and its installer. Choose the matching product from the [family README](../README.md); no product requires this hub or another product at runtime.
+LitHermes uses its Hermes installer and Python plugin registration. LitOpenCode uses its OpenCode plugin and config path. LitGrok uses documented Grok Build skills/rules and its installer. LitMuse uses Muse Code plugin registration with explicit hook and agent approvals. LitGravity uses an Antigravity CLI (`agy`) plugin, validated by `agy plugin validate`; its repository is `wjgoarxiv/litgravity`. Both first releases are pending. Choose the matching product from the [family README](../README.md); no product requires this hub or another product at runtime.

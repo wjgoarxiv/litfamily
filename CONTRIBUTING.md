@@ -1,6 +1,6 @@
 # Contributing
 
-LitFamily is a discovery and distribution hub for five independent products. Changes to a harness implementation belong in that product repository. A working change in one product does not establish compatibility in another.
+LitFamily is a discovery and distribution hub for seven independent products. Changes to a harness implementation belong in that product repository. A working change in one product does not establish compatibility in another.
 
 For a hub change, explain the reader-visible problem, keep the diff limited to the relevant documentation, manifest, catalog or artwork, and run:
 

@@ -8,10 +8,15 @@ import { documentReferences, localTarget, validateMarketplace, validateHashes, v
 
 test('the distributed hub closes links, source identity and asset hashes', async () => {
   const result = await verify();
-  assert.equal(result.inventory, 252);
-  assert.equal(result.nativeEntries, 200);
+  assert.equal(result.inventory, 330);
+  assert.equal(result.nativeEntries, 278);
   assert.equal(result.exports, 1);
   assert.equal(result.exportFiles, 72);
+});
+
+test('the catalog attributes all seven products to their own hosts', async () => {
+  const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
+  assert.deepEqual(inventory.products.map(product => product.id).sort(), ['claude', 'codex', 'gravity', 'grok', 'hermes', 'muse', 'opencode']);
 });
 
 test('the standalone Grok export pins the LitGrok humanizer release commit', async () => {
@@ -53,7 +58,7 @@ test('the hub binds the release commits', async () => {
 test('the catalog lists the new skills at canonical vendor paths without the retired ones', async () => {
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   assert.ok(inventory.entries.every((entry) => !/(?:^|\/)vendor\/\d{3}_/u.test(entry.path)), 'Numbered vendor directory in the catalog');
-  for (const product of ['claude', 'hermes', 'codex', 'opencode', 'grok']) {
+  for (const product of ['claude', 'hermes', 'codex', 'opencode', 'grok', 'muse', 'gravity']) {
     const native = inventory.entries.filter((entry) => entry.product === product && entry.role === 'native-entry').map((entry) => entry.id);
     for (const id of ['lit-humanizer', 'lit-docx', 'lit-pptx', 'lit-diagram-drawer', 'lit-typographic-motion', 'readme-studio']) {
       assert.ok(native.includes(id), `${product} lacks ${id}`);
@@ -64,16 +69,18 @@ test('the catalog lists the new skills at canonical vendor paths without the ret
   assert.match(skills, /Grok `lit-scientific-visualization` links to `\.\.\/\.\.\/vendor\/scientific-visualization\/`/u);
 });
 
-test('both hub READMEs lead with the one robot motion cover and expose five emphasis choices', async () => {
+test('both hub READMEs lead with the one robot motion cover and expose seven emphasis choices', async () => {
   const expected = {
-    litclaude: '90c14b40d8c7ae774763ce4c3689edad6abf6697e7236cafec7987269cc5e5f4',
-    lithermes: 'c125a3ff2ebe1a62535bd159b9a8b277f72002a6bb95ea22015a4f8849a4e3ea',
-    litcodex: 'ca303edfd346c6c4756d14f269ec56799be1ae43b1c74593295026610b174e45',
-    litopencode: '00b045cf08c00ed3c2b5205645689a035be8f56540a289f9b9a9cad6a7ef9251',
-    litgrok: '0725bed298d34bd5221955fb856b10b4f996b595effc838c9e053954ac49eddd',
-  };
+  "litclaude": "116cd4eeb43b376b4502fc8f1768ea8dcc3252cdb5198e56ee8508d55170e75c",
+  "lithermes": "22cd11187b35caecb1ef125099502adc7045b40b40945452662a476f5c76cb3a",
+  "litcodex": "90099f77838a47c26ebd52fdec8c25a67071345a6c3b2bcbe7324d35d7ebb086",
+  "litopencode": "cd82a5abc42e6e7aff2b08184767372174ad644cad74e1681ab7784ee4a712b3",
+  "litgrok": "7a1eaf59b2292f1b879ab82d53bd645e5c2cafc83189ced49a84f946d83d58c0",
+  "litmuse": "93b900ec51a6f4fb822f7d6590cc1ff7901f0dde142996c38367ca0dd83893a7",
+  "litgravity": "c56c37cc87343632eaca21e4ab1e874522613c15b0435faf48d3b05e5ad8dcb3"
+};
   const armory = await readFile(new URL('../assets/brand/exports/litfamily-armory.webp', import.meta.url));
-  assert.equal(createHash('sha256').update(armory).digest('hex'), '5e6dcfdacd0c0e7ab2abe51e90bd86bfe03b3a311090d20de3552e65345fea45');
+  assert.equal(createHash('sha256').update(armory).digest('hex'), 'eaa94fe07f86deca1bafe7a5b89b64e93c775cc9989e31ea4853d5e1281c05f2');
   for (const name of ['README.md', 'README_ko-KR.md']) {
     const text = await readFile(new URL(`../${name}`, import.meta.url), 'utf8');
     assert.match(text, /^<p align="center"><picture><source media="\(prefers-reduced-motion: reduce\)" srcset="assets\/brand\/exports\/litfamily-cover-motion-still\.webp" \/><img src="assets\/brand\/exports\/litfamily-cover-motion\.webp"/u);
@@ -91,7 +98,7 @@ test('both hub READMEs lead with the one robot motion cover and expose five emph
     }
   }
   const manifest = JSON.parse(await readFile(new URL('../assets/brand/artifact-manifest.json', import.meta.url), 'utf8'));
-  for (const [slug, hash] of Object.entries({ litfamily: '5e6dcfdacd0c0e7ab2abe51e90bd86bfe03b3a311090d20de3552e65345fea45', ...expected })) {
+  for (const [slug, hash] of Object.entries({ litfamily: 'eaa94fe07f86deca1bafe7a5b89b64e93c775cc9989e31ea4853d5e1281c05f2', ...expected })) {
     const entry = manifest.find((item) => item.path === `exports/${slug === 'litfamily' ? 'litfamily-armory' : `${slug}-emphasis`}.webp`);
     assert.equal(entry?.sha256, hash, `${slug} manifest hash`);
   }
@@ -100,6 +107,8 @@ test('both hub READMEs lead with the one robot motion cover and expose five emph
 test('source provenance requires an immutable commit and a product-owned license hash', () => {
   const product = { id: 'grok', repository: 'https://github.com/wjgoarxiv/litgrok', sourceHistory: 'curated-public', sourceCommit: 'a'.repeat(40), sourceUrl: 'https://github.com/wjgoarxiv/litgrok/tree/' + 'a'.repeat(40), licensePath: 'licenses/grok-MIT.txt', licenseSha256: 'b'.repeat(64), licenseBytes: 100 };
   validateProductProvenance(product);
+  validateProductProvenance({ ...product, sourceHistory: 'local-candidate', releaseStatus: 'pending' });
+  assert.throws(() => validateProductProvenance({ ...product, sourceHistory: 'local-candidate' }));
   assert.throws(() => validateProductProvenance({ ...product, sourceCommit: 'main' }));
   assert.throws(() => validateProductProvenance({ ...product, sourceCommit: undefined }));
   assert.throws(() => validateProductProvenance({ ...product, licensePath: '../foreign/LICENSE' }));
@@ -147,5 +156,23 @@ test('README HTML assets and motion posters are enrolled in local link validatio
   assert.deepEqual(documentReferences("<video poster='poster.png'><source src='film.mp4'></video>"), ['poster.png', 'film.mp4']);
   for (const reference of documentReferences('<img src="../outside.svg"><a href="%2e%2e/private">escape</a>', true)) {
     assert.throws(() => localTarget('/bundle', '/bundle/README.md', reference));
+  }
+});
+
+test('new member installation and native registration remain host-specific', async () => {
+  for (const name of ['README.md', 'README_ko-KR.md']) {
+    const text = await readFile(new URL('../' + name, import.meta.url), 'utf8');
+    for (const id of ['muse', 'gravity']) {
+      assert(text.includes('@litfamily/lit' + id + '@0.1.0 install'));
+      assert(text.includes('https://www.npmjs.com/package/@litfamily/lit' + id));
+    }
+    assert(text.includes('Muse Code'));
+    assert(text.includes('Antigravity CLI'));
+    assert(text.includes('lit start plans/<slug>.md'));
+    assert(text.includes('Meta'));
+  }
+  const gallery = await readFile(new URL('../assets/brand/gallery.html', import.meta.url), 'utf8');
+  for (const id of ['muse', 'gravity']) {
+    for (const suffix of ['-cover.svg', '-cover.webp', '-icon.svg', '-social.png']) assert(gallery.includes(id + suffix));
   }
 });

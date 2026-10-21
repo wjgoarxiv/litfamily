@@ -61,13 +61,13 @@
   },
   {
     "path": "exports/family-cover.svg",
-    "bytes": 98278,
-    "sha256": "b0374ba38c90da17eb27b10c0716cefedd84b557d6ac371b1e8f4e07abc50d94"
+    "bytes": 93181,
+    "sha256": "3ae2d7ba52021905f76be365579aa18acc59ea830674701ffe6de494c287b2ac"
   },
   {
     "path": "exports/family-cover.webp",
-    "bytes": 41156,
-    "sha256": "6245ae7119943511a1b91b16d50490878eb2fcb506738da179e4a9a05d4e6664"
+    "bytes": 40958,
+    "sha256": "4dd4cd39d62272f07922466d6911b5a87f7d24ba3d26802b7e307ff63afc62ba"
   },
   {
     "path": "exports/family-icon-512.png",
@@ -86,13 +86,43 @@
   },
   {
     "path": "exports/family-poster.png",
-    "bytes": 64413,
-    "sha256": "17f15f784e7e935f8da8d19088975bf12ee9e3f910448d8d0bf40a93358a62cd"
+    "bytes": 64342,
+    "sha256": "971d757088870401be925053e7a6842a59f25b543123396e2199eb07503cdcfe"
   },
   {
     "path": "exports/family-social.png",
-    "bytes": 64413,
-    "sha256": "17f15f784e7e935f8da8d19088975bf12ee9e3f910448d8d0bf40a93358a62cd"
+    "bytes": 64342,
+    "sha256": "971d757088870401be925053e7a6842a59f25b543123396e2199eb07503cdcfe"
+  },
+  {
+    "path": "exports/gravity-cover.svg",
+    "bytes": 89523,
+    "sha256": "f2c9af9dd7212fda7ca7bef71228404f9af36c13097d37a7a659dec0bb08365c"
+  },
+  {
+    "path": "exports/gravity-cover.webp",
+    "bytes": 42934,
+    "sha256": "7882dac77493fd76b53391597b29bd8f74ce65fbd74c7a95b149c39f6183a7ee"
+  },
+  {
+    "path": "exports/gravity-icon-512.png",
+    "bytes": 10828,
+    "sha256": "cc5afde9049845fa4fc7a418025d67bac0fe2057a858c05b51e6cbd8e273bd37"
+  },
+  {
+    "path": "exports/gravity-icon-64.png",
+    "bytes": 1700,
+    "sha256": "10dd40861b790ceffc2b1ea92df3597b9fc0113bd97aee35a37bc470e7193c2f"
+  },
+  {
+    "path": "exports/gravity-icon.svg",
+    "bytes": 2096,
+    "sha256": "c91ee9d80dec80759be36a568dfa4054bddfd8f372a8b16e41d5169a7a5eff87"
+  },
+  {
+    "path": "exports/gravity-social.png",
+    "bytes": 65737,
+    "sha256": "17f8ad198f46f254607355abc1b2cb6cc13c57cec8720986e58efc37cb8148c2"
   },
   {
     "path": "exports/grok-cover.svg",
@@ -165,6 +195,11 @@
     "sha256": "b1579c89a677ab453765f77ae6361bd9730fabc4291a85071de7f373fc5ebfad"
   },
   {
+    "path": "exports/ignition-motion-still.webp",
+    "bytes": 73722,
+    "sha256": "ec4a7708e84881c6ae062ffa53311ec4a5a0776b9fc3024a499a9267b1bf05ec"
+  },
+  {
     "path": "exports/ignition-poster.png",
     "bytes": 49315,
     "sha256": "0fac2d0fc78d311710d1658968a45f8d9ff07ff73c6ca6f3ebc60bcb698d318f"
@@ -178,6 +213,161 @@
     "path": "exports/lit-wordmark.svg",
     "bytes": 1521,
     "sha256": "3016e2cbfa89fda5d75e4e38ae4a078d0fbefbe0b490862162cab8cebb243e3a"
+  },
+  {
+    "path": "exports/litclaude-continuity-1600.webp",
+    "bytes": 129456,
+    "sha256": "11d4b5681909053b18cd8b827f824f979864494b04a66aa86a3727568ef0634d"
+  },
+  {
+    "path": "exports/litclaude-emphasis.webp",
+    "bytes": 240612,
+    "sha256": "116cd4eeb43b376b4502fc8f1768ea8dcc3252cdb5198e56ee8508d55170e75c"
+  },
+  {
+    "path": "exports/litclaude-ignition-1600.webp",
+    "bytes": 98712,
+    "sha256": "f9d1c13de467a0c9e3c20e1344abe507ba001eb7211b6e5e4380cd2fbf82e159"
+  },
+  {
+    "path": "exports/litcodex-continuity-1600.webp",
+    "bytes": 110212,
+    "sha256": "b04a0e214c0fc0db660306613e644880c733e6ef95ac9c2f8b97b68f835cf6e1"
+  },
+  {
+    "path": "exports/litcodex-emphasis.webp",
+    "bytes": 240414,
+    "sha256": "90099f77838a47c26ebd52fdec8c25a67071345a6c3b2bcbe7324d35d7ebb086"
+  },
+  {
+    "path": "exports/litcodex-ignition-1600.webp",
+    "bytes": 119324,
+    "sha256": "bb16babda85268b2d35ff3e5cee147c12a89621b7f2a2a2cfd87593f9b7566f2"
+  },
+  {
+    "path": "exports/litfamily-armory.webp",
+    "bytes": 369324,
+    "sha256": "eaa94fe07f86deca1bafe7a5b89b64e93c775cc9989e31ea4853d5e1281c05f2"
+  },
+  {
+    "path": "exports/litfamily-cover-film.mp4",
+    "bytes": 4509355,
+    "sha256": "6355209b628af0a60b4c1473b65710d52e1e460664bfe384f28e47b61e64fa49"
+  },
+  {
+    "path": "exports/litfamily-cover-motion-still.webp",
+    "bytes": 182948,
+    "sha256": "d32f94529e8185856566c51b5469706c01502678774d4034825998779ed820b6"
+  },
+  {
+    "path": "exports/litfamily-cover-motion.webp",
+    "bytes": 1944710,
+    "sha256": "7d3ee77da99482c36b9ae501ce4de48ce6892956442d1f886b75e552a997bbbd"
+  },
+  {
+    "path": "exports/litgravity-continuity-1600.webp",
+    "bytes": 178390,
+    "sha256": "9423785f0c27f82059db6903a337fae72e2962dc919c71d8aaa6e262e3a1f0a0"
+  },
+  {
+    "path": "exports/litgravity-emphasis.webp",
+    "bytes": 244778,
+    "sha256": "c56c37cc87343632eaca21e4ab1e874522613c15b0435faf48d3b05e5ad8dcb3"
+  },
+  {
+    "path": "exports/litgravity-ignition-1600.webp",
+    "bytes": 147248,
+    "sha256": "de2f3425f976ed9347f694d298b677b7f717def81a3b06e560c4f81197e9c00b"
+  },
+  {
+    "path": "exports/litgrok-continuity-1600.webp",
+    "bytes": 95564,
+    "sha256": "3b0c4b77d885c3f06da9abf3c6ace26a8872d258054cd446fe6ff35b6956bd12"
+  },
+  {
+    "path": "exports/litgrok-emphasis.webp",
+    "bytes": 240028,
+    "sha256": "7a1eaf59b2292f1b879ab82d53bd645e5c2cafc83189ced49a84f946d83d58c0"
+  },
+  {
+    "path": "exports/litgrok-ignition-1600.webp",
+    "bytes": 86494,
+    "sha256": "02e3788f03ed09c98d4a8b28323f83b9fcc8c11400b14653327a15d1838a1e13"
+  },
+  {
+    "path": "exports/lithermes-continuity-1600.webp",
+    "bytes": 112870,
+    "sha256": "bb7ea94c920ddf3e292e414fa8ceda0fdf3b3eab865c08713eac2896b4a4e8b4"
+  },
+  {
+    "path": "exports/lithermes-emphasis.webp",
+    "bytes": 234812,
+    "sha256": "22cd11187b35caecb1ef125099502adc7045b40b40945452662a476f5c76cb3a"
+  },
+  {
+    "path": "exports/lithermes-ignition-1600.webp",
+    "bytes": 73324,
+    "sha256": "2bdb8a91c1db255e6e9f0014935545d6f5c82c2233c67fdf4a2026ec42eb787a"
+  },
+  {
+    "path": "exports/litmuse-continuity-1600.webp",
+    "bytes": 111080,
+    "sha256": "315bede35d25f29191507c3aa5655ae9655dfd871f92096c35dd1ea98a651e37"
+  },
+  {
+    "path": "exports/litmuse-emphasis.webp",
+    "bytes": 244736,
+    "sha256": "93b900ec51a6f4fb822f7d6590cc1ff7901f0dde142996c38367ca0dd83893a7"
+  },
+  {
+    "path": "exports/litmuse-ignition-1600.webp",
+    "bytes": 136490,
+    "sha256": "a516a29bcd15c40b2e72e5bbecc3e07726a43f0a77f739dcc9931ba2ecc6fa1f"
+  },
+  {
+    "path": "exports/litopencode-continuity-1600.webp",
+    "bytes": 138668,
+    "sha256": "143726b005062b9941d2b86ea2835d2b57025ae284e236dbd638acf389c9b23b"
+  },
+  {
+    "path": "exports/litopencode-emphasis.webp",
+    "bytes": 239994,
+    "sha256": "cd82a5abc42e6e7aff2b08184767372174ad644cad74e1681ab7784ee4a712b3"
+  },
+  {
+    "path": "exports/litopencode-ignition-1600.webp",
+    "bytes": 105048,
+    "sha256": "412d3404171eb3c63dd8832c6abccd325e9b415a2c7276a5d5d801ffc91c24b3"
+  },
+  {
+    "path": "exports/muse-cover.svg",
+    "bytes": 89106,
+    "sha256": "5da67a8918ad82880c54f84eec179e4343839020cf7aa1be2d1fa1c00cc1ccbf"
+  },
+  {
+    "path": "exports/muse-cover.webp",
+    "bytes": 38518,
+    "sha256": "a38e01d311fae7404101e1c70c7b91f770f017c3e8a85672dac4e1a657561e33"
+  },
+  {
+    "path": "exports/muse-icon-512.png",
+    "bytes": 10757,
+    "sha256": "806a03fed8fd876ceff9bda6e8f15243e801d4996f6935cb88e0d3afb090741f"
+  },
+  {
+    "path": "exports/muse-icon-64.png",
+    "bytes": 1705,
+    "sha256": "836b4344840ef2e415a3a8b7cce205d1635d759dbb8e1c3362799c9961874fa8"
+  },
+  {
+    "path": "exports/muse-icon.svg",
+    "bytes": 2138,
+    "sha256": "ff0ef8cfe8aaea83ef1d52d0fa8403e9a54c3379f2f10b9970a139b069731bcb"
+  },
+  {
+    "path": "exports/muse-social.png",
+    "bytes": 60174,
+    "sha256": "d37e5081f93203d5c0d94fbb871041f66d77f9162b1f22b6a4bdee4c3d3f96cb"
   },
   {
     "path": "exports/opencode-cover.svg",
@@ -222,7 +412,7 @@
   {
     "path": "readme/badge-family.svg",
     "bytes": 617,
-    "sha256": "2c829a6e7778437af661b6eca6290971f89abd05b3508a0f080ed29f2a052236"
+    "sha256": "3b6df65ec28784d5fedca444507f1fb99785d2d8407b92c4142324df9374feeb"
   },
   {
     "path": "readme/badge-license.svg",
@@ -248,50 +438,5 @@
     "path": "readme/lucide-shield-check.svg",
     "bytes": 410,
     "sha256": "aefbe606a9d7cf919208bbd64dfd453b83364f020585be43f32ba162fda4115c"
-  },
-  {
-    "path": "exports/litfamily-armory.webp",
-    "bytes": 1814926,
-    "sha256": "5e6dcfdacd0c0e7ab2abe51e90bd86bfe03b3a311090d20de3552e65345fea45"
-  },
-  {
-    "path": "exports/litclaude-emphasis.webp",
-    "bytes": 1237040,
-    "sha256": "90c14b40d8c7ae774763ce4c3689edad6abf6697e7236cafec7987269cc5e5f4"
-  },
-  {
-    "path": "exports/lithermes-emphasis.webp",
-    "bytes": 1236060,
-    "sha256": "c125a3ff2ebe1a62535bd159b9a8b277f72002a6bb95ea22015a4f8849a4e3ea"
-  },
-  {
-    "path": "exports/litcodex-emphasis.webp",
-    "bytes": 1239636,
-    "sha256": "ca303edfd346c6c4756d14f269ec56799be1ae43b1c74593295026610b174e45"
-  },
-  {
-    "path": "exports/litopencode-emphasis.webp",
-    "bytes": 1237784,
-    "sha256": "00b045cf08c00ed3c2b5205645689a035be8f56540a289f9b9a9cad6a7ef9251"
-  },
-  {
-    "path": "exports/litgrok-emphasis.webp",
-    "bytes": 1251464,
-    "sha256": "0725bed298d34bd5221955fb856b10b4f996b595effc838c9e053954ac49eddd"
-  },
-  {
-    "path": "exports/litfamily-cover-motion.webp",
-    "bytes": 2321686,
-    "sha256": "11f781597d45e16d35aff265454f123c2e3ba895625c2538c7d964363253a291"
-  },
-  {
-    "path": "exports/litfamily-cover-motion-still.webp",
-    "bytes": 193574,
-    "sha256": "c4bfdc868f65bc265cd7bc350bc57031d21d7e77b3c7785b6c482401fb836d26"
-  },
-  {
-    "path": "exports/litfamily-cover-film.mp4",
-    "bytes": 4552714,
-    "sha256": "da073e7cd0acd5570d1a12728a959a91550bac53d0e043747a2670b3b3377300"
   }
 ]

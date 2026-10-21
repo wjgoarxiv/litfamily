@@ -77,7 +77,8 @@ export async function validateSkillExports(base, exports) {
 
 export function validateProductProvenance(product) {
   assert.match(product.sourceCommit, /^[a-f0-9]{40}$/, 'Source must identify a full immutable commit');
-  assert.equal(product.sourceHistory, 'curated-public');
+  if (product.sourceHistory === 'local-candidate') assert.equal(product.releaseStatus, 'pending');
+  else assert.equal(product.sourceHistory, 'curated-public');
   assert.equal(product.repository, `https://github.com/wjgoarxiv/lit${product.id}`);
   assert.equal(product.sourceUrl, `${product.repository}/tree/${product.sourceCommit}`);
   assert.equal(product.licensePath, `licenses/${product.id}-MIT.txt`);
@@ -108,9 +109,9 @@ export async function verify(base = root) {
   const json = async (name) => JSON.parse(await readFile(path.join(base, name), 'utf8'));
   const inventory = await json('docs/skill-inventory.json');
   assert.equal(inventory.schema, 'litfamily.skill-inventory/v1');
-  assert.equal(inventory.products.length, 5);
+  assert.equal(inventory.products.length, 7);
   const products = new Set(inventory.products.map((product) => product.id));
-  assert.deepEqual([...products].sort(), ['claude', 'codex', 'grok', 'hermes', 'opencode']);
+  assert.deepEqual([...products].sort(), ['claude', 'codex', 'gravity', 'grok', 'hermes', 'muse', 'opencode']);
   validateMarketplace(await json('.claude-plugin/marketplace.json'), inventory.products.find((product) => product.id === 'claude').sourceCommit);
   for (const product of inventory.products) {
     validateProductProvenance(product);
