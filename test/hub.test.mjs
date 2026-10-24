@@ -33,8 +33,8 @@ test('the standalone Grok export pins the LitGrok humanizer final public release
 test('the hub binds the round-26 final public release commits', async () => {
   const release = {
   "claude": {
-    "version": "1.0.36",
-    "sourceCommit": "43c0e5d13d134ff699590eb46c78b4fda3640bfa",
+    "version": "1.0.37",
+    "sourceCommit": "370c9ea6f974b347a9bd386facdfc84095d44cd5",
     "repository": "https://github.com/wjgoarxiv/litclaude",
     "name": "LitClaude"
   },
@@ -88,7 +88,7 @@ test('the hub binds the round-26 final public release commits', async () => {
   assert.equal(marketplace.plugins[0].source.sha, release.claude.sourceCommit);
   const status = await readFile(new URL('../docs/release-status.md', import.meta.url), 'utf8');
   for (const expected of Object.values(release)) {
-    const row = status.split('\n').find((line) => line.startsWith(`| ${expected.name} | ${expected.version} | pending publication |`));
+    const row = status.split('\n').find((line) => line.startsWith(`| ${expected.name} | ${expected.version} | published |`));
     assert(row && row.includes(expected.sourceCommit), `Missing release row for ${expected.name}`);
   }
 });
@@ -215,14 +215,14 @@ test('new member installation and native registration remain host-specific', asy
   }
 });
 
-test('all install routes pin the pending round-26 targets', async () => {
-  const expected = { claude: '1.0.36', hermes: '1.0.28', codex: '1.0.29', opencode: '1.0.30', grok: '1.0.25', muse: '0.1.0', gravity: '0.1.0' };
+test('all install routes pin the released round-26 versions', async () => {
+  const expected = { claude: '1.0.37', hermes: '1.0.28', codex: '1.0.29', opencode: '1.0.30', grok: '1.0.25', muse: '0.1.0', gravity: '0.1.0' };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
-  assert.equal(inventory.state, 'pending-release');
+  assert.equal(inventory.state, 'released');
   for (const product of inventory.products) {
     assert.equal(product.version, expected[product.id]);
     assert.equal(product.sourceHistory, 'curated-public');
-    assert.equal(product.releaseStatus, 'pending');
+    assert.equal(product.releaseStatus, undefined);
   }
   for (const name of ['README.md', 'README_ko-KR.md', 'assets/brand/gallery.html']) {
     const text = await readFile(new URL('../' + name, import.meta.url), 'utf8');

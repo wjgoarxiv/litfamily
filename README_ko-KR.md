@@ -23,7 +23,7 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 
 | 쓰는 에이전트 | 제품 | 설치 명령 |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.36 -- litclaude install --yes` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.37 -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.28 -- lithermes install --yes --no-style` |
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.29 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.30 -- litopencode install` |
@@ -67,7 +67,7 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 - **Antigravity CLI (`agy`)** — [LitGravity](https://github.com/wjgoarxiv/litgravity): `doctor`로 확인한 뒤 프로젝트에서 `lit`으로 요청. 승인한 계획은 `lit start plans/<slug>.md`로 실행.
 
 > [!NOTE]
-> **출시 준비 중입니다.** LitMuse·LitGravity 0.1.0 첫 출시를 포함한 일곱 제품의 round-26 공개 대기 상태는 [출시 상태](docs/release-status.md)에 있습니다. 새 버전 설치 명령은 npm 공개 후 사용할 수 있습니다.
+> **npm에 출시했습니다.** LitMuse·LitGravity 0.1.0 첫 출시를 포함해 일곱 제품 모두 npm `@litfamily` 스코프로 배포되어 있습니다. 버전과 출시 커밋은 [출시 상태](docs/release-status.md)에 있습니다.
 
 같은 명령은 각 npm 페이지에서도 볼 수 있습니다: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok) · [`@litfamily/litmuse`](https://www.npmjs.com/package/@litfamily/litmuse) · [`@litfamily/litgravity`](https://www.npmjs.com/package/@litfamily/litgravity). 허브에는 공통 설치기가 없습니다. 호스트 설정, 로그인, 설치 중 선택 항목과 제거 방법은 제품마다 다릅니다.
 
@@ -196,8 +196,8 @@ flowchart TB
 <tr><td><a href="https://github.com/wjgoarxiv/litcodex"><img src="assets/brand/exports/litcodex-emphasis.webp" width="180" alt="LitCodex 강조 표지" /></a><br /><strong>LitCodex</strong><br />npm 배포</td>
 <td><a href="https://github.com/wjgoarxiv/litopencode"><img src="assets/brand/exports/litopencode-emphasis.webp" width="180" alt="LitOpenCode 강조 표지" /></a><br /><strong>LitOpenCode</strong><br />npm 배포</td></tr>
 <tr><td><a href="https://github.com/wjgoarxiv/litgrok"><img src="assets/brand/exports/litgrok-emphasis.webp" width="180" alt="LitGrok 강조 표지" /></a><br /><strong>LitGrok</strong><br />npm 배포</td>
-<td><a href="https://github.com/wjgoarxiv/litmuse"><img src="assets/brand/exports/litmuse-emphasis.webp" width="180" alt="LitMuse 강조 표지" /></a><br /><strong>LitMuse</strong><br />출시 대기</td></tr>
-<tr><td><a href="https://github.com/wjgoarxiv/litgravity"><img src="assets/brand/exports/litgravity-emphasis.webp" width="180" alt="LitGravity 강조 표지" /></a><br /><strong>LitGravity</strong><br />출시 대기</td></tr>
+<td><a href="https://github.com/wjgoarxiv/litmuse"><img src="assets/brand/exports/litmuse-emphasis.webp" width="180" alt="LitMuse 강조 표지" /></a><br /><strong>LitMuse</strong><br />npm 배포</td></tr>
+<tr><td><a href="https://github.com/wjgoarxiv/litgravity"><img src="assets/brand/exports/litgravity-emphasis.webp" width="180" alt="LitGravity 강조 표지" /></a><br /><strong>LitGravity</strong><br />npm 배포</td></tr>
 </table>
 
 [![Ignition 모션 포스터](assets/brand/exports/ignition-poster.png)](assets/brand/exports/ignition-film.mp4)

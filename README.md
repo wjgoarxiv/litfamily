@@ -23,7 +23,7 @@ Each product is its own npm package, written for one agent. Find the agent you a
 
 | Your agent | Product | Install command |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.36 -- litclaude install --yes` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.37 -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.28 -- lithermes install --yes --no-style` |
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.29 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.30 -- litopencode install` |
@@ -67,7 +67,7 @@ Choose one of the two routes for LitClaude and stay with it, so the same plugin 
 - **Antigravity CLI (`agy`)** — [LitGravity](https://github.com/wjgoarxiv/litgravity): Run its `doctor`, then start with `lit` in your project. Execute an approved plan with `lit start plans/<slug>.md`.
 
 > [!NOTE]
-> **Release preparation.** [Release status](docs/release-status.md) lists the seven pending round-26 target versions, including the LitMuse and LitGravity 0.1.0 first releases. These install lines become usable after npm publication.
+> **Released on npm.** All seven products are published under the `@litfamily` npm scope, including the LitMuse and LitGravity 0.1.0 first releases. The versions and release commits are listed in [release status](docs/release-status.md).
 
 The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok) · [`@litfamily/litmuse`](https://www.npmjs.com/package/@litfamily/litmuse) · [`@litfamily/litgravity`](https://www.npmjs.com/package/@litfamily/litgravity). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
 
@@ -196,8 +196,8 @@ These are seven independent alternatives to install. Products do not share a run
 <tr><td><a href="https://github.com/wjgoarxiv/litcodex"><img src="assets/brand/exports/litcodex-emphasis.webp" width="180" alt="LitCodex emphasis cover" /></a><br /><strong>LitCodex</strong><br />on npm</td>
 <td><a href="https://github.com/wjgoarxiv/litopencode"><img src="assets/brand/exports/litopencode-emphasis.webp" width="180" alt="LitOpenCode emphasis cover" /></a><br /><strong>LitOpenCode</strong><br />on npm</td></tr>
 <tr><td><a href="https://github.com/wjgoarxiv/litgrok"><img src="assets/brand/exports/litgrok-emphasis.webp" width="180" alt="LitGrok emphasis cover" /></a><br /><strong>LitGrok</strong><br />on npm</td>
-<td><a href="https://github.com/wjgoarxiv/litmuse"><img src="assets/brand/exports/litmuse-emphasis.webp" width="180" alt="LitMuse emphasis cover" /></a><br /><strong>LitMuse</strong><br />release pending</td></tr>
-<tr><td><a href="https://github.com/wjgoarxiv/litgravity"><img src="assets/brand/exports/litgravity-emphasis.webp" width="180" alt="LitGravity emphasis cover" /></a><br /><strong>LitGravity</strong><br />release pending</td></tr>
+<td><a href="https://github.com/wjgoarxiv/litmuse"><img src="assets/brand/exports/litmuse-emphasis.webp" width="180" alt="LitMuse emphasis cover" /></a><br /><strong>LitMuse</strong><br />on npm</td></tr>
+<tr><td><a href="https://github.com/wjgoarxiv/litgravity"><img src="assets/brand/exports/litgravity-emphasis.webp" width="180" alt="LitGravity emphasis cover" /></a><br /><strong>LitGravity</strong><br />on npm</td></tr>
 </table>
 
 [![Ignition motion poster](assets/brand/exports/ignition-poster.png)](assets/brand/exports/ignition-film.mp4)
