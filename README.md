@@ -30,7 +30,7 @@ Each product is its own npm package, written for one agent. Find the agent you a
 
 | Your agent | Product | Install command |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.39 -- litclaude install --yes` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.40 -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.29 -- lithermes install --yes --no-style` |
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.30 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.31 -- litopencode install` |
@@ -80,16 +80,16 @@ The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.
 
 ## What you can make
 
-Every picture in this section is a real output of LitClaude 1.0.39, the Claude Code product. Where a prompt sits under a picture, that request produced it in a Claude Code session (long ones are cut short with …); where none does, the skill's own engine made it from the example the skill ships with. None of them is a mock-up.
+Every picture in this section is a real output of LitClaude 1.0.40, the Claude Code product. Where a prompt sits under a picture, that request produced it in a Claude Code session (long ones are cut short with …); where none does, the skill's own engine made it from the example the skill ships with. None of them is a mock-up.
 
-What you can reproduce depends on your product today. Most of these skills ship in all seven products, and each port runs them in its own harness. Three skills and the fuller default look are in LitClaude 1.0.39 only, and the other six products are porting them now:
+What you can reproduce depends on your product today. Most of these skills ship in all seven products, and each port runs them in its own harness. Three skills and the fuller default look are in LitClaude 1.0.40 only, and the other six products are porting them now:
 
 | What | Where it ships today |
 |---|---|
 | `lit-diagram-drawer`, `lit-scientific-visualization`, `lit-pptx`, `lit-docx`, `frontend-ui-ux`, `lit-typographic-motion`, `readme-studio` | All seven products |
-| `lit-schematic` (P&IDs, apparatus figures, cutaways), `lit-adhd`, `lit-hijack` | LitClaude 1.0.39; the other six are porting them |
-| The fuller default look these pictures show (dense layouts, several accent colours, a signature detail) | LitClaude 1.0.39; the other six are porting it |
-| The LIT card with thread rows | LitClaude 1.0.39, in Claude Code's status line |
+| `lit-schematic` (P&IDs, apparatus figures, cutaways), `lit-adhd`, `lit-hijack` | LitClaude 1.0.40; the other six are porting them |
+| The fuller default look these pictures show (dense layouts, several accent colours, a signature detail) | LitClaude 1.0.40; the other six are porting it |
+| The LIT card with thread rows | LitClaude 1.0.40, in Claude Code's status line |
 
 ### Draw it
 
@@ -229,7 +229,7 @@ For a problem, follow [Support](SUPPORT.md): include the product and host versio
 
 ### Documentation
 
-Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. LitClaude 1.0.39 adds three skills of its own: `lit-adhd` (or `lit-rewind`) reads your recent sessions and tells you where each one stands and what to do next, `lit-hijack` brings a technique you read about into one of your own skills, and `lit-schematic` draws P&IDs, apparatus figures and cutaways. A matching skill name does not make it portable between hosts.
+Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. LitClaude 1.0.40 adds three skills of its own: `lit-adhd` (or `lit-rewind`) reads your recent sessions and tells you where each one stands and what to do next, `lit-hijack` brings a technique you read about into one of your own skills, and `lit-schematic` draws P&IDs, apparatus figures and cutaways. A matching skill name does not make it portable between hosts.
 
 The seven product READMEs above explain the actual installation paths, entry points, permissions, optional tools, and limitations. This hub helps you find them; it does not add a shared runtime.
 

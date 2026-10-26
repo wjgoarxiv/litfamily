@@ -30,7 +30,7 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 
 | 쓰는 에이전트 | 제품 | 설치 명령 |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.39 -- litclaude install --yes` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.40 -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.29 -- lithermes install --yes --no-style` |
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.30 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.31 -- litopencode install` |
@@ -80,16 +80,16 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 
 ## 이런 걸 만들 수 있어요
 
-이 절의 그림은 모두 Claude Code용 제품인 LitClaude 1.0.39이 실제로 만든 결과입니다. 그림 밑에 프롬프트가 있으면 Claude Code 세션에서 그 요청으로 만든 것이고(긴 요청은 …로 줄였습니다), 없으면 스킬의 엔진이 스킬에 함께 들어 있는 예시로 만든 것입니다. 꾸며 낸 시안은 하나도 없습니다.
+이 절의 그림은 모두 Claude Code용 제품인 LitClaude 1.0.40이 실제로 만든 결과입니다. 그림 밑에 프롬프트가 있으면 Claude Code 세션에서 그 요청으로 만든 것이고(긴 요청은 …로 줄였습니다), 없으면 스킬의 엔진이 스킬에 함께 들어 있는 예시로 만든 것입니다. 꾸며 낸 시안은 하나도 없습니다.
 
-지금 똑같이 만들 수 있는지는 쓰는 제품에 따라 다릅니다. 대부분의 스킬은 일곱 제품 모두에 들어 있고, 제품마다 자기 하네스에서 돌립니다. 스킬 세 개와 더 꽉 찬 기본 스타일은 아직 LitClaude 1.0.39에만 있고, 나머지 여섯 제품이 지금 옮겨 오는 중입니다.
+지금 똑같이 만들 수 있는지는 쓰는 제품에 따라 다릅니다. 대부분의 스킬은 일곱 제품 모두에 들어 있고, 제품마다 자기 하네스에서 돌립니다. 스킬 세 개와 더 꽉 찬 기본 스타일은 아직 LitClaude 1.0.40에만 있고, 나머지 여섯 제품이 지금 옮겨 오는 중입니다.
 
 | 무엇 | 지금 들어 있는 곳 |
 |---|---|
 | `lit-diagram-drawer`, `lit-scientific-visualization`, `lit-pptx`, `lit-docx`, `frontend-ui-ux`, `lit-typographic-motion`, `readme-studio` | 일곱 제품 모두 |
-| `lit-schematic`(P&ID, 실험 장치도, 컷어웨이), `lit-adhd`, `lit-hijack` | LitClaude 1.0.39. 나머지 여섯 제품은 옮겨 오는 중 |
-| 이 그림들처럼 꽉 찬 기본 스타일(촘촘한 배치, 여러 강조색, 눈에 띄는 한 가지 장치) | LitClaude 1.0.39. 나머지 여섯 제품은 옮겨 오는 중 |
-| 스레드 줄이 보이는 LIT 카드 | LitClaude 1.0.39, Claude Code 상태 표시줄 |
+| `lit-schematic`(P&ID, 실험 장치도, 컷어웨이), `lit-adhd`, `lit-hijack` | LitClaude 1.0.40. 나머지 여섯 제품은 옮겨 오는 중 |
+| 이 그림들처럼 꽉 찬 기본 스타일(촘촘한 배치, 여러 강조색, 눈에 띄는 한 가지 장치) | LitClaude 1.0.40. 나머지 여섯 제품은 옮겨 오는 중 |
+| 스레드 줄이 보이는 LIT 카드 | LitClaude 1.0.40, Claude Code 상태 표시줄 |
 
 ### 그리기
 
@@ -229,7 +229,7 @@ Antigravity CLI에서는 승인한 계획을 `lit start plans/<slug>.md`로 실�
 
 ### 문서
 
-스킬 이름보다 하려는 작업을 먼저 고르세요. [전체 스킬 목록](docs/skills.md)에서 계획, 실행, 검토, 조사, 시각화, 영어와 한국어 문장 편집, Word와 PowerPoint 문서, 다이어그램, 짧은 영상, README 작성 기능과 각 호스트의 요구 사항을 살펴볼 수 있습니다. 이제 모든 제품에 `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion`, `readme-studio`가 들어 있습니다. `lit-pptx`와 `lit-docx`는 만들기 전에 누가 읽을 파일인지 따져 그 독자에게 맞는 모양을 발표자료 여덟 가지, 문서 여섯 가지 가운데서 고르고, 답에서 함께 어울릴 다른 두 가지도 알려 줍니다. LitClaude 1.0.39에는 이 제품에만 있는 스킬이 세 개 더 생겼습니다. `lit-adhd`(또는 `lit-rewind`)는 최근 세션들을 읽고 각각 어디까지 왔는지와 다음에 할 일을 알려 주고, `lit-hijack`은 읽고 탐난 기법을 내 스킬로 옮겨 오며, `lit-schematic`은 P&ID, 실험 장치 그림, 컷어웨이를 그립니다. 이름이 같은 스킬이라도 다른 호스트에서 그대로 쓸 수 있는 것은 아닙니다.
+스킬 이름보다 하려는 작업을 먼저 고르세요. [전체 스킬 목록](docs/skills.md)에서 계획, 실행, 검토, 조사, 시각화, 영어와 한국어 문장 편집, Word와 PowerPoint 문서, 다이어그램, 짧은 영상, README 작성 기능과 각 호스트의 요구 사항을 살펴볼 수 있습니다. 이제 모든 제품에 `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion`, `readme-studio`가 들어 있습니다. `lit-pptx`와 `lit-docx`는 만들기 전에 누가 읽을 파일인지 따져 그 독자에게 맞는 모양을 발표자료 여덟 가지, 문서 여섯 가지 가운데서 고르고, 답에서 함께 어울릴 다른 두 가지도 알려 줍니다. LitClaude 1.0.40에는 이 제품에만 있는 스킬이 세 개 더 생겼습니다. `lit-adhd`(또는 `lit-rewind`)는 최근 세션들을 읽고 각각 어디까지 왔는지와 다음에 할 일을 알려 주고, `lit-hijack`은 읽고 탐난 기법을 내 스킬로 옮겨 오며, `lit-schematic`은 P&ID, 실험 장치 그림, 컷어웨이를 그립니다. 이름이 같은 스킬이라도 다른 호스트에서 그대로 쓸 수 있는 것은 아닙니다.
 
 실제 설치 위치, 진입점, 권한, 선택 도구와 제약은 위 일곱 제품의 README에 있습니다. 이 허브에서 필요한 제품과 문서를 찾을 수 있습니다. 제품 사이에 공통 실행 환경을 추가하지는 않습니다.
 
