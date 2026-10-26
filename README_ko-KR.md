@@ -23,13 +23,13 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 
 | 쓰는 에이전트 | 제품 | 설치 명령 |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.37 -- litclaude install --yes` |
-| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.28 -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.29 -- litcodex install` |
-| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.30 -- litopencode install` |
-| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.25 -- litgrok install` |
-| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.0 install` |
-| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.0 install` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.38 -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.29 -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.30 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.31 -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.26 -- litgrok install` |
+| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.1 install` |
+| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.1 install` |
 
 npm이 함께 설치된 Node.js와 해당 에이전트가 있어야 합니다. LitCodex는 Node.js 22 이상, LitHermes는 18 이상이 필요합니다. 설치 프로그램이 무엇을 바꾸는지, 설치 중에 무엇을 묻는지, 바뀔 내용을 미리 보는 방법과 제거하는 방법은 각 제품 README에 정리되어 있습니다.
 
@@ -74,7 +74,7 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 ## 실제 화면
 
 <!-- demo-gif -->
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/6171a250e22e98eca3e65d368d6be79d5297094f/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/6171a250e22e98eca3e65d368d6be79d5297094f/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="세 가지 요청이 보이는 Codex 터미널 창. &quot;lit add input validation to the signup form&quot; 다음에 &quot;Hook ·&quot;, 다섯 줄짜리 LIT 마크와 &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;가 나옵니다. &quot;handoff&quot; 다음에는 같은 마크와 &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;가, &quot;lit recap&quot; 다음에는 마크와 &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;가 나옵니다." /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/f7107e147185af19cb020de6a1051aa9fbfdd8c4/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/f7107e147185af19cb020de6a1051aa9fbfdd8c4/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="세 가지 요청이 보이는 Codex 터미널 창. &quot;lit add input validation to the signup form&quot; 다음에 &quot;Hook ·&quot;, 다섯 줄짜리 LIT 마크와 &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;가 나옵니다. &quot;handoff&quot; 다음에는 같은 마크와 &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;가, &quot;lit recap&quot; 다음에는 마크와 &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;가 나옵니다." /></picture></p>
 
 Codex CLI 세션에서 LitCodex가 동작하는 모습입니다. `lit`, `handoff`, `lit recap`으로 시작한 요청마다 LIT 마크와 그 요청을 맡은 작업 흐름의 이름이 함께 나오기 때문에, 지금 어떤 모드가 돌고 있는지 한눈에 알 수 있습니다. 다른 제품은 각 호스트에 맞는 방식으로 시작을 알리며, 제품별 화면은 각 README에서 볼 수 있습니다.
 
@@ -148,7 +148,7 @@ Antigravity CLI에서는 승인한 계획을 `lit start plans/<slug>.md`로 실�
 
 ### 문서
 
-스킬 이름보다 하려는 작업을 먼저 고르세요. [전체 스킬 목록](docs/skills.md)에서 계획, 실행, 검토, 조사, 시각화, 영어와 한국어 문장 편집, Word와 PowerPoint 문서, 다이어그램, 짧은 영상, README 작성 기능과 각 호스트의 요구 사항을 살펴볼 수 있습니다. 이제 모든 제품에 `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion`, `readme-studio`가 들어 있습니다. `lit-pptx`와 `lit-docx`는 만들기 전에 누가 읽을 파일인지 따져 그 독자에게 맞는 모양을 발표자료 여덟 가지, 문서 여섯 가지 가운데서 고르고, 답에서 함께 어울릴 다른 두 가지도 알려 줍니다. 이름이 같은 스킬이라도 다른 호스트에서 그대로 쓸 수 있는 것은 아닙니다.
+스킬 이름보다 하려는 작업을 먼저 고르세요. [전체 스킬 목록](docs/skills.md)에서 계획, 실행, 검토, 조사, 시각화, 영어와 한국어 문장 편집, Word와 PowerPoint 문서, 다이어그램, 짧은 영상, README 작성 기능과 각 호스트의 요구 사항을 살펴볼 수 있습니다. 이제 모든 제품에 `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion`, `readme-studio`가 들어 있습니다. `lit-pptx`와 `lit-docx`는 만들기 전에 누가 읽을 파일인지 따져 그 독자에게 맞는 모양을 발표자료 여덟 가지, 문서 여섯 가지 가운데서 고르고, 답에서 함께 어울릴 다른 두 가지도 알려 줍니다. LitClaude 1.0.38에는 이 제품에만 있는 스킬이 세 개 더 생겼습니다. `lit-adhd`(또는 `lit-rewind`)는 최근 세션들을 읽고 각각 어디까지 왔는지와 다음에 할 일을 알려 주고, `lit-hijack`은 읽고 탐난 기법을 내 스킬로 옮겨 오며, `lit-schematic`은 P&ID, 실험 장치 그림, 컷어웨이를 그립니다. 이름이 같은 스킬이라도 다른 호스트에서 그대로 쓸 수 있는 것은 아닙니다.
 
 실제 설치 위치, 진입점, 권한, 선택 도구와 제약은 위 일곱 제품의 README에 있습니다. 이 허브에서 필요한 제품과 문서를 찾을 수 있습니다. 제품 사이에 공통 실행 환경을 추가하지는 않습니다.
 

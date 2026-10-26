@@ -8,8 +8,8 @@ import { documentReferences, localTarget, validateMarketplace, validateHashes, v
 
 test('the distributed hub closes links, source identity and asset hashes', async () => {
   const result = await verify();
-  assert.equal(result.inventory, 335);
-  assert.equal(result.nativeEntries, 283);
+  assert.equal(result.inventory, 338);
+  assert.equal(result.nativeEntries, 286);
   assert.equal(result.exports, 1);
   assert.equal(result.exportFiles, 74);
 });
@@ -23,54 +23,54 @@ test('the standalone Grok export pins the LitGrok humanizer final public release
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   const entry = inventory.exports.find((item) => item.id === 'lit-humanizer');
   assert.equal(entry.product, 'grok');
-  assert.equal(entry.sourceVersion, '1.0.25');
-  assert.equal(entry.sourceCommit, '9c749c4ca446055471d534bdef9da120bee0ef59');
+  assert.equal(entry.sourceVersion, '1.0.26');
+  assert.equal(entry.sourceCommit, 'e827a6aa9f0348506e78ac9f1dc78f9c871ea455');
   assert.equal(entry.sourcePath, '.grok/skills/lit-humanizer');
   assert.equal(entry.destinationPath, 'skills/grok/lit-humanizer');
   assert.equal(entry.files.length, 74);
 });
 
-test('the hub binds the round-26 final public release commits', async () => {
+test('the hub binds the 2026-10-26 public release commits', async () => {
   const release = {
   "claude": {
-    "version": "1.0.37",
-    "sourceCommit": "370c9ea6f974b347a9bd386facdfc84095d44cd5",
+    "version": "1.0.38",
+    "sourceCommit": "933e1f220e070bfe21a26ad6e6cb662e27eb5b18",
     "repository": "https://github.com/wjgoarxiv/litclaude",
     "name": "LitClaude"
   },
   "hermes": {
-    "version": "1.0.28",
-    "sourceCommit": "7baecfc738e2a12b4f93d16d81305051236c2deb",
+    "version": "1.0.29",
+    "sourceCommit": "3c05d629dbd27fd278d745c3f61083e7351ad5f6",
     "repository": "https://github.com/wjgoarxiv/lithermes",
     "name": "LitHermes"
   },
   "codex": {
-    "version": "1.0.29",
-    "sourceCommit": "6171a250e22e98eca3e65d368d6be79d5297094f",
+    "version": "1.0.30",
+    "sourceCommit": "f7107e147185af19cb020de6a1051aa9fbfdd8c4",
     "repository": "https://github.com/wjgoarxiv/litcodex",
     "name": "LitCodex"
   },
   "opencode": {
-    "version": "1.0.30",
-    "sourceCommit": "fb534620d791949641c7df40883b0687d7b039fe",
+    "version": "1.0.31",
+    "sourceCommit": "1dd58f44bba8dd4f613188b553a50a17e838400b",
     "repository": "https://github.com/wjgoarxiv/litopencode",
     "name": "LitOpenCode"
   },
   "grok": {
-    "version": "1.0.25",
-    "sourceCommit": "9c749c4ca446055471d534bdef9da120bee0ef59",
+    "version": "1.0.26",
+    "sourceCommit": "e827a6aa9f0348506e78ac9f1dc78f9c871ea455",
     "repository": "https://github.com/wjgoarxiv/litgrok",
     "name": "LitGrok"
   },
   "muse": {
-    "version": "0.1.0",
-    "sourceCommit": "6c8f41a4551cb2f6d53a8ead473c6cebae07d930",
+    "version": "0.1.1",
+    "sourceCommit": "f0ccd0ae8eaf54d727698b116d6ad9b572a89e11",
     "repository": "https://github.com/wjgoarxiv/litmuse",
     "name": "LitMuse"
   },
   "gravity": {
-    "version": "0.1.0",
-    "sourceCommit": "de4d9946ad9481307cbcc52be9dfb128a56b59b5",
+    "version": "0.1.1",
+    "sourceCommit": "de753f838d1952955480b9ac7ccf33f8e21811b0",
     "repository": "https://github.com/wjgoarxiv/litgravity",
     "name": "LitGravity"
   }
@@ -103,7 +103,10 @@ test('the catalog lists the new skills at canonical vendor paths without the ret
     }
     assert.ok(!native.includes('lit-korean'), `${product} still lists lit-korean as a native entry`);
   }
+  const claude = inventory.entries.filter((entry) => entry.product === 'claude' && entry.role === 'native-entry').map((entry) => entry.id);
+  for (const id of ['lit-adhd', 'lit-hijack', 'lit-schematic']) assert.ok(claude.includes(id), `claude lacks ${id}`);
   const skills = await readFile(new URL('../docs/skills.md', import.meta.url), 'utf8');
+  for (const id of ['lit-adhd', 'lit-rewind', 'lit-hijack', 'lit-schematic']) assert.ok(skills.includes('`' + id + '`'), `skills.md does not name ${id}`);
   assert.match(skills, /Grok `lit-scientific-visualization` links to `\.\.\/\.\.\/vendor\/scientific-visualization\/`/u);
 });
 
@@ -201,7 +204,7 @@ test('new member installation and native registration remain host-specific', asy
   for (const name of ['README.md', 'README_ko-KR.md']) {
     const text = await readFile(new URL('../' + name, import.meta.url), 'utf8');
     for (const id of ['muse', 'gravity']) {
-      assert(text.includes('@litfamily/lit' + id + '@0.1.0 install'));
+      assert(text.includes('@litfamily/lit' + id + '@0.1.1 install'));
       assert(text.includes('https://www.npmjs.com/package/@litfamily/lit' + id));
     }
     assert(text.includes('Muse Code'));
@@ -215,8 +218,8 @@ test('new member installation and native registration remain host-specific', asy
   }
 });
 
-test('all install routes pin the released round-26 versions', async () => {
-  const expected = { claude: '1.0.37', hermes: '1.0.28', codex: '1.0.29', opencode: '1.0.30', grok: '1.0.25', muse: '0.1.0', gravity: '0.1.0' };
+test('all install routes pin the 2026-10-26 released versions', async () => {
+  const expected = { claude: '1.0.38', hermes: '1.0.29', codex: '1.0.30', opencode: '1.0.31', grok: '1.0.26', muse: '0.1.1', gravity: '0.1.1' };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   assert.equal(inventory.state, 'released');
   for (const product of inventory.products) {

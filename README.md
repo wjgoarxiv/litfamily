@@ -23,13 +23,13 @@ Each product is its own npm package, written for one agent. Find the agent you a
 
 | Your agent | Product | Install command |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.37 -- litclaude install --yes` |
-| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.28 -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.29 -- litcodex install` |
-| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.30 -- litopencode install` |
-| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.25 -- litgrok install` |
-| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.0 install` |
-| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.0 install` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.38 -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.29 -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.30 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.31 -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.26 -- litgrok install` |
+| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.1 install` |
+| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.1 install` |
 
 You need Node.js with npm and the agent itself. LitCodex asks for Node.js 22 or later and LitHermes for 18 or later. Each product's README explains what its installer changes, the questions it may ask, how to preview the changes first, and how to remove it again.
 
@@ -74,7 +74,7 @@ The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.
 ## See it work
 
 <!-- demo-gif -->
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/6171a250e22e98eca3e65d368d6be79d5297094f/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/6171a250e22e98eca3e65d368d6be79d5297094f/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="A Codex terminal window with three prompts. &quot;lit add input validation to the signup form&quot; is followed by &quot;Hook ·&quot;, a five-row LIT mark and &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;. &quot;handoff&quot; is followed by the same mark and &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;. &quot;lit recap&quot; is followed by the mark and &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;." /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wjgoarxiv/litcodex/f7107e147185af19cb020de6a1051aa9fbfdd8c4/docs/assets/screens/screen-lit-ignited-dark.webp" /><img src="https://raw.githubusercontent.com/wjgoarxiv/litcodex/f7107e147185af19cb020de6a1051aa9fbfdd8c4/docs/assets/screens/screen-lit-ignited-light.webp" width="548" alt="A Codex terminal window with three prompts. &quot;lit add input validation to the signup form&quot; is followed by &quot;Hook ·&quot;, a five-row LIT mark and &quot;🔥 LIT IGNITED · lit-loop 🔥&quot;. &quot;handoff&quot; is followed by the same mark and &quot;🔥 LIT IGNITED · lit-handoff 🔥&quot;. &quot;lit recap&quot; is followed by the mark and &quot;🔥 LIT IGNITED · lit-recap 🔥&quot;." /></picture></p>
 
 This is LitCodex in a Codex CLI session. Each request that begins with `lit`, `handoff` or `lit recap` is answered with the LIT mark and the name of the workflow that took it, so you can tell at a glance which mode is running. The other products greet you in their own host's way, and each product README shows its own screens.
 
@@ -148,7 +148,7 @@ For a problem, follow [Support](SUPPORT.md): include the product and host versio
 
 ### Documentation
 
-Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. A matching skill name does not make it portable between hosts.
+Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. LitClaude 1.0.38 adds three skills of its own: `lit-adhd` (or `lit-rewind`) reads your recent sessions and tells you where each one stands and what to do next, `lit-hijack` brings a technique you read about into one of your own skills, and `lit-schematic` draws P&IDs, apparatus figures and cutaways. A matching skill name does not make it portable between hosts.
 
 The seven product READMEs above explain the actual installation paths, entry points, permissions, optional tools, and limitations. This hub helps you find them; it does not add a shared runtime.
 
