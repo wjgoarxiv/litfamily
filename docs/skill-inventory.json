@@ -6,14 +6,14 @@
     {
       "id": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "repository": "https://github.com/wjgoarxiv/litclaude",
-      "sourceCommit": "933e1f220e070bfe21a26ad6e6cb662e27eb5b18",
+      "sourceCommit": "a2b32f67faba39b10c7775b565a751c900b4fea7",
       "licensePath": "licenses/claude-MIT.txt",
       "licenseSha256": "a03098dc7f73e791343be35cf34a3fb5e041ea1b527d75aed7e372d055caaa99",
       "licenseBytes": 1079,
       "sourceHistory": "curated-public",
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/tree/933e1f220e070bfe21a26ad6e6cb662e27eb5b18"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/tree/a2b32f67faba39b10c7775b565a751c900b4fea7"
     },
     {
       "id": "hermes",
@@ -92,7 +92,7 @@
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference",
       "path": "plugins/litclaude/skills/autoconference/SKILL.md",
       "role": "native-entry",
@@ -119,12 +119,12 @@
           "text": "entry_routes: [\"Skill(autoconference)\", \"/litclaude:autoconference\", \"$autoconference\", \"leading bare autoconference\"]"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch",
       "path": "plugins/litclaude/skills/autoresearch/SKILL.md",
       "role": "native-entry",
@@ -151,12 +151,12 @@
           "text": "entry_routes: [\"Skill(autoresearch)\", \"/litclaude:autoresearch\", \"$autoresearch\", \"leading bare autoresearch\"]"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "browser-drive",
       "path": "plugins/litclaude/skills/browser-drive/SKILL.md",
       "role": "native-entry",
@@ -179,12 +179,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/browser-drive/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/browser-drive/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "comment-checker",
       "path": "plugins/litclaude/skills/comment-checker/SKILL.md",
       "role": "native-entry",
@@ -211,12 +211,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/comment-checker/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/comment-checker/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "debugging",
       "path": "plugins/litclaude/skills/debugging/SKILL.md",
       "role": "native-entry",
@@ -268,12 +268,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/debugging/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/debugging/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "deep-interview",
       "path": "plugins/litclaude/skills/deep-interview/SKILL.md",
       "role": "native-entry",
@@ -300,17 +300,17 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and command or hook route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/deep-interview/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/deep-interview/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "frontend-ui-ux",
       "path": "plugins/litclaude/skills/frontend-ui-ux/SKILL.md",
       "role": "native-entry",
-      "sha256": "5015eb08b412ef7232c709f8c59963cb9d10bb7bfe6f52ab4c4a82c3f9379a01",
-      "bytes": 13654,
+      "sha256": "aac563934eea0dbc2511fac8d7426d2e51e0497d9890841b520df7dfdec3f383",
+      "bytes": 15901,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -328,21 +328,21 @@
           "text": "| capability | What can actually be implemented and observed in this Claude Code session |"
         },
         {
-          "line": 129,
+          "line": 136,
           "text": "`references/_canonical-corpus/manifest.json`, verify it through LitClaude's corpus gate, and"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/frontend-ui-ux/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/frontend-ui-ux/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-adhd",
       "path": "plugins/litclaude/skills/lit-adhd/SKILL.md",
       "role": "native-entry",
-      "sha256": "27214bce023fe695e3c1d85c56693dfe17f980fc3e7277f42acc8df903714c03",
-      "bytes": 12565,
+      "sha256": "e17fb4259f19c93f4231aa7c455b9c6ef172d538c9a8d00aef5e9b6b007e4e9c",
+      "bytes": 15549,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -364,12 +364,12 @@
           "text": "| activation | `lit adhd`, `lit rewind`, `$lit-adhd`, `$lit-rewind`, `/litclaude:lit-adhd` or `/litclaude:lit-rewind` asks for one brief across recent sessions. | Name the route that fired; the hook probe line comes first. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-adhd/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-adhd/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-brainstorm",
       "path": "plugins/litclaude/skills/lit-brainstorm/SKILL.md",
       "role": "native-entry",
@@ -396,12 +396,12 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and the `lit brainstorm`, `$lit-brainstorm` or `/litclaude:lit-brainstorm` route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-brainstorm/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-brainstorm/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-burnoff-file",
       "path": "plugins/litclaude/skills/lit-burnoff-file/SKILL.md",
       "role": "native-entry",
@@ -428,12 +428,12 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and command or hook route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-burnoff-file/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-burnoff-file/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-burnoff",
       "path": "plugins/litclaude/skills/lit-burnoff/SKILL.md",
       "role": "native-entry",
@@ -460,12 +460,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-burnoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-burnoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-code",
       "path": "plugins/litclaude/skills/lit-code/SKILL.md",
       "role": "native-entry",
@@ -492,12 +492,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-code/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-code/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-commit",
       "path": "plugins/litclaude/skills/lit-commit/SKILL.md",
       "role": "native-entry",
@@ -524,12 +524,12 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and command or hook route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-commit/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-commit/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-comprehend",
       "path": "plugins/litclaude/skills/lit-comprehend/SKILL.md",
       "role": "native-entry",
@@ -556,12 +556,12 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and command or hook route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-comprehend/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-comprehend/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-crucible",
       "path": "plugins/litclaude/skills/lit-crucible/SKILL.md",
       "role": "native-entry",
@@ -588,17 +588,17 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-crucible/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-crucible/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-diagram-drawer",
       "path": "plugins/litclaude/skills/lit-diagram-drawer/SKILL.md",
       "role": "native-entry",
-      "sha256": "c6c5685ac9245661d8f4f31e995edc90dcb3e0473fbae569be8b0c0a8192e4b0",
-      "bytes": 12085,
+      "sha256": "0cdc28c7460508e40d7b9632b3f8ed21ec90cf2ace972e3c1f0efb4881e5abd1",
+      "bytes": 14168,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -620,17 +620,17 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-docx",
       "path": "plugins/litclaude/skills/lit-docx/SKILL.md",
       "role": "native-entry",
-      "sha256": "b1ccc31f65feb0b70567335ff34a62f481c33d654670705c0e0776eb96d56d48",
-      "bytes": 30392,
+      "sha256": "49e8999fb9352456c372ab7aecacaae35f67870c21ab9b739e86670dbafc1c18",
+      "bytes": 32230,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [
@@ -654,17 +654,17 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-docx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-docx/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-handoff",
       "path": "plugins/litclaude/skills/lit-handoff/SKILL.md",
       "role": "native-entry",
-      "sha256": "7dafdffc9652c5cf187c0070dabff6b1d6de215ce1e213e1bfe993d3be71f2bb",
-      "bytes": 5956,
+      "sha256": "75424440ef1d2c5f3aeefba2c129c2ecae0b39e2b4944a97e9d61597221418cc",
+      "bytes": 6146,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -686,12 +686,12 @@
           "text": "| direct-skill | Claude Code loads `Skill(lit-handoff)`. | Read the complete canonical source before writing. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-handoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-hijack",
       "path": "plugins/litclaude/skills/lit-hijack/SKILL.md",
       "role": "native-entry",
@@ -718,12 +718,12 @@
           "text": "| activation | Confirm the Skill name, route, and Claude Code surface before acting. | Name the loaded Skill and the `lit hijack`, `$lit-hijack` or `/litclaude:lit-hijack` route. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-hijack/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-hijack/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-humanizer",
       "path": "plugins/litclaude/skills/lit-humanizer/SKILL.md",
       "role": "native-entry",
@@ -750,12 +750,12 @@
           "text": "| activation | Confirm that `lit-humanizer` or one of its aliases was requested before using the deep workflow. | Name the active Skill or `/litclaude:lit-humanizer` route when useful. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-humanizer/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-humanizer/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-init",
       "path": "plugins/litclaude/skills/lit-init/SKILL.md",
       "role": "native-entry",
@@ -782,12 +782,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-init/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-init/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-loop",
       "path": "plugins/litclaude/skills/lit-loop/SKILL.md",
       "role": "native-entry",
@@ -814,12 +814,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-loop/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-loop/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-plan",
       "path": "plugins/litclaude/skills/lit-plan/SKILL.md",
       "role": "native-entry",
@@ -846,17 +846,17 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-pptx",
       "path": "plugins/litclaude/skills/lit-pptx/SKILL.md",
       "role": "native-entry",
-      "sha256": "c480971d0a91b0ccc65e950d464fc35c421bba7236efb2cbc8424680cc2f45c7",
-      "bytes": 41464,
+      "sha256": "ffa322886bdd42636ede66ed030a73e49b4bf354bd9ba0bbd78d06b8334547a9",
+      "bytes": 43265,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [
@@ -881,17 +881,17 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-pptx/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-pptx/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-recap",
       "path": "plugins/litclaude/skills/lit-recap/SKILL.md",
       "role": "native-entry",
-      "sha256": "12f1c6545a13a6adf906753195493a6e8d9cd0dc5d71777a5e3b9bbf288c6d9d",
-      "bytes": 7926,
+      "sha256": "cd526e5c0fa38ff765e76fe4121c09bdd4d9c2a53b76ba0db108d40dd4a22ec8",
+      "bytes": 7978,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -913,17 +913,17 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-recap/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-recap/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-schematic",
       "path": "plugins/litclaude/skills/lit-schematic/SKILL.md",
       "role": "native-entry",
-      "sha256": "9c578046d090b86d53f3ec659f99ef0df15b3ec9df76f5af3b8658f2301f28db",
-      "bytes": 15332,
+      "sha256": "141e6d63d41bf673efc09ddb861b8c15d2b493e8ef32298c06c07a5584d77f14",
+      "bytes": 17338,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -945,12 +945,12 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-schematic/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-schematic/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-scientific-visualization",
       "path": "plugins/litclaude/skills/lit-scientific-visualization/SKILL.md",
       "role": "native-entry",
@@ -981,12 +981,12 @@
           "text": "| direct-skill | Claude Code loads `Skill(lit-scientific-visualization)`. | Explicit user intent is required; there is no generic visualization auto-trigger. |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-team",
       "path": "plugins/litclaude/skills/lit-team/SKILL.md",
       "role": "native-entry",
@@ -1013,17 +1013,17 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-team/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-team/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lit-typographic-motion",
       "path": "plugins/litclaude/skills/lit-typographic-motion/SKILL.md",
       "role": "native-entry",
-      "sha256": "a6f395d2f031f81bb63a6ab7c7ba3572418195bbafcd079ba623b2b2827f367f",
-      "bytes": 12240,
+      "sha256": "4d39b4a2f650badcdfd3da9154f060d911f9f33e2322e2139f0a5f927820afcf",
+      "bytes": 12281,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -1045,12 +1045,12 @@
           "text": "host: Claude Code"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lit-typographic-motion/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lit-typographic-motion/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "litgoal",
       "path": "plugins/litclaude/skills/litgoal/SKILL.md",
       "role": "native-entry",
@@ -1077,12 +1077,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/litgoal/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/litgoal/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "litresearch",
       "path": "plugins/litclaude/skills/litresearch/SKILL.md",
       "role": "native-entry",
@@ -1109,12 +1109,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/litresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/litresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "litwork",
       "path": "plugins/litclaude/skills/litwork/SKILL.md",
       "role": "native-entry",
@@ -1141,12 +1141,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/litwork/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/litwork/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lsp-setup",
       "path": "plugins/litclaude/skills/lsp-setup/SKILL.md",
       "role": "native-entry",
@@ -1173,12 +1173,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lsp-setup/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lsp-setup/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "lsp",
       "path": "plugins/litclaude/skills/lsp/SKILL.md",
       "role": "native-entry",
@@ -1205,17 +1205,17 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/lsp/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/lsp/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "readme-studio",
       "path": "plugins/litclaude/skills/readme-studio/SKILL.md",
       "role": "native-entry",
-      "sha256": "0b75a6e6f669ee629b0ce31e45b4bed0fa4bffad676a673370fae5d7a046d4af",
-      "bytes": 9452,
+      "sha256": "044d0734ef13df3adfb93f7cb9f1878d0b0dbce93cd0702b39d87cd7d4b4e1b5",
+      "bytes": 11701,
       "classification": "host-dependent",
       "reason": "The native contract requires Claude Code discovery, routing and host-owned tools; use this product's native installation.",
       "localMarkdownReferences": [],
@@ -1237,12 +1237,12 @@
           "text": "2. Read `references/facts-and-assembly.md`. Run the structure checker from the exact installed skill selected by Claude Code, with absolute quoted paths:"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/readme-studio/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/readme-studio/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "refactor",
       "path": "plugins/litclaude/skills/refactor/SKILL.md",
       "role": "native-entry",
@@ -1269,12 +1269,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/refactor/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/refactor/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "review-work",
       "path": "plugins/litclaude/skills/review-work/SKILL.md",
       "role": "native-entry",
@@ -1301,12 +1301,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/review-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/review-work/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "rules",
       "path": "plugins/litclaude/skills/rules/SKILL.md",
       "role": "native-entry",
@@ -1333,12 +1333,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/rules/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/rules/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "start-work",
       "path": "plugins/litclaude/skills/start-work/SKILL.md",
       "role": "native-entry",
@@ -1365,12 +1365,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/start-work/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/start-work/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "structural-search",
       "path": "plugins/litclaude/skills/structural-search/SKILL.md",
       "role": "native-entry",
@@ -1393,12 +1393,12 @@
           "text": "owner: LitClaude"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/structural-search/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/structural-search/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "visual-qa",
       "path": "plugins/litclaude/skills/visual-qa/SKILL.md",
       "role": "native-entry",
@@ -1417,12 +1417,12 @@
           "text": "This LitClaude surface validates evidence; it does not create a browser or prove appearance from prose."
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/visual-qa/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/visual-qa/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "wikify",
       "path": "plugins/litclaude/skills/wikify/SKILL.md",
       "role": "native-entry",
@@ -1449,12 +1449,12 @@
           "text": "entry_routes: [\"Skill(wikify)\", \"/litclaude:wikify\", \"$wikify\", \"leading bare wikify\"]"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/skills/wikify/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/skills/wikify/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference-skill",
       "path": "plugins/litclaude/vendor/autoconference/SKILL.md",
       "role": "vendor-reference",
@@ -1469,12 +1469,12 @@
           "text": "- **Required:** Any LLM CLI with subagent support (Claude Code, Codex CLI, OpenCode, Gemini CLI)"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:analyze",
       "path": "plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md",
       "role": "vendor-reference",
@@ -1484,12 +1484,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference",
       "path": "plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md",
       "role": "vendor-reference",
@@ -1499,12 +1499,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:debate",
       "path": "plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md",
       "role": "vendor-reference",
@@ -1514,12 +1514,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:plan",
       "path": "plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md",
       "role": "vendor-reference",
@@ -1529,12 +1529,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:resume",
       "path": "plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md",
       "role": "vendor-reference",
@@ -1544,12 +1544,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:ship",
       "path": "plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md",
       "role": "vendor-reference",
@@ -1559,12 +1559,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoconference:survey",
       "path": "plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md",
       "role": "vendor-reference",
@@ -1574,12 +1574,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch-skill",
       "path": "plugins/litclaude/vendor/autoresearch/SKILL.md",
       "role": "vendor-reference",
@@ -1594,12 +1594,12 @@
           "text": "Works on Claude Code, Codex CLI, OpenCode, and Gemini CLI. Platform-specific install guides:"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch",
       "path": "plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md",
       "role": "vendor-reference",
@@ -1614,12 +1614,12 @@
           "text": "| **Tier 1** | Claude Code, Codex CLI, any terminal | Bash + Python + full tool access | Run code, measure metrics, modify files, benchmark |"
         }
       ],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:debug",
       "path": "plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md",
       "role": "vendor-reference",
@@ -1629,12 +1629,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:fix",
       "path": "plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md",
       "role": "vendor-reference",
@@ -1644,12 +1644,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:learn",
       "path": "plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md",
       "role": "vendor-reference",
@@ -1659,12 +1659,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:plan",
       "path": "plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md",
       "role": "vendor-reference",
@@ -1674,12 +1674,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:predict",
       "path": "plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md",
       "role": "vendor-reference",
@@ -1689,12 +1689,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:reason",
       "path": "plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md",
       "role": "vendor-reference",
@@ -1704,12 +1704,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:scenario",
       "path": "plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md",
       "role": "vendor-reference",
@@ -1719,12 +1719,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:security",
       "path": "plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md",
       "role": "vendor-reference",
@@ -1734,12 +1734,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "autoresearch:ship",
       "path": "plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md",
       "role": "vendor-reference",
@@ -1749,12 +1749,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "handoff",
       "path": "plugins/litclaude/vendor/handoff/SKILL.md",
       "role": "vendor-reference",
@@ -1764,12 +1764,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/handoff/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/handoff/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "llm-wikify",
       "path": "plugins/litclaude/vendor/llm-wikify/SKILL.md",
       "role": "vendor-reference",
@@ -1779,12 +1779,12 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/llm-wikify/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/llm-wikify/SKILL.md"
     },
     {
       "product": "claude",
       "host": "Claude Code",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "id": "scientific-visualization",
       "path": "plugins/litclaude/vendor/scientific-visualization/SKILL.md",
       "role": "vendor-reference",
@@ -1794,7 +1794,7 @@
       "reason": "This supporting document belongs to its enclosing native distribution, not an independent installation.",
       "localMarkdownReferences": [],
       "hostEvidence": [],
-      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/933e1f220e070bfe21a26ad6e6cb662e27eb5b18/plugins/litclaude/vendor/scientific-visualization/SKILL.md"
+      "sourceUrl": "https://github.com/wjgoarxiv/litclaude/blob/a2b32f67faba39b10c7775b565a751c900b4fea7/plugins/litclaude/vendor/scientific-visualization/SKILL.md"
     },
     {
       "product": "hermes",

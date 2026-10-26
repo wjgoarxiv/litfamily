@@ -4,7 +4,7 @@ All seven independent products are released. On 2026-10-26, each version below w
 
 | Product | Released version | npm package | Host |
 |---|---|---|---|
-| LitClaude | 1.0.38 | [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) | Claude Code |
+| LitClaude | 1.0.39 | [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) | Claude Code |
 | LitHermes | 1.0.29 | [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) | Hermes Agent |
 | LitCodex | 1.0.30 | [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) | Codex CLI |
 | LitOpenCode | 1.0.31 | [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) | OpenCode |
@@ -18,7 +18,7 @@ The catalog, Claude marketplace and Grok skill export pin the final public relea
 
 | Product | Version | State | Source commit |
 |---|---|---|---|
-| LitClaude | 1.0.38 | published | `933e1f220e070bfe21a26ad6e6cb662e27eb5b18` |
+| LitClaude | 1.0.39 | published | `a2b32f67faba39b10c7775b565a751c900b4fea7` |
 | LitHermes | 1.0.29 | published | `3c05d629dbd27fd278d745c3f61083e7351ad5f6` |
 | LitCodex | 1.0.30 | published | `f7107e147185af19cb020de6a1051aa9fbfdd8c4` |
 | LitOpenCode | 1.0.31 | published | `1dd58f44bba8dd4f613188b553a50a17e838400b` |

@@ -13,7 +13,14 @@ LitFamily is seven open-source add-ons, one for each of seven AI coding agents, 
 <img src="assets/brand/readme/badge-family.svg" alt="Seven independent ports" />
 </p>
 
-**[Install](#install) · [See it work](#see-it-work) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**
+**[Install](#install) · [What you can make](#what-you-can-make) · [See it work](#see-it-work) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**
+
+The workflow is half of it. The other half is skills that make finished things: drawings, decks, reports, pages and films. Each picture below came out of LitClaude from one short typed request, and [What you can make](#what-you-can-make) shows the rest, each with the request that made it.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/pid-column.webp" width="400" alt="P&amp;ID of a distillation column overhead section with ISA tags, a legend and a title block." /><br /><sub>lit-schematic · P&amp;ID</sub></td><td width="50%" valign="top"><img src="assets/showcase/cutaway-reactor.webp" width="400" alt="Isometric cutaway of a jacketed stirred reactor in material colours with Korean callouts." /><br /><sub>lit-schematic · isometric cutaway</sub></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/architecture.webp" width="400" alt="Food delivery platform architecture with numbered flows in five colours." /><br /><sub>lit-diagram-drawer · architecture</sub></td><td width="50%" valign="top"><img src="assets/showcase/ui-dashboard.webp" width="400" alt="Operations dashboard for a refrigerated truck fleet with figure cards, a bar chart and an excursion list." /><br /><sub>frontend-ui-ux · dashboard</sub></td></tr>
+</table>
 
 ## Install
 
@@ -23,7 +30,7 @@ Each product is its own npm package, written for one agent. Find the agent you a
 
 | Your agent | Product | Install command |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.38 -- litclaude install --yes` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.39 -- litclaude install --yes` |
 | Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.29 -- lithermes install --yes --no-style` |
 | Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.30 -- litcodex install` |
 | OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.31 -- litopencode install` |
@@ -70,6 +77,80 @@ Choose one of the two routes for LitClaude and stay with it, so the same plugin 
 > **Released on npm.** All seven products are published under the `@litfamily` npm scope, including the LitMuse and LitGravity 0.1.0 first releases. The versions and release commits are listed in [release status](docs/release-status.md).
 
 The same commands appear on each npm page: [`@litfamily/litclaude`](https://www.npmjs.com/package/@litfamily/litclaude) · [`@litfamily/lithermes`](https://www.npmjs.com/package/@litfamily/lithermes) · [`@litfamily/litcodex`](https://www.npmjs.com/package/@litfamily/litcodex) · [`@litfamily/litopencode`](https://www.npmjs.com/package/@litfamily/litopencode) · [`@litfamily/litgrok`](https://www.npmjs.com/package/@litfamily/litgrok) · [`@litfamily/litmuse`](https://www.npmjs.com/package/@litfamily/litmuse) · [`@litfamily/litgravity`](https://www.npmjs.com/package/@litfamily/litgravity). The hub has no universal installer. Host configuration, login, interactive choices, and removal differ by product.
+
+## What you can make
+
+Every picture in this section is a real output of LitClaude 1.0.39, the Claude Code product. Where a prompt sits under a picture, that request produced it in a Claude Code session (long ones are cut short with …); where none does, the skill's own engine made it from the example the skill ships with. None of them is a mock-up.
+
+What you can reproduce depends on your product today. Most of these skills ship in all seven products, and each port runs them in its own harness. Three skills and the fuller default look are in LitClaude 1.0.39 only, and the other six products are porting them now:
+
+| What | Where it ships today |
+|---|---|
+| `lit-diagram-drawer`, `lit-scientific-visualization`, `lit-pptx`, `lit-docx`, `frontend-ui-ux`, `lit-typographic-motion`, `readme-studio` | All seven products |
+| `lit-schematic` (P&IDs, apparatus figures, cutaways), `lit-adhd`, `lit-hijack` | LitClaude 1.0.39; the other six are porting them |
+| The fuller default look these pictures show (dense layouts, several accent colours, a signature detail) | LitClaude 1.0.39; the other six are porting it |
+| The LIT card with thread rows | LitClaude 1.0.39, in Claude Code's status line |
+
+### Draw it
+
+Equipment, systems and data, each drawn by the skill that knows its rules: ISA-5.1 tags and a title block on a P&ID, material colours on a cutaway, numbered flows on an architecture, error bands on a figure.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/pid-column.webp" width="400" alt="P&amp;ID of a distillation column overhead section: column, shell-and-tube condenser, reflux drum, two reflux pumps, ISA instrument bubbles, a legend column on the right and a title block at the bottom." /><br /><b>lit-schematic</b> · P&amp;ID on one A3 sheet<br /><code>lit draw a detailed P&amp;ID of a distillation column overhead section on one A3 sheet: shell-and-tube overhead condenser, reflux drum, duty and standby reflux pumps, LIC to FIC cascade …</code></td><td width="50%" valign="top"><img src="assets/showcase/cutaway-reactor.webp" width="400" alt="Isometric cutaway of a jacketed stirred batch reactor in material colours: motor on top, steel shell cut open to show the blue liquid, impeller and coil, green legs on a concrete pad, Korean callouts on both sides." /><br /><b>lit-schematic</b> · isometric cutaway<br /><code>lit-schematic 교반식 재킷 회분 반응기(jacketed stirred batch reactor)의 등각 단면 사시도를 그려줘</code></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/architecture.webp" width="400" alt="Korean architecture diagram of a food delivery platform: client apps, an API gateway, order, payment, dispatch and tracking services, Kafka, PostgreSQL and Redis, with numbered request flows in five colours and a legend." /><br /><b>lit-diagram-drawer</b> · system architecture<br /><code>lit-diagram-drawer 음식 배달 플랫폼의 시스템 아키텍처 다이어그램을 그려줘</code></td><td width="50%" valign="top"><img src="assets/showcase/isotherm-figure.webp" width="400" alt="Two-panel figure: (a) CO2 uptake against pressure at 273, 298 and 323 K with replicate markers, Langmuir fits and an inset; (b) isosteric heat against loading with a 95% interval band." /><br /><b>lit-scientific-visualization</b> · two-panel journal figure<br /><code>/litclaude:lit-scientific-visualization 현재 폴더의 data.csv(세 온도에서 측정한 CO2 흡착 등온선, 반복 2회)를 논문용 그림으로 만들어줘</code></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/optics-bench.webp" width="400" alt="Isometric optical bench: a He-Ne laser, beam expander, two mirrors, a beam splitter, a lens, the sample and two photodetectors, with the orange beam path and labelled callouts." /><br /><b>lit-schematic</b> · apparatus figure<br /><code>lit 레이저 광학 벤치 실험 장치를 저널 double column 그림 한 장으로 그려줘 …</code></td><td width="50%" valign="top"><img src="assets/showcase/cutaway-loop.webp" width="400" alt="Animated cutaway of a stirred autoclave: the parts assemble, the impeller turns and coolant flows through the internal coil." /><br /><b>lit-schematic</b> · cutaway as a loop<br /><code>lit … 오토클레이브 컷어웨이를 짧은 루프 모션 영상으로 만들어줘: 분해된 부품이 조립되고, 임펠러가 돌고, 냉각수가 코일을 따라 흐르게</code></td></tr>
+</table>
+
+### Present it
+
+Name a style, or let lit-pptx choose one from thirteen. Every deck has native, editable charts and KPI rows, Pretendard embedded, and passed a gate for overflow, contrast and empty slides.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/deck-newsroom.webp" width="400" alt="Contact sheet of a ten-slide newsroom-style deck: black masthead bands, an orange data series, bar and line charts and big figures." /><br /><b>lit-pptx</b> · newsroom, 10 slides<br /><code>lit 우리 구 주민에게 보여줄 2026년 대중교통 이용 데이터 브리핑 발표자료 10장, 뉴스룸 스타일로</code></td><td width="50%" valign="top"><img src="assets/showcase/deck-neo.webp" width="400" alt="Contact sheet of a ten-slide neo-brutalism pitch deck: blue and yellow blocks, thick outlines, hard shadows and large bold numbers." /><br /><b>lit-pptx</b> · neo-brutalism pitch<br /><code>lit 신규 서비스 투자 피칭 덱 10장, 네오 브루탈리즘 스타일로. 글자와 숫자는 크고 굵게</code></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/deck-themes.webp" width="400" alt="Grid of the same deck in thirteen tonalities, one row per tonality, from light paper styles to dark night and teal themes." /><br /><b>lit-pptx</b> · one deck, 13 tonalities<br /><sub>The same sample deck rendered by the engine in all thirteen tonalities, from paper and newsroom to riso, night and ledger.</sub></td></tr>
+</table>
+
+### Write it
+
+lit-docx writes a Word file you can keep editing: a cover, key figures with their basis, tables with right-aligned numbers and a decision box, then renders the pages and looks at them before it hands the file over.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/docx-report.webp" width="400" alt="Three pages of a Korean operations report: a title page with three key figures and an approval box, then pages with ruled tables and numbered sections." /><br /><b>lit-docx</b> · Korean report, Report tonality<br /><sub>Built from the skill's bundled example <code>references/examples/01-report-ko.md</code> by its own converter; the layout gate passed.</sub></td><td width="50%" valign="top"><img src="assets/showcase/docx-mix.webp" width="400" alt="Pages from an English quarterly support report and a Korean pilot-project proposal, each with its own cover treatment." /><br /><b>lit-docx</b> · English report and a proposal<br /><sub>Two more bundled examples: <code>07-report-en.md</code> (Report) and <code>04-proposal-ko.md</code> (Proposal).</sub></td></tr>
+</table>
+
+### Build it
+
+frontend-ui-ux locks a house style before it writes markup, builds the page, then opens it at several widths and reviews its own screenshots. readme-studio does the same for a project cover.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/ui-dashboard.webp" width="400" alt="Coldline operations dashboard: four figure cards (on-time rate 91.7%, five temperature excursions, trucks on the road, deliveries), a planned-versus-delivered bar chart with a now marker and an excursion list." /><br /><b>frontend-ui-ux</b> · operations dashboard<br /><code>Build the operations dashboard for Coldline, a regional delivery company that runs a fleet of refrigerated trucks. …</code></td><td width="50%" valign="top"><img src="assets/showcase/ui-landing-neo.webp" width="400" alt="Ledgerline landing page on lavender: a huge black headline, yellow buttons, and an invoice card and a fee-budget card with thick outlines and hard shadows." /><br /><b>frontend-ui-ux</b> · landing page, neo-brutalism<br /><code>Build the marketing landing page for Ledgerline … Make it neo-brutalism: loud, friendly, bold outlines and hard shadows.</code></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/ui-landing-brutalist.webp" width="400" alt="Ledgerline landing page as a spec sheet: a grid background, a stacked capital headline, and a project monitor panel reading 115% over budget." /><br /><b>frontend-ui-ux</b> · landing page, computational brutalism<br /><code>Build the marketing landing page for Ledgerline … Make it retro-futurist computational brutalism: raw, mechanical, like an instrument or a spec sheet.</code></td><td width="50%" valign="top"><img src="assets/showcase/readme-cover.webp" width="400" alt="Dark README cover for a sample project, hydrate-kit: a label line, a large outlined title, an orange rule and a subtitle over a blurred reactor drawing, with a pixel notebook motif on the right." /><br /><b>readme-studio</b> · README cover<br /><sub>The skill's HyperFrames cover template with every letter outlined by its own type tool, for a sample project.</sub></td></tr>
+</table>
+
+### Film it
+
+lit-typographic-motion writes a treatment first, then renders the film frame by frame with a sound bed and checks flashes, legibility and the loop seam. The prompt below names no tool and never asks for a dense look; the layering, colour and sound came from the defaults.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/film-hero.webp" width="400" alt="Poster frame of the film: a glowing flame keycap on a dark teal field of keys, the word LitClaude, and a stage bar reading PROMPT, PLAN, WORK 2/2, REVIEW and DONE." /><br /><b>lit-typographic-motion</b> · 13-second hero film, poster<br /><code>lit LitClaude 히어로 영상 13초짜리 만들어줘. LIT 불꽃 키가 주인공으로, 프롬프트 → 계획 → 작업 → 리뷰 → 완료로 lit-loop가 돌아가는 세계를 고퀄리티 3D로 보여줘.</code></td><td width="50%" valign="top"><img src="assets/showcase/film-frames.webp" width="400" alt="Twelve frames of the hero film in a grid: the keycap lights up, Korean captions for each stage appear, and the last row lands on the LitClaude title." /><br /><b>lit-typographic-motion</b> · frames from the same film<br /><sub>Twelve frames of that film, from the dark opening to the LitClaude title.</sub></td></tr>
+</table>
+
+### Keep track of it
+
+When two workflows and three helpers run at once, the LIT card draws them as threads under the prompt. Type <code>lit adhd</code> after a scattered day and you get one brief: what you asked, what got done, what is paused and the next step. <code>go</code> then picks up the single open plan.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/card-threads.webp" width="400" alt="The LIT card with thread rows: lit-loop paused at GREEN 2/5, start-work running at 3/6 beneath it, and a fork into executor, librarian-researcher and lit-verifier lanes." /><br /><b>LIT card</b> · thread rows<br /><sub>Drawn by the card's own renderer: lit-loop paused at GREEN, start-work running under it, three lanes in parallel.</sub></td><td width="50%" valign="top"><img src="assets/showcase/adhd-brief.webp" width="400" alt="Terminal with the lit-adhd brief: a headline with four sessions and the next step, one card per active session with its last ask, finished work and commit, a roadmap with two commits and the clamp plan at 0/6, and a boxed recommended next step, with the rainbow REWIND card below." /><br /><b>lit-adhd</b> · the brief<br /><code>lit adhd</code></td></tr>
+<tr><td width="50%" valign="top"><img src="assets/showcase/adhd-go.webp" width="400" alt="Terminal after typing go: start-work runs the open clamp plan, the tests pass, and the card shows start-work at review." /><br /><b>lit-adhd</b> · go resumes the plan<br /><code>go</code></td></tr>
+</table>
+
+### Learn from others
+
+Point <code>lit hijack</code> at an article, a post, a PDF or a repository and name your own skill. It records where each source came from and what its licence allows, writes a spec in its own words, has it built in isolation, runs the old and new skill on the same held-out prompt, and ends with a port report.
+
+<table>
+<tr><td width="50%" valign="top"><img src="assets/showcase/hijack-report.webp" width="400" alt="The port report: five mechanisms taken with their parity results (2/2 new runs against 0/2 old), six left with reasons, a provenance table marking the source ideas-only, and exposure, credit and review-by sections." /><br /><b>lit-hijack</b> · port report<br /><code>lit hijack https://x.com/… into .claude/skills/promo-brief</code></td><td width="50%" valign="top"><img src="assets/showcase/hijack-ab.webp" width="400" alt="Contact sheet of four promo briefs side by side, two from the old skill and two from the new one, with the new briefs carrying takeaway, real assets, timed scenes and reject-if sections." /><br /><b>lit-hijack</b> · old skill against new<br /><sub>The proof: two runs of the old skill beside two of the new one on the same prompt. The old briefs invent product features; the new ones ask instead.</sub></td></tr>
+</table>
 
 ## See it work
 
@@ -148,7 +229,7 @@ For a problem, follow [Support](SUPPORT.md): include the product and host versio
 
 ### Documentation
 
-Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. LitClaude 1.0.38 adds three skills of its own: `lit-adhd` (or `lit-rewind`) reads your recent sessions and tells you where each one stands and what to do next, `lit-hijack` brings a technique you read about into one of your own skills, and `lit-schematic` draws P&IDs, apparatus figures and cutaways. A matching skill name does not make it portable between hosts.
+Choose a task before choosing a skill. The [complete skill catalog](docs/skills.md) lets you explore planning, execution, review, research, visualization, English and Korean prose editing, Word and PowerPoint files, diagrams, short films and READMEs, with the requirements for each host. Every product now includes `lit-humanizer`, `lit-docx`, `lit-pptx`, `lit-diagram-drawer`, `lit-typographic-motion` and `readme-studio`. Before they build, `lit-pptx` and `lit-docx` work out who will read the file and choose a look for that reader, from eight for decks and six for documents, and the reply names two others that would also fit. LitClaude 1.0.39 adds three skills of its own: `lit-adhd` (or `lit-rewind`) reads your recent sessions and tells you where each one stands and what to do next, `lit-hijack` brings a technique you read about into one of your own skills, and `lit-schematic` draws P&IDs, apparatus figures and cutaways. A matching skill name does not make it portable between hosts.
 
 The seven product READMEs above explain the actual installation paths, entry points, permissions, optional tools, and limitations. This hub helps you find them; it does not add a shared runtime.
 

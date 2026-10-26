@@ -33,8 +33,8 @@ test('the standalone Grok export pins the LitGrok humanizer final public release
 test('the hub binds the 2026-10-26 public release commits', async () => {
   const release = {
   "claude": {
-    "version": "1.0.38",
-    "sourceCommit": "933e1f220e070bfe21a26ad6e6cb662e27eb5b18",
+    "version": "1.0.39",
+    "sourceCommit": "a2b32f67faba39b10c7775b565a751c900b4fea7",
     "repository": "https://github.com/wjgoarxiv/litclaude",
     "name": "LitClaude"
   },
@@ -219,7 +219,7 @@ test('new member installation and native registration remain host-specific', asy
 });
 
 test('all install routes pin the 2026-10-26 released versions', async () => {
-  const expected = { claude: '1.0.38', hermes: '1.0.29', codex: '1.0.30', opencode: '1.0.31', grok: '1.0.26', muse: '0.1.1', gravity: '0.1.1' };
+  const expected = { claude: '1.0.39', hermes: '1.0.29', codex: '1.0.30', opencode: '1.0.31', grok: '1.0.26', muse: '0.1.1', gravity: '0.1.1' };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   assert.equal(inventory.state, 'released');
   for (const product of inventory.products) {
