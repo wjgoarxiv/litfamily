@@ -225,6 +225,12 @@ Use only the diagnostic and removal commands that product documents. **There is 
 
 For a problem, follow [Support](SUPPORT.md): include the product and host version, redacted command, expected behavior, and observed output. Installation, skill discovery, and task completion are separate observations. Publishing, destructive actions, and changes to access still require your project's authorization.
 
+## Wall of fame
+
+LitFamily grows when people pass it on. In LitClaude, `lit invite @<github-id>` records who told you about it and unlocks a special card look on your machine. Nothing is sent anywhere. To be listed here, post "invited by @<github-id>" in the pinned "Who invited you?" thread in this repository's Discussions. Inviters are added by hand.
+
+No one is listed yet.
+
 ## Links
 
 ### Documentation
@@ -237,7 +243,7 @@ The seven product READMEs above explain the actual installation paths, entry poi
 
 The [complete skill catalog](docs/skills.md) records every native entry and supporting skill document, with host-specific compatibility. Install the matching product for its full native workflow. The root `skills/` directory provides independently verified direct exports and currently contains the complete Grok Build `lit-humanizer` skill tree, checked for file hashes and reference closure. Other host variants remain traceable in the catalog by product, source path and commit.
 
-[Claude marketplace and Codex pointer](docs/marketplaces.md) · [Brand artwork and licenses](assets/brand/README.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Support](SUPPORT.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Privacy](PRIVACY.md) · [License](LICENSE)
+[Claude marketplace and Codex pointer](docs/marketplaces.md) · [Brand artwork and licenses](assets/brand/README.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Support](SUPPORT.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Privacy](PRIVACY.md) · [Trademark](TRADEMARK.md) · [License](LICENSE)
 
 ### LITFAMILY
 

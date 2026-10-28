@@ -225,6 +225,12 @@ Antigravity CLI에서는 승인한 계획을 `lit start plans/<slug>.md`로 실�
 
 문제가 생기면 [지원 안내](SUPPORT.md)에 따라 제품과 호스트 버전, 민감한 내용을 가린 명령, 예상한 동작과 실제 출력을 남겨주세요. 설치, 스킬 발견, 작업 완료는 각각 확인합니다. 공개, 파괴적 작업과 접근 권한 변경에는 프로젝트에서 요구하는 승인이 계속 필요합니다.
 
+## 명예의 벽
+
+LitFamily는 사람들이 서로 알려 주면서 자라요. LitClaude에서 `lit invite @<깃허브-아이디>`를 입력하면 누가 알려 줬는지 기록되고, 내 컴퓨터의 카드에 특별한 꾸밈이 열려요. 어디로도 아무것도 보내지 않아요. 여기에 이름을 올리고 싶다면 이 저장소 Discussions에 고정된 "누가 초대했나요?" 글에 "invited by @<깃허브-아이디>"라고 남겨 주세요. 초대한 사람은 직접 확인해서 올려요.
+
+아직 등록된 사람은 없어요.
+
 ## 링크
 
 ### 문서
@@ -237,7 +243,7 @@ Antigravity CLI에서는 승인한 계획을 `lit start plans/<slug>.md`로 실�
 
 [전체 스킬 목록](docs/skills.md)은 모든 기본 스킬과 보조 문서를 실행 환경별로 분류합니다. 전체 네이티브 워크플로를 쓰려면 사용하는 에이전트에 맞는 제품을 설치하세요. 루트 `skills/`에는 독립 배포를 검토한 스킬을 제공하며, 현재 Grok Build용 `lit-humanizer` 전체 폴더의 파일 해시와 참조 경로를 확인했습니다. 다른 호스트용 변형은 목록의 제품명, 원본 경로와 커밋으로 추적할 수 있습니다.
 
-[Claude 마켓플레이스와 Codex 연결](docs/marketplaces.md) · [브랜드 이미지와 라이선스](assets/brand/README.md) · [기여](CONTRIBUTING.md) · [보안](SECURITY.md) · [지원](SUPPORT.md) · [행동 규칙](CODE_OF_CONDUCT.md) · [개인정보](PRIVACY.md) · [라이선스](LICENSE)
+[Claude 마켓플레이스와 Codex 연결](docs/marketplaces.md) · [브랜드 이미지와 라이선스](assets/brand/README.md) · [기여](CONTRIBUTING.md) · [보안](SECURITY.md) · [지원](SUPPORT.md) · [행동 규칙](CODE_OF_CONDUCT.md) · [개인정보](PRIVACY.md) · [상표](TRADEMARK.md) · [라이선스](LICENSE)
 
 ### LITFAMILY
 
