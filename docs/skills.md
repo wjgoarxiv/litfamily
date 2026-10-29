@@ -6,23 +6,23 @@ Every native contract remains associated with its original harness. A common ski
 
 ## Assessed source identities and licenses
 
-Every catalog entry links to its exact file in an immutable product snapshot. All seven sources are the 2026-10-28 release commits published to npm, listed in the [release status](release-status.md). The product commit, source path and content hash preserve distinct host variants even when their skill IDs match.
+Every catalog entry links to its exact file in an immutable product snapshot. All seven sources are the 2026-10-29 release commits published to npm, listed in the [release status](release-status.md). The product commit, source path and content hash preserve distinct host variants even when their skill IDs match.
 
 | Product | Released version | Public release commit | Source license |
 |---|---|---|---|
-| Claude Code | 1.0.42 | [69afd8164e9dadffe74f1e28e1c9a903ac5189b6](https://github.com/wjgoarxiv/litclaude/tree/69afd8164e9dadffe74f1e28e1c9a903ac5189b6) | [MIT](../licenses/claude-MIT.txt) |
-| Hermes Agent | 1.0.31 | [88de078098393ee106cde1a60d84d3eb782d7bf4](https://github.com/wjgoarxiv/lithermes/tree/88de078098393ee106cde1a60d84d3eb782d7bf4) | [MIT](../licenses/hermes-MIT.txt) |
-| Codex CLI | 1.0.32 | [e588ccccb1bb85ab9c200f0752b2451b7f3c04e5](https://github.com/wjgoarxiv/litcodex/tree/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5) | [MIT](../licenses/codex-MIT.txt) |
-| OpenCode | 1.0.33 | [accd4813a39dd768da4e9c9d5804c68e6e44d32b](https://github.com/wjgoarxiv/litopencode/tree/accd4813a39dd768da4e9c9d5804c68e6e44d32b) | [MIT](../licenses/opencode-MIT.txt) |
-| Grok Build | 1.0.28 | [a7a36bb4a26616c92a3586e78c4848143b7b67b2](https://github.com/wjgoarxiv/litgrok/tree/a7a36bb4a26616c92a3586e78c4848143b7b67b2) | [MIT](../licenses/grok-MIT.txt) |
-| Muse Code | 0.1.3 | [f984c10b1e28832ba78d997268b5f7fea9d1becf](https://github.com/wjgoarxiv/litmuse/tree/f984c10b1e28832ba78d997268b5f7fea9d1becf) | [MIT](../licenses/muse-MIT.txt) |
-| Antigravity CLI (agy) | 0.1.3 | [70280586aa668151550c08789bd04425b18902e7](https://github.com/wjgoarxiv/litgravity/tree/70280586aa668151550c08789bd04425b18902e7) | [MIT](../licenses/gravity-MIT.txt) |
+| Claude Code | 1.0.43 | [4fa79fdb36d610b338dc016a5a1ba9280a6459a9](https://github.com/wjgoarxiv/litclaude/tree/4fa79fdb36d610b338dc016a5a1ba9280a6459a9) | [MIT](../licenses/claude-MIT.txt) |
+| Hermes Agent | 1.0.32 | [db47cc10c79df6571e3810d39d800cb4554cf0ea](https://github.com/wjgoarxiv/lithermes/tree/db47cc10c79df6571e3810d39d800cb4554cf0ea) | [MIT](../licenses/hermes-MIT.txt) |
+| Codex CLI | 1.0.33 | [c5606f21e023396a677ca0ce429fc39e15d58da7](https://github.com/wjgoarxiv/litcodex/tree/c5606f21e023396a677ca0ce429fc39e15d58da7) | [MIT](../licenses/codex-MIT.txt) |
+| OpenCode | 1.0.34 | [eff765581dd07141b87d25a80ccd6c9e84c4bdd8](https://github.com/wjgoarxiv/litopencode/tree/eff765581dd07141b87d25a80ccd6c9e84c4bdd8) | [MIT](../licenses/opencode-MIT.txt) |
+| Grok Build | 1.0.29 | [fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde](https://github.com/wjgoarxiv/litgrok/tree/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde) | [MIT](../licenses/grok-MIT.txt) |
+| Muse Code | 0.1.4 | [05f405fbf34a5f388589e66c7669556f76f3fa3b](https://github.com/wjgoarxiv/litmuse/tree/05f405fbf34a5f388589e66c7669556f76f3fa3b) | [MIT](../licenses/muse-MIT.txt) |
+| Antigravity CLI (agy) | 0.1.4 | [8618daaab5a5ed8bab7ee6c59871f1f1ad931439](https://github.com/wjgoarxiv/litgravity/tree/8618daaab5a5ed8bab7ee6c59871f1f1ad931439) | [MIT](../licenses/gravity-MIT.txt) |
 
 The machine-readable product records include `sourceCommit`, `sourceUrl`, `licensePath`, `licenseSha256` and `licenseBytes`; hub verification checks the distributed license bytes and source-link consistency.
 
 ## Verified standalone export
 
-`skills/grok/lit-humanizer/` exports `.grok/skills/lit-humanizer/` from the LitGrok 1.0.28 public release commit [`a7a36bb4a26616c92a3586e78c4848143b7b67b2`](https://github.com/wjgoarxiv/litgrok/tree/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-humanizer). The export includes its Grok Build entrypoint, references, examples, fixtures, assets, rules, helper scripts and `NOTICE`. Its Windows/Python process helper is vendored from the adjacent native document skill in that same snapshot, and two imports point to the local copy. The inventory records original source hashes, the helper dependency, the two import adaptations, the fixture’s equivalent Unicode category ranges and Python flag mapping, the rules-parser module extraction, and every distributed file hash. The skill retains Grok Build host requirements and makes no cross-host behavior claim.
+`skills/grok/lit-humanizer/` exports `.grok/skills/lit-humanizer/` from the LitGrok 1.0.29 public release commit [`fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde`](https://github.com/wjgoarxiv/litgrok/tree/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-humanizer). The export includes its Grok Build entrypoint, references, examples, fixtures, assets, rules, helper scripts and `NOTICE`. Its Windows/Python process helper is vendored from the adjacent native document skill in that same snapshot, and two imports point to the local copy. The inventory records original source hashes, the helper dependency, the two import adaptations, the fixture’s equivalent Unicode category ranges and Python flag mapping, the rules-parser module extraction, and every distributed file hash. The skill retains Grok Build host requirements and makes no cross-host behavior claim.
 
 With Node.js 22.20 or later, from a disposable project, use the absolute path to your clone of this hub in place of `/absolute/path/to/litfamily`:
 
@@ -56,277 +56,277 @@ The established products added six skills after 1.0.0; Muse and Gravity include 
 
 Three skills that first shipped in LitClaude 1.0.38 are now in all seven products; LitHermes 1.0.30, LitCodex 1.0.31, LitOpenCode 1.0.32, LitGrok 1.0.27, LitMuse 0.1.2 and LitGravity 0.1.2 added them: `lit-adhd`, which also answers to `lit-rewind`, reads your recent sessions and gives a brief of where each one stands with one next step; `lit-hijack` ports a technique from someone's posts, repositories or papers into one of your own skills and proves the change; `lit-schematic` draws checked P&IDs, apparatus figures and cutaways as SVG, PDF and PNG.
 
-### Claude Code — 1.0.42
+### Claude Code — 1.0.43
 
 42 native entries; 22 supporting skill documents.
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `autoconference` | Native product | [plugins/litclaude/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [plugins/litclaude/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [plugins/litclaude/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [plugins/litclaude/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [plugins/litclaude/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [plugins/litclaude/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [plugins/litclaude/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [plugins/litclaude/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [plugins/litclaude/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [plugins/litclaude/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [plugins/litclaude/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [plugins/litclaude/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [plugins/litclaude/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [plugins/litclaude/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [plugins/litclaude/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [plugins/litclaude/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [plugins/litclaude/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-docx/SKILL.md) |
-| `lit-handoff` | Native product | [plugins/litclaude/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [plugins/litclaude/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [plugins/litclaude/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [plugins/litclaude/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-init/SKILL.md) |
-| `lit-loop` | Native product | [plugins/litclaude/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-loop/SKILL.md) |
-| `lit-plan` | Native product | [plugins/litclaude/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [plugins/litclaude/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [plugins/litclaude/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [plugins/litclaude/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [plugins/litclaude/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-team` | Native product | [plugins/litclaude/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-team/SKILL.md) |
-| `lit-typographic-motion` | Native product | [plugins/litclaude/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [plugins/litclaude/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [plugins/litclaude/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [plugins/litclaude/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [plugins/litclaude/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [plugins/litclaude/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [plugins/litclaude/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [plugins/litclaude/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [plugins/litclaude/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/review-work/SKILL.md) |
-| `rules` | Native product | [plugins/litclaude/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/rules/SKILL.md) |
-| `start-work` | Native product | [plugins/litclaude/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [plugins/litclaude/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [plugins/litclaude/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [plugins/litclaude/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/skills/wikify/SKILL.md) |
+| `autoconference` | Native product | [plugins/litclaude/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [plugins/litclaude/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [plugins/litclaude/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [plugins/litclaude/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [plugins/litclaude/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [plugins/litclaude/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [plugins/litclaude/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [plugins/litclaude/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [plugins/litclaude/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [plugins/litclaude/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [plugins/litclaude/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [plugins/litclaude/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [plugins/litclaude/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [plugins/litclaude/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [plugins/litclaude/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [plugins/litclaude/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [plugins/litclaude/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-docx/SKILL.md) |
+| `lit-handoff` | Native product | [plugins/litclaude/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [plugins/litclaude/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [plugins/litclaude/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [plugins/litclaude/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-init/SKILL.md) |
+| `lit-loop` | Native product | [plugins/litclaude/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-loop/SKILL.md) |
+| `lit-plan` | Native product | [plugins/litclaude/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [plugins/litclaude/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [plugins/litclaude/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [plugins/litclaude/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [plugins/litclaude/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-team` | Native product | [plugins/litclaude/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-team/SKILL.md) |
+| `lit-typographic-motion` | Native product | [plugins/litclaude/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [plugins/litclaude/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [plugins/litclaude/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [plugins/litclaude/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [plugins/litclaude/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [plugins/litclaude/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [plugins/litclaude/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [plugins/litclaude/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [plugins/litclaude/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/review-work/SKILL.md) |
+| `rules` | Native product | [plugins/litclaude/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/rules/SKILL.md) |
+| `start-work` | Native product | [plugins/litclaude/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [plugins/litclaude/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [plugins/litclaude/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [plugins/litclaude/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/skills/wikify/SKILL.md) |
 
 Supporting documents, preserved as inventory rather than independent routes:
 
-- [plugins/litclaude/vendor/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/handoff/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/llm-wikify/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/llm-wikify/SKILL.md) — vendor-reference
-- [plugins/litclaude/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/69afd8164e9dadffe74f1e28e1c9a903ac5189b6/plugins/litclaude/vendor/scientific-visualization/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/analyze/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/autoconference/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/debate/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/plan/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/resume/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/ship/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoconference/skills/survey/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/autoresearch/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/debug/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/fix/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/learn/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/plan/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/predict/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/reason/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/scenario/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/security/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/autoresearch/skills/ship/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/handoff/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/llm-wikify/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/llm-wikify/SKILL.md) — vendor-reference
+- [plugins/litclaude/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litclaude/blob/4fa79fdb36d610b338dc016a5a1ba9280a6459a9/plugins/litclaude/vendor/scientific-visualization/SKILL.md) — vendor-reference
 
-### Hermes Agent — 1.0.31
+### Hermes Agent — 1.0.32
 
 40 native entries; 24 supporting skill documents.
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `autoconference` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-docx/SKILL.md) |
-| `lit-handoff` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-init/SKILL.md) |
-| `lit-plan` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-typographic-motion` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/review-work/SKILL.md) |
-| `rules` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/rules/SKILL.md) |
-| `start-work` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/SKILL.md) |
+| `autoconference` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-docx/SKILL.md) |
+| `lit-handoff` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-init/SKILL.md) |
+| `lit-plan` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-typographic-motion` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/review-work/SKILL.md) |
+| `rules` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/rules/SKILL.md) |
+| `start-work` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/SKILL.md) |
 
 Supporting documents, preserved as inventory rather than independent routes:
 
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/analyze/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/analyze/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/core/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/core/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/debate/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/debate/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/plan/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/resume/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/resume/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/ship/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/ship/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/survey/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/survey/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/core/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/core/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/debug/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/debug/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/fix/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/fix/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/learn/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/learn/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/plan/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/predict/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/predict/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/reason/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/reason/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/scenario/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/scenario/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/security/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/security/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/ship/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/ship/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/ingest/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/ingest/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/init/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/init/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/lint/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/lint/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/query/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/query/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/save/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/save/SKILL.md) — nested-mode
-- [packages/lithermes-installer/assets/lithermes-plugin/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/vendor/handoff/SKILL.md) — vendor-reference
-- [packages/lithermes-installer/assets/lithermes-plugin/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/88de078098393ee106cde1a60d84d3eb782d7bf4/packages/lithermes-installer/assets/lithermes-plugin/vendor/scientific-visualization/SKILL.md) — vendor-reference
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/analyze/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/analyze/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/core/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/core/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/debate/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/debate/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/plan/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/resume/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/resume/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/ship/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/ship/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/survey/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoconference/modes/survey/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/core/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/core/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/debug/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/debug/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/fix/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/fix/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/learn/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/learn/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/plan/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/plan/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/predict/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/predict/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/reason/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/reason/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/scenario/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/scenario/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/security/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/security/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/ship/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/autoresearch/modes/ship/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/ingest/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/ingest/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/init/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/init/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/lint/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/lint/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/query/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/query/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/save/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/skills/wikify/modes/save/SKILL.md) — nested-mode
+- [packages/lithermes-installer/assets/lithermes-plugin/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/vendor/handoff/SKILL.md) — vendor-reference
+- [packages/lithermes-installer/assets/lithermes-plugin/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/lithermes/blob/db47cc10c79df6571e3810d39d800cb4554cf0ea/packages/lithermes-installer/assets/lithermes-plugin/vendor/scientific-visualization/SKILL.md) — vendor-reference
 
-### Codex CLI — 1.0.32
+### Codex CLI — 1.0.33
 
 47 native entries; 3 supporting skill documents.
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `autoconference` | Native product | [plugins/litcodex/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [plugins/litcodex/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [plugins/litcodex/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/browser-drive/SKILL.md) |
-| `coding-session-audit` | Native product | [plugins/litcodex/skills/coding-session-audit/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/coding-session-audit/SKILL.md) |
-| `comment-checker` | Native product | [plugins/litcodex/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [plugins/litcodex/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [plugins/litcodex/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [plugins/litcodex/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [plugins/litcodex/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [plugins/litcodex/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [plugins/litcodex/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [plugins/litcodex/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [plugins/litcodex/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [plugins/litcodex/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [plugins/litcodex/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [plugins/litcodex/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [plugins/litcodex/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [plugins/litcodex/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-docx/SKILL.md) |
-| `lit-fetch` | Native product | [plugins/litcodex/skills/lit-fetch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-fetch/SKILL.md) |
-| `lit-handoff` | Native product | [plugins/litcodex/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [plugins/litcodex/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [plugins/litcodex/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [plugins/litcodex/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-init/SKILL.md) |
-| `lit-loop` | Native product | [plugins/litcodex/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-loop/SKILL.md) |
-| `lit-plan` | Native product | [plugins/litcodex/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [plugins/litcodex/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [plugins/litcodex/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [plugins/litcodex/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [plugins/litcodex/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-team` | Native product | [plugins/litcodex/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-team/SKILL.md) |
-| `lit-typographic-motion` | Native product | [plugins/litcodex/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lit-typographic-motion/SKILL.md) |
-| `litcodex-contribute-bug-fix` | Native product | [plugins/litcodex/skills/litcodex-contribute-bug-fix/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litcodex-contribute-bug-fix/SKILL.md) |
-| `litcodex-doctor` | Native product | [plugins/litcodex/skills/litcodex-doctor/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litcodex-doctor/SKILL.md) |
-| `litcodex-report-bug` | Native product | [plugins/litcodex/skills/litcodex-report-bug/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litcodex-report-bug/SKILL.md) |
-| `litgoal` | Native product | [plugins/litcodex/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [plugins/litcodex/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [plugins/litcodex/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [plugins/litcodex/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [plugins/litcodex/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [plugins/litcodex/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [plugins/litcodex/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [plugins/litcodex/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/review-work/SKILL.md) |
-| `rules` | Native product | [plugins/litcodex/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/rules/SKILL.md) |
-| `start-work` | Native product | [plugins/litcodex/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [plugins/litcodex/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [plugins/litcodex/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [plugins/litcodex/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/skills/wikify/SKILL.md) |
+| `autoconference` | Native product | [plugins/litcodex/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [plugins/litcodex/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [plugins/litcodex/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/browser-drive/SKILL.md) |
+| `coding-session-audit` | Native product | [plugins/litcodex/skills/coding-session-audit/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/coding-session-audit/SKILL.md) |
+| `comment-checker` | Native product | [plugins/litcodex/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [plugins/litcodex/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [plugins/litcodex/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [plugins/litcodex/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [plugins/litcodex/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [plugins/litcodex/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [plugins/litcodex/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [plugins/litcodex/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [plugins/litcodex/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [plugins/litcodex/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [plugins/litcodex/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [plugins/litcodex/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [plugins/litcodex/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [plugins/litcodex/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-docx/SKILL.md) |
+| `lit-fetch` | Native product | [plugins/litcodex/skills/lit-fetch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-fetch/SKILL.md) |
+| `lit-handoff` | Native product | [plugins/litcodex/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [plugins/litcodex/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [plugins/litcodex/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [plugins/litcodex/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-init/SKILL.md) |
+| `lit-loop` | Native product | [plugins/litcodex/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-loop/SKILL.md) |
+| `lit-plan` | Native product | [plugins/litcodex/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [plugins/litcodex/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [plugins/litcodex/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [plugins/litcodex/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [plugins/litcodex/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-team` | Native product | [plugins/litcodex/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-team/SKILL.md) |
+| `lit-typographic-motion` | Native product | [plugins/litcodex/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lit-typographic-motion/SKILL.md) |
+| `litcodex-contribute-bug-fix` | Native product | [plugins/litcodex/skills/litcodex-contribute-bug-fix/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litcodex-contribute-bug-fix/SKILL.md) |
+| `litcodex-doctor` | Native product | [plugins/litcodex/skills/litcodex-doctor/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litcodex-doctor/SKILL.md) |
+| `litcodex-report-bug` | Native product | [plugins/litcodex/skills/litcodex-report-bug/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litcodex-report-bug/SKILL.md) |
+| `litgoal` | Native product | [plugins/litcodex/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [plugins/litcodex/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [plugins/litcodex/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [plugins/litcodex/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [plugins/litcodex/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [plugins/litcodex/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [plugins/litcodex/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [plugins/litcodex/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/review-work/SKILL.md) |
+| `rules` | Native product | [plugins/litcodex/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/rules/SKILL.md) |
+| `start-work` | Native product | [plugins/litcodex/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [plugins/litcodex/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [plugins/litcodex/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [plugins/litcodex/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/skills/wikify/SKILL.md) |
 
 Supporting documents, preserved as inventory rather than independent routes:
 
-- [packages/litcodex-ai/src/install/test-fixtures/legacy-lit-korean/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/packages/litcodex-ai/src/install/test-fixtures/legacy-lit-korean/SKILL.md) — test-fixture
-- [plugins/litcodex/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/vendor/handoff/SKILL.md) — vendor-reference
-- [plugins/litcodex/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/e588ccccb1bb85ab9c200f0752b2451b7f3c04e5/plugins/litcodex/vendor/scientific-visualization/SKILL.md) — vendor-reference
+- [packages/litcodex-ai/src/install/test-fixtures/legacy-lit-korean/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/packages/litcodex-ai/src/install/test-fixtures/legacy-lit-korean/SKILL.md) — test-fixture
+- [plugins/litcodex/vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/vendor/handoff/SKILL.md) — vendor-reference
+- [plugins/litcodex/vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litcodex/blob/c5606f21e023396a677ca0ce429fc39e15d58da7/plugins/litcodex/vendor/scientific-visualization/SKILL.md) — vendor-reference
 
-### OpenCode — 1.0.33
+### OpenCode — 1.0.34
 
 49 native entries; 3 supporting skill documents.
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `agent-roster` | Native product | [skills/agent-roster/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/agent-roster/SKILL.md) |
-| `autoconference` | Native product | [skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/deep-interview/SKILL.md) |
-| `doctor-installer` | Native product | [skills/doctor-installer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/doctor-installer/SKILL.md) |
-| `frontend-ui-ux` | Native product | [skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-docx/SKILL.md) |
-| `lit-fetch` | Native product | [skills/lit-fetch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-fetch/SKILL.md) |
-| `lit-handoff` | Native product | [skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-init/SKILL.md) |
-| `lit-plan` | Native product | [skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-typographic-motion` | Native product | [skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/lsp/SKILL.md) |
-| `native-goal-verdict` | Native product | [skills/native-goal-verdict/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/native-goal-verdict/SKILL.md) |
-| `readme-studio` | Native product | [skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/refactor/SKILL.md) |
-| `reference-benchmark-claims` | Native product | [skills/reference-benchmark-claims/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/reference-benchmark-claims/SKILL.md) |
-| `release-guardrails` | Native product | [skills/release-guardrails/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/release-guardrails/SKILL.md) |
-| `review-work` | Native product | [skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/review-work/SKILL.md) |
-| `rules` | Native product | [skills/rules/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/rules/SKILL.md) |
-| `search-workflow-ideas` | Native product | [skills/search-workflow-ideas/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/search-workflow-ideas/SKILL.md) |
-| `start-work` | Native product | [skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/structural-search/SKILL.md) |
-| `tool-guards` | Native product | [skills/tool-guards/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/tool-guards/SKILL.md) |
-| `visual-qa` | Native product | [skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/wikify/SKILL.md) |
-| `workflow-loop` | Native product | [skills/workflow-loop/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/skills/workflow-loop/SKILL.md) |
+| `agent-roster` | Native product | [skills/agent-roster/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/agent-roster/SKILL.md) |
+| `autoconference` | Native product | [skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/deep-interview/SKILL.md) |
+| `doctor-installer` | Native product | [skills/doctor-installer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/doctor-installer/SKILL.md) |
+| `frontend-ui-ux` | Native product | [skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-docx/SKILL.md) |
+| `lit-fetch` | Native product | [skills/lit-fetch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-fetch/SKILL.md) |
+| `lit-handoff` | Native product | [skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-init/SKILL.md) |
+| `lit-plan` | Native product | [skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-typographic-motion` | Native product | [skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/lsp/SKILL.md) |
+| `native-goal-verdict` | Native product | [skills/native-goal-verdict/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/native-goal-verdict/SKILL.md) |
+| `readme-studio` | Native product | [skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/refactor/SKILL.md) |
+| `reference-benchmark-claims` | Native product | [skills/reference-benchmark-claims/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/reference-benchmark-claims/SKILL.md) |
+| `release-guardrails` | Native product | [skills/release-guardrails/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/release-guardrails/SKILL.md) |
+| `review-work` | Native product | [skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/review-work/SKILL.md) |
+| `rules` | Native product | [skills/rules/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/rules/SKILL.md) |
+| `search-workflow-ideas` | Native product | [skills/search-workflow-ideas/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/search-workflow-ideas/SKILL.md) |
+| `start-work` | Native product | [skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/structural-search/SKILL.md) |
+| `tool-guards` | Native product | [skills/tool-guards/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/tool-guards/SKILL.md) |
+| `visual-qa` | Native product | [skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/wikify/SKILL.md) |
+| `workflow-loop` | Native product | [skills/workflow-loop/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/skills/workflow-loop/SKILL.md) |
 
 Supporting documents, preserved as inventory rather than independent routes:
 
-- [test/fixtures/retired-lit-korean/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/test/fixtures/retired-lit-korean/SKILL.md) — test-fixture
-- [vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/vendor/handoff/SKILL.md) — vendor-reference
-- [vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/accd4813a39dd768da4e9c9d5804c68e6e44d32b/vendor/scientific-visualization/SKILL.md) — vendor-reference
+- [test/fixtures/retired-lit-korean/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/test/fixtures/retired-lit-korean/SKILL.md) — test-fixture
+- [vendor/handoff/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/vendor/handoff/SKILL.md) — vendor-reference
+- [vendor/scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litopencode/blob/eff765581dd07141b87d25a80ccd6c9e84c4bdd8/vendor/scientific-visualization/SKILL.md) — vendor-reference
 
-### Grok Build — 1.0.28
+### Grok Build — 1.0.29
 
 42 native entries; 0 supporting skill documents.
 
@@ -334,143 +334,143 @@ The `lit-humanizer` row is the standalone export described above, copied from th
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `autoconference` | Native product | [.grok/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [.grok/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [.grok/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [.grok/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [.grok/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [.grok/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [.grok/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [.grok/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [.grok/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [.grok/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [.grok/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [.grok/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [.grok/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [.grok/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [.grok/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [.grok/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [.grok/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-docx/SKILL.md) |
-| `lit-handoff` | Native product | [.grok/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [.grok/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Standalone Grok | [.grok/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [.grok/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-init/SKILL.md) |
-| `lit-plan` | Native product | [.grok/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [.grok/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [.grok/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [.grok/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [.grok/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-team` | Native product | [.grok/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-team/SKILL.md) |
-| `lit-typographic-motion` | Native product | [.grok/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [.grok/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/litgoal/SKILL.md) |
-| `litgrok` | Native product | [.grok/skills/litgrok/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/litgrok/SKILL.md) |
-| `litresearch` | Native product | [.grok/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [.grok/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [.grok/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [.grok/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [.grok/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [.grok/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [.grok/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/review-work/SKILL.md) |
-| `rules` | Native product | [.grok/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/rules/SKILL.md) |
-| `start-work` | Native product | [.grok/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [.grok/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [.grok/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [.grok/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/a7a36bb4a26616c92a3586e78c4848143b7b67b2/.grok/skills/wikify/SKILL.md) |
+| `autoconference` | Native product | [.grok/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [.grok/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [.grok/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [.grok/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [.grok/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [.grok/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [.grok/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [.grok/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [.grok/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [.grok/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [.grok/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [.grok/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [.grok/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [.grok/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [.grok/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [.grok/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [.grok/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-docx/SKILL.md) |
+| `lit-handoff` | Native product | [.grok/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [.grok/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Standalone Grok | [.grok/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [.grok/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-init/SKILL.md) |
+| `lit-plan` | Native product | [.grok/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [.grok/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [.grok/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [.grok/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [.grok/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-team` | Native product | [.grok/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-team/SKILL.md) |
+| `lit-typographic-motion` | Native product | [.grok/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [.grok/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/litgoal/SKILL.md) |
+| `litgrok` | Native product | [.grok/skills/litgrok/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/litgrok/SKILL.md) |
+| `litresearch` | Native product | [.grok/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [.grok/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [.grok/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [.grok/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [.grok/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [.grok/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [.grok/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/review-work/SKILL.md) |
+| `rules` | Native product | [.grok/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/rules/SKILL.md) |
+| `start-work` | Native product | [.grok/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [.grok/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [.grok/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [.grok/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litgrok/blob/fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde/.grok/skills/wikify/SKILL.md) |
 
-### Muse Code — 0.1.3
-
-42 native entries; 0 supporting skill documents.
-
-| Skill | Distribution | Source path |
-|---|---|---|
-| `autoconference` | Native product | [plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-docx/SKILL.md) |
-| `lit-handoff` | Native product | [plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-init/SKILL.md) |
-| `lit-loop` | Native product | [plugin/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-loop/SKILL.md) |
-| `lit-plan` | Native product | [plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-team` | Native product | [plugin/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-team/SKILL.md) |
-| `lit-typographic-motion` | Native product | [plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/review-work/SKILL.md) |
-| `rules` | Native product | [plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/rules/SKILL.md) |
-| `start-work` | Native product | [plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/f984c10b1e28832ba78d997268b5f7fea9d1becf/plugin/skills/wikify/SKILL.md) |
-
-### Antigravity CLI (agy) — 0.1.3
+### Muse Code — 0.1.4
 
 42 native entries; 0 supporting skill documents.
 
 | Skill | Distribution | Source path |
 |---|---|---|
-| `autoconference` | Native product | [plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/autoconference/SKILL.md) |
-| `autoresearch` | Native product | [plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/autoresearch/SKILL.md) |
-| `browser-drive` | Native product | [plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/browser-drive/SKILL.md) |
-| `comment-checker` | Native product | [plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/comment-checker/SKILL.md) |
-| `debugging` | Native product | [plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/debugging/SKILL.md) |
-| `deep-interview` | Native product | [plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/deep-interview/SKILL.md) |
-| `frontend-ui-ux` | Native product | [plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/frontend-ui-ux/SKILL.md) |
-| `lit-adhd` | Native product | [plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-adhd/SKILL.md) |
-| `lit-brainstorm` | Native product | [plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-brainstorm/SKILL.md) |
-| `lit-burnoff-file` | Native product | [plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-burnoff-file/SKILL.md) |
-| `lit-burnoff` | Native product | [plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-burnoff/SKILL.md) |
-| `lit-code` | Native product | [plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-code/SKILL.md) |
-| `lit-commit` | Native product | [plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-commit/SKILL.md) |
-| `lit-comprehend` | Native product | [plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-comprehend/SKILL.md) |
-| `lit-crucible` | Native product | [plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-crucible/SKILL.md) |
-| `lit-diagram-drawer` | Native product | [plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-diagram-drawer/SKILL.md) |
-| `lit-docx` | Native product | [plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-docx/SKILL.md) |
-| `lit-handoff` | Native product | [plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-handoff/SKILL.md) |
-| `lit-hijack` | Native product | [plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-hijack/SKILL.md) |
-| `lit-humanizer` | Native product | [plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-humanizer/SKILL.md) |
-| `lit-init` | Native product | [plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-init/SKILL.md) |
-| `lit-loop` | Native product | [plugin/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-loop/SKILL.md) |
-| `lit-plan` | Native product | [plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-plan/SKILL.md) |
-| `lit-pptx` | Native product | [plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-pptx/SKILL.md) |
-| `lit-recap` | Native product | [plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-recap/SKILL.md) |
-| `lit-schematic` | Native product | [plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-schematic/SKILL.md) |
-| `lit-scientific-visualization` | Native product | [plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-scientific-visualization/SKILL.md) |
-| `lit-team` | Native product | [plugin/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-team/SKILL.md) |
-| `lit-typographic-motion` | Native product | [plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lit-typographic-motion/SKILL.md) |
-| `litgoal` | Native product | [plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/litgoal/SKILL.md) |
-| `litresearch` | Native product | [plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/litresearch/SKILL.md) |
-| `litwork` | Native product | [plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/litwork/SKILL.md) |
-| `lsp-setup` | Native product | [plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lsp-setup/SKILL.md) |
-| `lsp` | Native product | [plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/lsp/SKILL.md) |
-| `readme-studio` | Native product | [plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/readme-studio/SKILL.md) |
-| `refactor` | Native product | [plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/refactor/SKILL.md) |
-| `review-work` | Native product | [plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/review-work/SKILL.md) |
-| `rules` | Native product | [plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/rules/SKILL.md) |
-| `start-work` | Native product | [plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/start-work/SKILL.md) |
-| `structural-search` | Native product | [plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/structural-search/SKILL.md) |
-| `visual-qa` | Native product | [plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/visual-qa/SKILL.md) |
-| `wikify` | Native product | [plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/70280586aa668151550c08789bd04425b18902e7/plugin/skills/wikify/SKILL.md) |
+| `autoconference` | Native product | [plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-docx/SKILL.md) |
+| `lit-handoff` | Native product | [plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-init/SKILL.md) |
+| `lit-loop` | Native product | [plugin/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-loop/SKILL.md) |
+| `lit-plan` | Native product | [plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-team` | Native product | [plugin/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-team/SKILL.md) |
+| `lit-typographic-motion` | Native product | [plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/review-work/SKILL.md) |
+| `rules` | Native product | [plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/rules/SKILL.md) |
+| `start-work` | Native product | [plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litmuse/blob/05f405fbf34a5f388589e66c7669556f76f3fa3b/plugin/skills/wikify/SKILL.md) |
+
+### Antigravity CLI (agy) — 0.1.4
+
+42 native entries; 0 supporting skill documents.
+
+| Skill | Distribution | Source path |
+|---|---|---|
+| `autoconference` | Native product | [plugin/skills/autoconference/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/autoconference/SKILL.md) |
+| `autoresearch` | Native product | [plugin/skills/autoresearch/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/autoresearch/SKILL.md) |
+| `browser-drive` | Native product | [plugin/skills/browser-drive/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/browser-drive/SKILL.md) |
+| `comment-checker` | Native product | [plugin/skills/comment-checker/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/comment-checker/SKILL.md) |
+| `debugging` | Native product | [plugin/skills/debugging/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/debugging/SKILL.md) |
+| `deep-interview` | Native product | [plugin/skills/deep-interview/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/deep-interview/SKILL.md) |
+| `frontend-ui-ux` | Native product | [plugin/skills/frontend-ui-ux/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/frontend-ui-ux/SKILL.md) |
+| `lit-adhd` | Native product | [plugin/skills/lit-adhd/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-adhd/SKILL.md) |
+| `lit-brainstorm` | Native product | [plugin/skills/lit-brainstorm/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-brainstorm/SKILL.md) |
+| `lit-burnoff-file` | Native product | [plugin/skills/lit-burnoff-file/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-burnoff-file/SKILL.md) |
+| `lit-burnoff` | Native product | [plugin/skills/lit-burnoff/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-burnoff/SKILL.md) |
+| `lit-code` | Native product | [plugin/skills/lit-code/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-code/SKILL.md) |
+| `lit-commit` | Native product | [plugin/skills/lit-commit/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-commit/SKILL.md) |
+| `lit-comprehend` | Native product | [plugin/skills/lit-comprehend/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-comprehend/SKILL.md) |
+| `lit-crucible` | Native product | [plugin/skills/lit-crucible/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-crucible/SKILL.md) |
+| `lit-diagram-drawer` | Native product | [plugin/skills/lit-diagram-drawer/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-diagram-drawer/SKILL.md) |
+| `lit-docx` | Native product | [plugin/skills/lit-docx/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-docx/SKILL.md) |
+| `lit-handoff` | Native product | [plugin/skills/lit-handoff/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-handoff/SKILL.md) |
+| `lit-hijack` | Native product | [plugin/skills/lit-hijack/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-hijack/SKILL.md) |
+| `lit-humanizer` | Native product | [plugin/skills/lit-humanizer/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-humanizer/SKILL.md) |
+| `lit-init` | Native product | [plugin/skills/lit-init/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-init/SKILL.md) |
+| `lit-loop` | Native product | [plugin/skills/lit-loop/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-loop/SKILL.md) |
+| `lit-plan` | Native product | [plugin/skills/lit-plan/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-plan/SKILL.md) |
+| `lit-pptx` | Native product | [plugin/skills/lit-pptx/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-pptx/SKILL.md) |
+| `lit-recap` | Native product | [plugin/skills/lit-recap/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-recap/SKILL.md) |
+| `lit-schematic` | Native product | [plugin/skills/lit-schematic/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-schematic/SKILL.md) |
+| `lit-scientific-visualization` | Native product | [plugin/skills/lit-scientific-visualization/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-scientific-visualization/SKILL.md) |
+| `lit-team` | Native product | [plugin/skills/lit-team/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-team/SKILL.md) |
+| `lit-typographic-motion` | Native product | [plugin/skills/lit-typographic-motion/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lit-typographic-motion/SKILL.md) |
+| `litgoal` | Native product | [plugin/skills/litgoal/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/litgoal/SKILL.md) |
+| `litresearch` | Native product | [plugin/skills/litresearch/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/litresearch/SKILL.md) |
+| `litwork` | Native product | [plugin/skills/litwork/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/litwork/SKILL.md) |
+| `lsp-setup` | Native product | [plugin/skills/lsp-setup/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lsp-setup/SKILL.md) |
+| `lsp` | Native product | [plugin/skills/lsp/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/lsp/SKILL.md) |
+| `readme-studio` | Native product | [plugin/skills/readme-studio/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/readme-studio/SKILL.md) |
+| `refactor` | Native product | [plugin/skills/refactor/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/refactor/SKILL.md) |
+| `review-work` | Native product | [plugin/skills/review-work/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/review-work/SKILL.md) |
+| `rules` | Native product | [plugin/skills/rules/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/rules/SKILL.md) |
+| `start-work` | Native product | [plugin/skills/start-work/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/start-work/SKILL.md) |
+| `structural-search` | Native product | [plugin/skills/structural-search/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/structural-search/SKILL.md) |
+| `visual-qa` | Native product | [plugin/skills/visual-qa/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/visual-qa/SKILL.md) |
+| `wikify` | Native product | [plugin/skills/wikify/SKILL.md](https://github.com/wjgoarxiv/litgravity/blob/8618daaab5a5ed8bab7ee6c59871f1f1ad931439/plugin/skills/wikify/SKILL.md) |

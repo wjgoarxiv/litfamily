@@ -30,13 +30,13 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 
 | 쓰는 에이전트 | 제품 | 설치 명령 |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.42 -- litclaude install --yes` |
-| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.31 -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.32 -- litcodex install` |
-| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.33 -- litopencode install` |
-| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.28 -- litgrok install` |
-| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.3 install` |
-| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.3 install` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.43 -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.32 -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.33 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.34 -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.29 -- litgrok install` |
+| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.4 install` |
+| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.4 install` |
 
 npm이 함께 설치된 Node.js와 해당 에이전트가 있어야 합니다. LitCodex는 Node.js 22 이상, LitHermes는 18 이상이 필요합니다. 설치 프로그램이 무엇을 바꾸는지, 설치 중에 무엇을 묻는지, 바뀔 내용을 미리 보는 방법과 제거하는 방법은 각 제품 README에 정리되어 있습니다.
 
@@ -80,7 +80,7 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 
 ## 이런 걸 만들 수 있어요
 
-이 절의 그림은 모두 Claude Code용 제품인 LitClaude 1.0.42이 실제로 만든 결과입니다. 그림 밑에 프롬프트가 있으면 Claude Code 세션에서 그 요청으로 만든 것이고(긴 요청은 …로 줄였습니다), 없으면 스킬의 엔진이 스킬에 함께 들어 있는 예시로 만든 것입니다. 꾸며 낸 시안은 하나도 없습니다.
+이 절의 그림은 모두 Claude Code용 제품인 LitClaude 1.0.43이 실제로 만든 결과입니다. 그림 밑에 프롬프트가 있으면 Claude Code 세션에서 그 요청으로 만든 것이고(긴 요청은 …로 줄였습니다), 없으면 스킬의 엔진이 스킬에 함께 들어 있는 예시로 만든 것입니다. 꾸며 낸 시안은 하나도 없습니다.
 
 지금 똑같이 만들 수 있는지는 쓰는 제품에 따라 다릅니다. 대부분의 스킬은 일곱 제품 모두에 들어 있고, 제품마다 자기 하네스에서 돌립니다. 가장 새로운 스킬 세 개도 이제 일곱 제품 모두에 들어 있고, 더 꽉 찬 기본 스타일은 LitMuse를 뺀 여섯 제품에 들어 있습니다.
 
@@ -89,7 +89,7 @@ LitClaude는 두 경로 가운데 하나만 골라 계속 쓰세요. 같은 플�
 | `lit-diagram-drawer`, `lit-scientific-visualization`, `lit-pptx`, `lit-docx`, `frontend-ui-ux`, `lit-typographic-motion`, `readme-studio` | 일곱 제품 모두 |
 | `lit-schematic`(P&ID, 실험 장치도, 컷어웨이), `lit-adhd`, `lit-hijack` | 일곱 제품 모두 |
 | 이 그림들처럼 꽉 찬 기본 스타일(촘촘한 배치, 여러 강조색, 눈에 띄는 한 가지 장치) | LitMuse를 뺀 여섯 제품 |
-| 스레드 줄이 보이는 LIT 카드 | LitClaude 1.0.42, Claude Code 상태 표시줄 |
+| 스레드 줄이 보이는 LIT 카드 | LitClaude 1.0.43, Claude Code 상태 표시줄 |
 
 ### 그리기
 

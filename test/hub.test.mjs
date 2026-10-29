@@ -23,54 +23,54 @@ test('the standalone Grok export pins the LitGrok humanizer final public release
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   const entry = inventory.exports.find((item) => item.id === 'lit-humanizer');
   assert.equal(entry.product, 'grok');
-  assert.equal(entry.sourceVersion, '1.0.28');
-  assert.equal(entry.sourceCommit, 'a7a36bb4a26616c92a3586e78c4848143b7b67b2');
+  assert.equal(entry.sourceVersion, '1.0.29');
+  assert.equal(entry.sourceCommit, 'fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde');
   assert.equal(entry.sourcePath, '.grok/skills/lit-humanizer');
   assert.equal(entry.destinationPath, 'skills/grok/lit-humanizer');
   assert.equal(entry.files.length, 74);
 });
 
-test('the hub binds the 2026-10-28 public release commits', async () => {
+test('the hub binds the 2026-10-29 public release commits', async () => {
   const release = {
   "claude": {
-    "version": "1.0.42",
-    "sourceCommit": "69afd8164e9dadffe74f1e28e1c9a903ac5189b6",
+    "version": "1.0.43",
+    "sourceCommit": "4fa79fdb36d610b338dc016a5a1ba9280a6459a9",
     "repository": "https://github.com/wjgoarxiv/litclaude",
     "name": "LitClaude"
   },
   "hermes": {
-    "version": "1.0.31",
-    "sourceCommit": "88de078098393ee106cde1a60d84d3eb782d7bf4",
+    "version": "1.0.32",
+    "sourceCommit": "db47cc10c79df6571e3810d39d800cb4554cf0ea",
     "repository": "https://github.com/wjgoarxiv/lithermes",
     "name": "LitHermes"
   },
   "codex": {
-    "version": "1.0.32",
-    "sourceCommit": "e588ccccb1bb85ab9c200f0752b2451b7f3c04e5",
+    "version": "1.0.33",
+    "sourceCommit": "c5606f21e023396a677ca0ce429fc39e15d58da7",
     "repository": "https://github.com/wjgoarxiv/litcodex",
     "name": "LitCodex"
   },
   "opencode": {
-    "version": "1.0.33",
-    "sourceCommit": "accd4813a39dd768da4e9c9d5804c68e6e44d32b",
+    "version": "1.0.34",
+    "sourceCommit": "eff765581dd07141b87d25a80ccd6c9e84c4bdd8",
     "repository": "https://github.com/wjgoarxiv/litopencode",
     "name": "LitOpenCode"
   },
   "grok": {
-    "version": "1.0.28",
-    "sourceCommit": "a7a36bb4a26616c92a3586e78c4848143b7b67b2",
+    "version": "1.0.29",
+    "sourceCommit": "fd0c9403f55d6fa8e7ce610e2c38ca2846b41dde",
     "repository": "https://github.com/wjgoarxiv/litgrok",
     "name": "LitGrok"
   },
   "muse": {
-    "version": "0.1.3",
-    "sourceCommit": "f984c10b1e28832ba78d997268b5f7fea9d1becf",
+    "version": "0.1.4",
+    "sourceCommit": "05f405fbf34a5f388589e66c7669556f76f3fa3b",
     "repository": "https://github.com/wjgoarxiv/litmuse",
     "name": "LitMuse"
   },
   "gravity": {
-    "version": "0.1.3",
-    "sourceCommit": "70280586aa668151550c08789bd04425b18902e7",
+    "version": "0.1.4",
+    "sourceCommit": "8618daaab5a5ed8bab7ee6c59871f1f1ad931439",
     "repository": "https://github.com/wjgoarxiv/litgravity",
     "name": "LitGravity"
   }
@@ -202,7 +202,7 @@ test('new member installation and native registration remain host-specific', asy
   for (const name of ['README.md', 'README_ko-KR.md']) {
     const text = await readFile(new URL('../' + name, import.meta.url), 'utf8');
     for (const id of ['muse', 'gravity']) {
-      assert(text.includes('@litfamily/lit' + id + '@0.1.3 install'));
+      assert(text.includes('@litfamily/lit' + id + '@0.1.4 install'));
       assert(text.includes('https://www.npmjs.com/package/@litfamily/lit' + id));
     }
     assert(text.includes('Muse Code'));
@@ -216,8 +216,8 @@ test('new member installation and native registration remain host-specific', asy
   }
 });
 
-test('all install routes pin the 2026-10-28 released versions', async () => {
-  const expected = { claude: '1.0.42', hermes: '1.0.31', codex: '1.0.32', opencode: '1.0.33', grok: '1.0.28', muse: '0.1.3', gravity: '0.1.3' };
+test('all install routes pin the 2026-10-29 released versions', async () => {
+  const expected = { claude: '1.0.43', hermes: '1.0.32', codex: '1.0.33', opencode: '1.0.34', grok: '1.0.29', muse: '0.1.4', gravity: '0.1.4' };
   const inventory = JSON.parse(await readFile(new URL('../docs/skill-inventory.json', import.meta.url), 'utf8'));
   assert.equal(inventory.state, 'released');
   for (const product of inventory.products) {
