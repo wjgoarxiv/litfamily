@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use LitFamily in your work, please cite it as below."
+title: "LitFamily"
+abstract: "One lit workflow family (planning, verified execution, review, research, handoff and editing skills) ported natively to seven coding-agent harnesses: Claude Code, Codex CLI, OpenCode, Hermes Agent, Grok Build, Muse Code and Antigravity CLI."
+type: software
+authors:
+  - name: "LitFamily contributors"
+repository-code: "https://github.com/wjgoarxiv/litfamily"
+url: "https://github.com/wjgoarxiv/litfamily"
+license: MIT
+date-released: "2026-10-29"
+keywords:
+  - coding agents
+  - agent harness
+  - claude code
+  - codex
+  - opencode
+  - workflow

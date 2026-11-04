@@ -225,6 +225,29 @@ Antigravity CLI에서는 승인한 계획을 `lit start plans/<slug>.md`로 실�
 
 문제가 생기면 [지원 안내](SUPPORT.md)에 따라 제품과 호스트 버전, 민감한 내용을 가린 명령, 예상한 동작과 실제 출력을 남겨주세요. 설치, 스킬 발견, 작업 완료는 각각 확인합니다. 공개, 파괴적 작업과 접근 권한 변경에는 프로젝트에서 요구하는 승인이 계속 필요합니다.
 
+## 공식 패키지
+
+아래 일곱 개가 LitFamily의 공식 빌드입니다. 모두 각자의 공개 저장소에서 `@litfamily` 범위로 npm에 배포되며, npm 출처 증명(provenance)이 패키지와 그것을 빌드한 GitHub Actions 실행을 이어 줍니다.
+
+| 제품 | 호스트 | npm | 소스 |
+| --- | --- | --- | --- |
+| LitClaude | Claude Code | `@litfamily/litclaude` | [wjgoarxiv/litclaude](https://github.com/wjgoarxiv/litclaude) |
+| LitCodex | Codex CLI | `@litfamily/litcodex` | [wjgoarxiv/litcodex](https://github.com/wjgoarxiv/litcodex) |
+| LitOpenCode | OpenCode | `@litfamily/litopencode` | [wjgoarxiv/litopencode](https://github.com/wjgoarxiv/litopencode) |
+| LitHermes | Hermes Agent | `@litfamily/lithermes` | [wjgoarxiv/lithermes](https://github.com/wjgoarxiv/lithermes) |
+| LitGrok | Grok Build | `@litfamily/litgrok` | [wjgoarxiv/litgrok](https://github.com/wjgoarxiv/litgrok) |
+| LitMuse | Muse Code | `@litfamily/litmuse` | [wjgoarxiv/litmuse](https://github.com/wjgoarxiv/litmuse) |
+| LitGravity | Antigravity CLI | `@litfamily/litgravity` | [wjgoarxiv/litgravity](https://github.com/wjgoarxiv/litgravity) |
+
+받은 패키지가 공식 빌드인지 확인하려면 npm에 출처 증명을 물어보세요. 공식 패키지는 SLSA 출처 증명 유형을 보여 줍니다.
+
+```sh
+npm view @litfamily/litclaude dist.attestations.provenance.predicateType
+# https://slsa.dev/provenance/v1
+```
+
+예전에 쓰던 범위 없는 이름(`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`)은 2026-09-16에 내렸습니다. 지금 그 이름으로 올라온 패키지는 저희 것이 아닙니다. LitFamily를 인용할 때는 저장소의 [CITATION.cff](CITATION.cff)(GitHub의 "Cite this repository")를 쓰세요.
+
 ## 명예의 벽
 
 LitFamily는 사람들이 서로 알려 주면서 자라요. LitClaude에서 `lit invite @<깃허브-아이디>`를 입력하면 누가 알려 줬는지 기록되고, 내 컴퓨터의 카드에 특별한 꾸밈이 열려요. 어디로도 아무것도 보내지 않아요. 여기에 이름을 올리고 싶다면 이 저장소 Discussions에 고정된 "누가 초대했나요?" 글에 "invited by @<깃허브-아이디>"라고 남겨 주세요. 초대한 사람은 직접 확인해서 올려요.

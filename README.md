@@ -225,6 +225,29 @@ Use only the diagnostic and removal commands that product documents. **There is 
 
 For a problem, follow [Support](SUPPORT.md): include the product and host version, redacted command, expected behavior, and observed output. Installation, skill discovery, and task completion are separate observations. Publishing, destructive actions, and changes to access still require your project's authorization.
 
+## Official packages
+
+These seven packages are the official LitFamily builds. Each one is published to npm under the `@litfamily` scope from its own public repository, with npm provenance that links the package to the GitHub Actions run that built it.
+
+| Product | Host | npm | Source |
+| --- | --- | --- | --- |
+| LitClaude | Claude Code | `@litfamily/litclaude` | [wjgoarxiv/litclaude](https://github.com/wjgoarxiv/litclaude) |
+| LitCodex | Codex CLI | `@litfamily/litcodex` | [wjgoarxiv/litcodex](https://github.com/wjgoarxiv/litcodex) |
+| LitOpenCode | OpenCode | `@litfamily/litopencode` | [wjgoarxiv/litopencode](https://github.com/wjgoarxiv/litopencode) |
+| LitHermes | Hermes Agent | `@litfamily/lithermes` | [wjgoarxiv/lithermes](https://github.com/wjgoarxiv/lithermes) |
+| LitGrok | Grok Build | `@litfamily/litgrok` | [wjgoarxiv/litgrok](https://github.com/wjgoarxiv/litgrok) |
+| LitMuse | Muse Code | `@litfamily/litmuse` | [wjgoarxiv/litmuse](https://github.com/wjgoarxiv/litmuse) |
+| LitGravity | Antigravity CLI | `@litfamily/litgravity` | [wjgoarxiv/litgravity](https://github.com/wjgoarxiv/litgravity) |
+
+To check that a copy is the official build, ask npm for its provenance. An official package prints the SLSA provenance type:
+
+```sh
+npm view @litfamily/litclaude dist.attestations.provenance.predicateType
+# https://slsa.dev/provenance/v1
+```
+
+The older unscoped names (`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`) were retired on 2026-09-16. A package published under one of those names today is not ours. To cite LitFamily, use the repository's [CITATION.cff](CITATION.cff) ("Cite this repository" on GitHub).
+
 ## Wall of fame
 
 LitFamily grows when people pass it on. In LitClaude, `lit invite @<github-id>` records who told you about it and unlocks a special card look on your machine. Nothing is sent anywhere. To be listed here, post "invited by @<github-id>" in the pinned "Who invited you?" thread in this repository's Discussions. Inviters are added by hand.

@@ -1,0 +1,13 @@
+{
+  "title": "LitFamily",
+  "description": "One lit workflow family (planning, verified execution, review, research, handoff and editing skills) ported natively to seven coding-agent harnesses: Claude Code, Codex CLI, OpenCode, Hermes Agent, Grok Build, Muse Code and Antigravity CLI.",
+  "upload_type": "software",
+  "creators": [
+    { "name": "LitFamily contributors" }
+  ],
+  "license": "MIT",
+  "keywords": ["coding agents", "agent harness", "claude code", "codex", "opencode", "workflow"],
+  "related_identifiers": [
+    { "identifier": "https://github.com/wjgoarxiv/litfamily", "relation": "isSupplementTo", "scheme": "url" }
+  ]
+}
