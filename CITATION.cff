@@ -8,7 +8,8 @@ authors:
 repository-code: "https://github.com/wjgoarxiv/litfamily"
 url: "https://github.com/wjgoarxiv/litfamily"
 license: MIT
-date-released: "2026-10-29"
+version: "v2026.11.0"
+date-released: "2026-11-05"
 keywords:
   - coding agents
   - agent harness
