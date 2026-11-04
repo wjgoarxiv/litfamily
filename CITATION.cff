@@ -9,7 +9,12 @@ repository-code: "https://github.com/wjgoarxiv/litfamily"
 url: "https://github.com/wjgoarxiv/litfamily"
 license: MIT
 version: "v2026.11.0"
-date-released: "2026-11-05"
+date-released: "2026-11-04"
+doi: "10.5281/zenodo.23964271"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23964272"
+    description: "Archived snapshot of release v2026.11.0"
 keywords:
   - coding agents
   - agent harness

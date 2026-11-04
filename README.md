@@ -11,6 +11,7 @@ LitFamily is seven open-source add-ons, one for each of seven AI coding agents, 
 <img src="assets/brand/readme/badge-version.svg" alt="Release: npm" />
 <img src="assets/brand/readme/badge-license.svg" alt="MIT license" />
 <img src="assets/brand/readme/badge-family.svg" alt="Seven independent ports" />
+<a href="https://doi.org/10.5281/zenodo.23964271"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23964271.svg" alt="DOI 10.5281/zenodo.23964271" /></a>
 </p>
 
 **[Install](#install) · [What you can make](#what-you-can-make) · [See it work](#see-it-work) · [Quick start](#quick-start) · [Key features](#key-features) · [Commands and hooks](#commands-and-hooks) · [Links](#links) · [한국어](README_ko-KR.md)**

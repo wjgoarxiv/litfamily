@@ -11,6 +11,7 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 <img src="assets/brand/readme/badge-version.svg" alt="출시: npm" />
 <img src="assets/brand/readme/badge-license.svg" alt="MIT license" />
 <img src="assets/brand/readme/badge-family.svg" alt="Seven independent ports" />
+<a href="https://doi.org/10.5281/zenodo.23964271"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23964271.svg" alt="DOI 10.5281/zenodo.23964271" /></a>
 </p>
 
 **[설치](#설치) · [작업 예시](#이런-걸-만들-수-있어요) · [실제 화면](#실제-화면) · [빠른 시작](#빠른-시작) · [주요 기능](#주요-기능) · [명령과 훅](#명령과-훅) · [링크](#링크) · [English](README.md)**
