@@ -31,13 +31,13 @@ LitFamily는 AI 코딩 에이전트 일곱 종류에 하나씩 맞춰 만든 오
 
 | 쓰는 에이전트 | 제품 | 설치 명령 |
 |---|---|---|
-| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.43 -- litclaude install --yes` |
-| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.32 -- lithermes install --yes --no-style` |
-| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.33 -- litcodex install` |
-| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.34 -- litopencode install` |
-| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.29 -- litgrok install` |
-| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.4 install` |
-| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.4 install` |
+| Claude Code | [LitClaude](https://github.com/wjgoarxiv/litclaude) | `npm exec --yes --package @litfamily/litclaude@1.0.47 -- litclaude install --yes` |
+| Hermes Agent | [LitHermes](https://github.com/wjgoarxiv/lithermes) | `npx --yes --package @litfamily/lithermes@1.0.37 -- lithermes install --yes --no-style` |
+| Codex CLI | [LitCodex](https://github.com/wjgoarxiv/litcodex) | `npm exec --yes --package @litfamily/litcodex@1.0.36 -- litcodex install` |
+| OpenCode | [LitOpenCode](https://github.com/wjgoarxiv/litopencode) | `npm exec --package @litfamily/litopencode@1.0.41 -- litopencode install` |
+| Grok Build | [LitGrok](https://github.com/wjgoarxiv/litgrok) | `npm exec --yes --package @litfamily/litgrok@1.0.33 -- litgrok install` |
+| Muse Code | [LitMuse](https://github.com/wjgoarxiv/litmuse) | `npx @litfamily/litmuse@0.1.10 install` |
+| Antigravity CLI (`agy`) | [LitGravity](https://github.com/wjgoarxiv/litgravity) | `npx @litfamily/litgravity@0.1.7 install` |
 
 npm이 함께 설치된 Node.js와 해당 에이전트가 있어야 합니다. LitCodex는 Node.js 22 이상, LitHermes는 18 이상이 필요합니다. 설치 프로그램이 무엇을 바꾸는지, 설치 중에 무엇을 묻는지, 바뀔 내용을 미리 보는 방법과 제거하는 방법은 각 제품 README에 정리되어 있습니다.
 
