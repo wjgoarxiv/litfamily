@@ -247,7 +247,7 @@ npm view @litfamily/litclaude dist.attestations.provenance.predicateType
 # https://slsa.dev/provenance/v1
 ```
 
-The older unscoped names (`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`) were retired on 2026-09-16. A package published under one of those names today is not ours. To cite LitFamily, use the repository's [CITATION.cff](CITATION.cff) ("Cite this repository" on GitHub).
+The older unscoped names (`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`) were retired on 2026-09-16. A package published under one of those names today is not ours. To cite LitFamily, use the repository's [CITATION.cff](CITATION.cff) ("Cite this repository" on GitHub). The method the products share is written up in a technical report: Go, W. (2026). *LitFamily Method: plan, prove, hand off. One workflow ported to seven coding-agent harnesses*. Zenodo. [doi:10.5281/zenodo.24052172](https://doi.org/10.5281/zenodo.24052172).
 
 ## Wall of fame
 

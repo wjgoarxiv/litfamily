@@ -247,7 +247,7 @@ npm view @litfamily/litclaude dist.attestations.provenance.predicateType
 # https://slsa.dev/provenance/v1
 ```
 
-예전에 쓰던 범위 없는 이름(`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`)은 2026-09-16에 내렸습니다. 지금 그 이름으로 올라온 패키지는 저희 것이 아닙니다. LitFamily를 인용할 때는 저장소의 [CITATION.cff](CITATION.cff)(GitHub의 "Cite this repository")를 쓰세요.
+예전에 쓰던 범위 없는 이름(`litclaude-ai`, `lithermes-ai`, `litcodex-ai`, `litopencode`, `litgrok-ai`)은 2026-09-16에 내렸습니다. 지금 그 이름으로 올라온 패키지는 저희 것이 아닙니다. LitFamily를 인용할 때는 저장소의 [CITATION.cff](CITATION.cff)(GitHub의 "Cite this repository")를 쓰세요. 제품들이 함께 쓰는 방법은 기술 보고서로 정리해 두었습니다: Go, W. (2026). *LitFamily Method: plan, prove, hand off. One workflow ported to seven coding-agent harnesses*. Zenodo. [doi:10.5281/zenodo.24052172](https://doi.org/10.5281/zenodo.24052172).
 
 ## 명예의 벽
 
